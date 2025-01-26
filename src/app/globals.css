@@ -1,6 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* COLORS  */
+  --deep-blue: #1f4e78; /* Represents trust, intelligence, and professionalism */
+  --electric-teal: #00c1d4; /* Symbolizes innovation and agility */
+  --charcoal-gray: #2d2d2d; /* For neutral elements and text */
+  --light-gray: #f5f5f5; /* For backgrounds to add contrast */
+  --white: #ffffff; /* For negative space and readability */
+  /* COLORS  */
+  /* BACKGROUNDCOLORS */
+  --primary-bg: #2d2d2d; /* Charcoal Gray or Black */
+  --secondary-bg: #c7c7bb; /* Light Gray */
+  /* BACKGROUNDCOLORS */
+
+  /* GRADIENTS */
+}
+
 /* IMPORTING FONTS  */
 /* Poppins */
 @font-face {
@@ -32,11 +49,171 @@
   font-style: normal;
 }
 /* Poppins */
-
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Light.ttf");
+  font-display: block;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+  font-display: block;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Medium.ttf");
+  font-display: block;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-SemiBold.ttf");
+  font-display: block;
+  font-weight: 600;
+  font-style: normal;
+}
+/* Roboto
+ */
 /* IMPORTING FONTS  */
+.roboto {
+  font-family: "Roboto";
+}
+.poppins {
+  font-family: "Poppins";
+}
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  font-family: "Roboto";
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 @layer components {
+  .myContainer {
+    @apply lg:w-[91.5625vw] w-[90.699%] mx-[auto];
+  }
+  h1,
+  h2 {
+    @apply font-bold poppins;
+  }
+  h1 {
+    @apply text70;
+  }
+  h1 {
+    @apply text60;
+  }
+  .text14 {
+    @apply lg:text-[0.72916666666vw] lg:leading-[1.25vw];
+  }
+  .text16 {
+    @apply lg:text-[0.83333333333vw] lg:leading-[1.35416666667vw];
+  }
+  .text18 {
+    @apply lg:text-[0.9375vw] lg:leading-[1.45833333333vw];
+  }
+  .text20 {
+    @apply lg:text-[1.04166666667vw] lg:leading-[1.5625vw];
+  }
+  .text22 {
+    @apply lg:text-[1.14583333333vw] lg:leading-[1.66666666667vw];
+  }
+  .text24 {
+    @apply lg:text-[1.25vw] lg:leading-[1.77083333333vw];
+  }
+  .text25 {
+    @apply lg:text-[1.30208333333vw] lg:leading-[1.82291666667vw];
+  }
+  .text26 {
+    @apply lg:text-[1.35416666667vw] lg:leading-[1.875vw];
+  }
+  .text30 {
+    @apply lg:text-[1.5625vw] lg:leading-[2.08333333333vw];
+  }
+  .text35 {
+    @apply lg:text-[1.82291666667vw] lg:leading-[2.08333333333vw];
+  }
+  .text40 {
+    @apply lg:text-[2.08333333333vw] lg:leading-[2.60416666667vw] sm:text-[30px] sm:leading-[40px]
+    text-[25px] leading-[35px] capitalize;
+  }
+  .text50 {
+    @apply lg:text-[2.60416666667vw] lg:leading-[3.125vw] sm:text-[40px] sm:leading-[50px]
+    text-[32px] leading-[42px] capitalize;
+  }
+  .text60 {
+    @apply lg:text-[3.125vw] lg:leading-[3.64583333333vw] sm:text-[50px] sm:leading-[60px]
+    text-[32px] leading-[42px] capitalize;
+  }
+  .text70 {
+    @apply lg:text-[3.64583333333vw] lg:leading-[5.20833333333vw] sm:text-[60px] sm:leading-[70px]
+    text-[32px] leading-[42px] capitalize;
+  }
+  .text90 {
+    @apply lg:text-[4.6875vw] lg:leading-[5.20833333333vw] sm:text-[80px] sm:leading-[90px]
+    text-[32px] leading-[42px] capitalize;
+  }
+  .mtext12 {
+    @apply sm:text-[14px] sm:leading-[24px] text-[12px] leading-[22px];
+  }
+  .mtext14 {
+    @apply sm:text-[16px] sm:leading-[26px] text-[14px] leading-[25px];
+  }
+  .mtext15 {
+    @apply sm:text-[17px] sm:leading-[27px] text-[15px] leading-[25px];
+  }
+  .mtext16 {
+    @apply sm:text-[18px] sm:leading-[28px] text-[16px] leading-[26px];
+  }
+  .mtext18 {
+    @apply sm:text-[20px] sm:leading-[30px] text-[18px] leading-[25px];
+  }
+  .mtext20 {
+    @apply sm:text-[22px] sm:leading-[32px] text-[20px] leading-[30px];
+  }
+  .mtext22 {
+    @apply sm:text-[24px] sm:leading-[34px] text-[22px] leading-[32px];
+  }
+  .mtext24 {
+    @apply sm:text-[26px] sm:leading-[36px] text-[24px] leading-[34px];
+  }
+  .mtext25 {
+    @apply sm:text-[27px] sm:leading-[37px] text-[25px] leading-[35px];
+  }
+  .mtext26 {
+    @apply sm:text-[28px] sm:leading-[38px] text-[26px] leading-[36px];
+  }
+  .mtext30 {
+    @apply sm:text-[32px] sm:leading-[42px] text-[30px] leading-[40px];
+  }
+  .mtext32 {
+    @apply sm:text-[34px] sm:leading-[44px] text-[32px] leading-[42px];
+  }
+
+  .mt20 {
+    @apply lg:mt-[1.04166666667vw] mt-[16px];
+  }
+  .mt30 {
+    @apply lg:mt-[1.5625vw] mt-[22px];
+  }
+  .py1 {
+    @apply lg:py-[11.4583333333vw] sm:py-[120px] py-[75px];
+  }
 }
