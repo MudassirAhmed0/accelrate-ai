@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import AnimatedText from "./bottom-texts/AnimatedText";
@@ -8,14 +8,14 @@ import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
-  useGSAP(() => {
-    gsap.from(".logo .letter", {
-      y: -200,
-      stagger: -0.05,
-      duration: 2.5,
-      ease: "power4.out",
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.from(".logo .letter", {
+  //     y: -200,
+  //     stagger: -0.05,
+  //     duration: 2.5,
+  //     ease: "power4.out",
+  //   });
+  // });
   useGSAP(() => {
     gsap.from(".heroWrapper", {
       y: -900,
@@ -40,7 +40,7 @@ const Hero = () => {
     <section className="overflow-hidden">
       <div className="lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper bg-black">
         <div className="overflow-hidden logoWrapper">
-          <svg
+          {/* <svg
             className="logo"
             id="Calque_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,22 @@ const Hero = () => {
               className="letter"
               d="M0,95.4v116h35v-113.2c0-39.6,20.3-61,52.5-61h21.5V3.2h-20.7C45.7,3.2,0,30.1,0,95.4Z"
             />
-          </svg>
+          </svg> */}
+          <div className="logo flex text-white text-[12.5vw] font-bold text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
+            <p className="letter inline-block">A</p>
+            <p className="letter inline-block">C</p>
+            <p className="letter inline-block">C</p>
+            <p className="letter inline-block">E</p>
+            <p className="letter inline-block">L</p>
+            <p className="letter inline-block">E</p>
+            <p className="letter inline-block">R</p>
+            <p className="letter inline-block">A</p>
+            <p className="letter inline-block">T</p>
+            <p className="letter inline-block">E</p>
+            <p className="letter inline-block">-</p>
+            <p className="letter inline-block">A</p>
+            <p className="letter inline-block">I</p>
+          </div>
         </div>
         <div className="flex justify-between items-end text-white suisseIntl text-[16px] font-light tracking-[-0.16px] leading-[17.5px] mt-auto pb-[36px]">
           <AnimatedText />
