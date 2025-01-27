@@ -14,8 +14,6 @@
   --primary-bg: #2d2d2d; /* Charcoal Gray or Black */
   --secondary-bg: #c7c7bb; /* Light Gray */
   /* BACKGROUNDCOLORS */
-
-  /* GRADIENTS */
 }
 
 /* IMPORTING FONTS  */
@@ -78,9 +76,43 @@
   font-weight: 600;
   font-style: normal;
 }
-/* Roboto
- */
+/* Roboto */
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Regular.ttf");
+  font-display: block;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Light.ttf");
+  font-display: block;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Bold.ttf");
+  font-display: block;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "switzer";
+  src: url("/fonts/refrence/switzer/Switzer-Semibold.otf");
+  font-display: block;
+  font-weight: 600;
+  font-style: normal;
+}
 /* IMPORTING FONTS  */
+.switzer {
+  font-family: "switzer";
+}
+.suisseIntl {
+  font-family: "SuisseIntl";
+}
 .roboto {
   font-family: "Roboto";
 }
@@ -117,7 +149,7 @@ input[type="number"] {
   h1 {
     @apply text70;
   }
-  h1 {
+  h2 {
     @apply text60;
   }
   .text14 {
@@ -216,4 +248,8 @@ input[type="number"] {
   .py1 {
     @apply lg:py-[11.4583333333vw] sm:py-[120px] py-[75px];
   }
+}
+
+.link-active:not(:hover):after {
+  transform-origin: 100% 50%;
 }

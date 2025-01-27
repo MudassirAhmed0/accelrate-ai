@@ -1,15 +1,12 @@
 import React from "react";
+import Hero from "./hero/Hero";
+import About from "./about/About";
 
 const HomePage = () => {
   return (
     <>
-      <section>
-        <h1 className="text70 text-primary-start">dasda</h1>
-        <div className="bg-gradient-to-b from-primary-blue via-primary-teal to-secondary-bg text-white p-6 rounded-lg">
-          This section uses a gradient background from charcoal gray to subtle
-          gray.
-        </div>
-      </section>
+      <Hero />
+      <About />
     </>
   );
 };
