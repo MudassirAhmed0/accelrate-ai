@@ -17,6 +17,36 @@
 }
 
 /* IMPORTING FONTS  */
+@font-face {
+  font-family: "swiss";
+  src: url("/fonts/swiss/Swiss721ThinBT.ttf");
+  font-display: block;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Sussie */
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/SuisseIntl/SuisseIntl-Regular.ttf");
+  font-display: block;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/SuisseIntl/SuisseIntl-Light.ttf");
+  font-display: block;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("/fonts/SuisseIntl/SuisseIntl-Bold.ttf");
+  font-display: block;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* Poppins */
 @font-face {
   font-family: "Poppins";
@@ -121,6 +151,9 @@
   font-style: normal;
 }
 /* IMPORTING FONTS  */
+.swiss {
+  font-family: "swiss";
+}
 .modica {
   font-family: "modica";
 }

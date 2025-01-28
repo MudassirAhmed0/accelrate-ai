@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <header className="fixed w-full top-0 left-0 z-10 mix-blend-difference capitalize tracking-[-.14px] lg:text20">
       <div className="lg:h-[4.539vw] lg:py-[0.73206442166vw] flex flex-col justify-end">
-        <div className="lg:px-[40px] flex justify-between text-primary-teal">
+        <div className="lg:px-[40px] flex justify-between text-white">
           <Link
             href={"/"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink"

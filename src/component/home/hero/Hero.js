@@ -39,9 +39,13 @@ const Hero = () => {
     <section className="overflow-hidden">
       <div className="lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper bg-black">
         <div className="overflow-hidden logoWrapper">
-          <div className="text-[10.6vw] font-semibold logo modica flex text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
+          <div className="text-[10.5vw] flex items-center font-semibold logo modica flex text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
+            <img
+              className="inline-block w-[9.5vw]   letter"
+              src="/images/icons/thunder.svg"
+            />
             {[
-              "A",
+              // "A",
               "C",
               "C",
               "E",
@@ -55,13 +59,18 @@ const Hero = () => {
               "A",
               "I",
             ].map((letter, index) => (
-              <span key={index} className="letter inline-block">
+              <span
+                key={index}
+                className={`letter inline-block ${
+                  letter == "-" ? " poppins " : ""
+                }`}
+              >
                 {letter}
               </span>
             ))}
           </div>
         </div>
-        <div className="flex justify-between items-end text-primary-teal text-[16px] font-light tracking-[-0.16px] leading-[17.5px] mt-auto pb-[36px]">
+        <div className="flex justify-between items-end  text-white text-[16px] font-light tracking-[-0.16px] leading-[17.5px] mt-auto pb-[36px]">
           <BottomTexts />
           <div>
             <svg

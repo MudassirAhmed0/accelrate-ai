@@ -14,18 +14,10 @@ const BottomTexts = () => {
     <div className="flex gap-x-[69px]">
       <div>
         <div className="overflow-hidden">
-          <p className="bottomText">Strategy, Design,</p>
+          <p className="bottomText">AI. Automation.</p>
         </div>
         <div className="overflow-hidden">
-          <p className="bottomText">and Performance.</p>
-        </div>
-      </div>
-      <div>
-        <div className="overflow-hidden">
-          <p className="bottomText">Two Engagement</p>
-        </div>
-        <div className="overflow-hidden">
-          <p className="bottomText">Models: Cash or Equity.</p>
+          <p className="bottomText"> Acceleration.</p>
         </div>
       </div>
     </div>

@@ -25,9 +25,9 @@ const Content = () => {
             {linkWords.map((word, wordIndex) => (
               <span
                 key={wordIndex}
-                className="wrapper inline-block overflow-hidden"
+                className="wrapper inline-block overflow-hidden  mr-[0.8vw]"
               >
-                <span className="inline-block">{word}</span>{" "}
+                <span className="inline-block  ">{word}</span>{" "}
               </span>
             ))}
           </Link>
@@ -36,8 +36,8 @@ const Content = () => {
         // Handle normal text: Split and wrap words in spans
         return part.split(" ").map((word, wordIndex) => (
           <span
-            key={wordIndex}
-            className="wrapper inline-block overflow-hidden"
+            key={`${index}-${wordIndex}`}
+            className="wrapper inline-block overflow-hidden mr-[0.8vw] "
           >
             <span className="inline-block">{word}</span>{" "}
           </span>
@@ -45,6 +45,7 @@ const Content = () => {
       }
     });
   };
+
   useGSAP(() => {
     gsap.from(".desc .wrapper span", {
       y: "90",
@@ -74,10 +75,12 @@ const Content = () => {
     });
   }, []);
   return (
-    <div className="px-[40px] py-[60px] bg-secondary-light containerWrap">
+    <div className="px-[40px] py-[60px] bg-black containerWrap">
       <div className="overflow-hidden headingWrapper">
-        <div className="text60 heading">
-          <h2 className="text-primary-bg">Heading - AI-Powered Precision.</h2>
+        <div className="text60 heading swiss font-[600] flex">
+          <h2 className="text-primary-bg swiss  font-[600] text-white">
+            AI-Powered Precision.
+          </h2>
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
@@ -94,15 +97,15 @@ const Content = () => {
             speed={50}
             style={{
               display: "inline-block",
-              fontWeight: "bold",
-              fontFamily: "poppins",
-              color: "var(--deep-blue)",
+              fontWeight: "600",
+              fontFamily: "swiss",
+              color: "white",
             }}
             repeat={Infinity}
           />
         </div>
       </div>
-      <p className="text50 mt30 text-primary-bg desc">
+      <p className="text50 mt30 text-white desc swiss flex flex-wrap  ">
         {wrapWordsInSpan(
           `By 2030, AI will add $15.7 trillion to the global economy. At Accelerate-AI, we help you claim <Link href="/">your share</Link> by integrating AI and automation into your business processes—quickly and effectively.`
         )}
