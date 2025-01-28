@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-const AnimatedText = () => {
+const BottomTexts = () => {
   useGSAP(() => {
-    gsap.from(".animatedText", {
+    gsap.from(".bottomText", {
       y: -200,
       duration: 2.5,
       ease: "power4.out",
@@ -14,22 +14,22 @@ const AnimatedText = () => {
     <div className="flex gap-x-[69px]">
       <div>
         <div className="overflow-hidden">
-          <p className="animatedText">Strategy, Design,</p>
+          <p className="bottomText">Strategy, Design,</p>
         </div>
         <div className="overflow-hidden">
-          <p className="animatedText">and Performance.</p>
+          <p className="bottomText">and Performance.</p>
         </div>
       </div>
       <div>
         <div className="overflow-hidden">
-          <p className="animatedText">Two Engagement</p>
+          <p className="bottomText">Two Engagement</p>
         </div>
         <div className="overflow-hidden">
-          <p className="animatedText">Models: Cash or Equity.</p>
+          <p className="bottomText">Models: Cash or Equity.</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default AnimatedText;
+export default BottomTexts;

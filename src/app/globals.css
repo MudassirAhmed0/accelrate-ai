@@ -106,7 +106,24 @@
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: "modica";
+  src: url("/fonts/Modica/Fontspring-DEMO-modica-bold.otf");
+  font-display: block;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "modica";
+  src: url("/fonts/Modica/Fontspring-DEMO-modica-semibold.otf");
+  font-display: block;
+  font-weight: 600;
+  font-style: normal;
+}
 /* IMPORTING FONTS  */
+.modica {
+  font-family: "modica";
+}
 .switzer {
   font-family: "switzer";
 }
@@ -123,6 +140,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto";
+  background-color: var(--primary-bg);
+  color: var(--electric-teal);
 }
 html {
   scroll-behavior: smooth;
@@ -139,6 +158,9 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 @layer components {
+  .fullVh.fullSvh {
+    @apply min-h-[100vh] min-h-[100svh];
+  }
   .myContainer {
     @apply lg:w-[91.5625vw] w-[90.699%] mx-[auto];
   }
@@ -247,6 +269,16 @@ input[type="number"] {
   }
   .py1 {
     @apply lg:py-[11.4583333333vw] sm:py-[120px] py-[75px];
+  }
+  .marqueeSlide {
+    @apply lg:w-[4.39238653001vw] lg:min-w-[4.39238653001vw] lg:h-[4.39238653001vw] sm:w-[140px] sm:min-w-[140px] sm:h-[140px] w-[19.5348837209vw] h-[19.5348837209vw];
+  }
+  .marqueeSlide {
+    @apply ml-[3.72093023256vw] lg:ml-[3.33333333333vw];
+  }
+
+  .marqueeSlide img {
+    position: relative !important;
   }
 }
 

@@ -1,6 +1,6 @@
+import HomePage from "@/component/home/Index";
+import Layout from "@/component/layout/Index";
 import React from "react";
-import HomePage from "./component/home/Index";
-import Layout from "./component/layout/Index";
 
 const page = () => {
   return (

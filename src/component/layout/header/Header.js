@@ -49,9 +49,9 @@ const Header = () => {
     });
   }, []);
   return (
-    <header className="fixed w-full top-0 left-0 z-10 mix-blend-difference suisseIntl capitalize tracking-[-.14px] lg:text20">
+    <header className="fixed w-full top-0 left-0 z-10 mix-blend-difference capitalize tracking-[-.14px] lg:text20">
       <div className="lg:h-[4.539vw] lg:py-[0.73206442166vw] flex flex-col justify-end">
-        <div className="lg:px-[40px] flex justify-between text-white">
+        <div className="lg:px-[40px] flex justify-between text-primary-teal">
           <Link
             href={"/"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink"
@@ -63,7 +63,7 @@ const Header = () => {
               {navLinks.map((navLink, index) => (
                 <li
                   key={index}
-                  className="link-active relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
+                  className="link-active relative overflow-hidden after:bg-primary-teal after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
                 >
                   <Link href={"/"}>{navLink.title}</Link>
                 </li>
@@ -73,7 +73,7 @@ const Header = () => {
           <div className="contactLink overflow-hidden">
             <Link
               href={"/"}
-              className="inline-flex lg:gap-[0.41666666666vw] items-center group relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
+              className="inline-flex lg:gap-[0.41666666666vw] items-center group relative overflow-hidden after:bg-primary-teal after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
             >
               <span className="absolute transform group-hover:translate-x-0 group-hover:translate-y-0 translate-x-[-125%] translate-y-[50%] group-hover:opacity-[1] opacity-[0] transition-all duration-[700ms] ease-[cubic-bezier(0.52,0,0,1)]">
                 ↗
