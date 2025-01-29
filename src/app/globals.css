@@ -150,7 +150,27 @@
   font-weight: 600;
   font-style: normal;
 }
+@font-face {
+  font-family: "MElle HK Medium";
+  src: url("/fonts/MElle HK Medium/MElle HK Medium.ttf");
+  font-display: block;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cordia New Regular";
+  src: url("/fonts/Cordia New Regular/Cordia New Regular.ttf");
+  font-display: block;
+  font-weight: 500;
+  font-style: normal;
+}
 /* IMPORTING FONTS  */
+.cordia {
+  font-family: "Cordia New Regular";
+}
+.melle {
+  font-family: "MElle HK Medium";
+}
 .swiss {
   font-family: "swiss";
 }
@@ -317,4 +337,14 @@ input[type="number"] {
 
 .link-active:not(:hover):after {
   transform-origin: 100% 50%;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

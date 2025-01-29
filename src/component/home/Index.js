@@ -11,6 +11,7 @@ const HomePage = () => {
       <About />
       <Services />
       <Testimonials />
+      <Services />
     </>
   );
 };
