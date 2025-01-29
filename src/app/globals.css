@@ -334,7 +334,14 @@ input[type="number"] {
     position: relative !important;
   }
 }
-
+.gradient {
+  background: linear-gradient(135deg, #0b0252, #1d0973, #41438c);
+  background: linear-gradient(135deg, #0b0252, #241180, #41438c);
+  background: linear-gradient(135deg, #0b0252, #322b7f, #6565a3);
+}
+.index-module_type__E-SaG {
+  @apply !opacity-[1];
+}
 .link-active:not(:hover):after {
   transform-origin: 100% 50%;
 }

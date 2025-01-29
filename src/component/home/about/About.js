@@ -35,10 +35,10 @@ const About = () => {
   useGSAP(() => {
     gsap.from(".bannerImg", {
       // y: "-90", // Animation effect
-      y: "-40",
-      scale: "1.3",
+      y: "-60",
+      scale: "1.5",
 
-      duration: "1",
+      duration: "2",
       scrollTrigger: {
         trigger: aboutContainer.current, // The element that triggers the scroll animation
         start: "top bottom", // Animation starts when the top of the aboutContainer hits the top of the viewport
@@ -50,21 +50,25 @@ const About = () => {
   }, []);
 
   return (
-    <section>
+    <section className="bg-black p-[40px] py-[160px] lg:py-[8vw]">
       <div
         ref={aboutContainer}
-        className="flex justify-between items-center m-[40px] my-[120px] p-[40px] border border-secondary-light rounded-[32px]"
+        className="flex justify-between items-center  p-[40px]   "
       >
-        <div className="relative lg:w-[39.8958333333vw] lg:h-[53.3333333333vw] bannerImg">
-          <Image fill alt="about" src={"/images/about/about.png"}></Image>
+        <div className="relative lg:w-[34.8958333333vw] lg:h-[53.3333333333vw] bannerImg">
+          <Image
+            fill
+            alt="about"
+            src="/images/icons/gradient-rocket.svg"
+          ></Image>
         </div>
         <div className="w-[52%] text-secondary-light relative">
           <div>
-            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7]">
+            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] swiss">
               (About){" "}
             </span>{" "}
             {/* (About) inline with text */}
-            <h3 className="text35 heading inline">
+            <h3 className="text35 heading inline swiss">
               {wrapWordsInSpan(
                 "We don’t just bring AI into your business—we empower you to lead with it. Accelerate-AI transforms workflows, scales operations, and drives unparalleled impact, ensuring you’re ready for the AI-driven future."
               )}
