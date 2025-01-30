@@ -8,17 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          blue: "var(--deep-blue)", // Deep Blue
-          teal: "var(--electric-teal)", // Electric Teal
-          bg: "var(--primary-bg)", // Charcoal Gray or Black
-        },
-        secondary: {
-          gray: "var(--charcoal-gray)", // Charcoal Gray
-          light: "var(--light-gray)", // Light Gray
-          white: "var(--white)", // White
-          bg: "var(--secondary-bg)", // Light Gray (for content-heavy sections)
-        },
+        // Primary Colors
+        deepblue: "var(--deep-blue)",
+        royalblue: "var(--royal-blue)",
+        lighterblue: "var(--lighter-blue)",
+
+        // Secondary Colors
+        charcoalgray: "var(--charcoal-gray)",
+        lightgray: "var(--light-gray)",
       },
     },
   },

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,6 +7,7 @@ import BottomTexts from "./bottom-texts/BottomTexts";
 import Content from "./Content";
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
+  const heroWrapper = useRef(null);
   useGSAP(() => {
     gsap.from(".logo .letter", {
       marginTop: -200,
@@ -15,31 +16,139 @@ const Hero = () => {
       ease: "power4.out",
     });
   });
+
   useGSAP(() => {
-    gsap.from(".heroWrapper", {
-      y: -900,
-      duration: 1.5,
-      ease: "power4.out",
+    const hero = heroWrapper.current;
+
+    if (!hero) return;
+
+    // Initial entrance animation
+    gsap.fromTo(
+      hero,
+      { y: -900 }, // Start position
+      {
+        y: 0, // End at natural position
+        duration: 1.5,
+        ease: "power4.out",
+        onComplete: () => {
+          // Scroll-triggered animation AFTER the entrance animation
+          gsap.to(hero, {
+            y: () => -hero.offsetHeight + window.innerHeight * 0.9,
+            scrollTrigger: {
+              trigger: hero,
+              start: "top top", // Starts when the top of the hero hits the top of the viewport
+              end: () => `+=${hero.offsetHeight + window.innerHeight * 0.9}`,
+              scrub: 1,
+              preventOverlaps: true,
+              anticipatePin: 1,
+            },
+          });
+        },
+      }
+    );
+  }, []);
+
+  // useGSAP(() => {
+  //   const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
+  //   gsap.to(".heroVideo", {
+  //     y: "0%",
+  //     scrollTrigger: {
+  //       trigger: ".heroVideoWrapper",
+  //       start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
+  //       end: `bottom bottom`,
+  //       // markers: true,
+  //       scrub: 1,
+  //     },
+  //   });
+  //   gsap.to(".heroVideo", {
+  //     y: "50%",
+  //     scrollTrigger: {
+  //       trigger: ".heroVideoWrapper",
+  //       start: `top top`,
+  //       end: `bottom bottom`,
+  //       // markers: true,
+  //       scrub: 1,
+  //     },
+  //   });
+  // }, []);
+
+  // useGSAP(() => {
+  //   const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
+
+  //   // Create a timeline to manage both animations smoothly
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".heroVideoWrapper",
+  //       start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
+  //       end: `bottom bottom`,
+  //       scrub: 1,
+  //       markers: false, // you can enable markers if you need to debug the triggers
+  //     },
+  //   });
+
+  //   // First animation (move video to 0% when scrolling)
+  //   tl.to(".heroVideo", {
+  //     y: "0%",
+  //   });
+  //   gsap.set(".heroVideo", { y: "0%" });
+
+  //   // Second animation (move video to 50% when scroll reaches top of the viewport)
+  //   gsap.to(".heroVideo", {
+  //     y: "50%",
+  //     scrollTrigger: {
+  //       trigger: ".heroVideoWrapper",
+  //       start: `top top`, // Start when the top of the wrapper reaches the top of the viewport
+  //       end: () => `+=${heroVideoWrapper.offsetHeight}`,
+  //       scrub: 1,
+  //       markers: false,
+  //     },
+  //   });
+  // }, []);
+
+  useGSAP(() => {
+    const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
+
+    // Create a timeline for the first animation
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".heroVideoWrapper",
+        start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
+        end: `bottom bottom`,
+        scrub: 1,
+        markers: false, // Enable for debugging
+      },
     });
-  });
-  //   useGSAP(() => {
-  //     gsap.to(".logoWrapper", {
-  //       y: "-90",
-  //       scrollTrigger: {
-  //         trigger: ".logoWrapper",
-  //         start: "top top",
-  //         end: "+=100%",
-  //         scrub: 1,
-  //         markers: true,
-  //       },
-  //     });
-  //   }, []);
+
+    // First animation: Move the video to y: 0%
+    tl.to(".heroVideo", {
+      y: "0%",
+      onComplete: () => {
+        // Ensure the position is set to 0 after the first animation finishes
+        gsap.set(".heroVideo", { y: "0%" });
+
+        // Second animation: Move video from 0% to 50% when scrolling further
+        gsap.to(".heroVideo", {
+          y: "50%",
+          scrollTrigger: {
+            trigger: ".heroVideoWrapper",
+            start: `top top`, // Start the animation when the wrapper reaches the top
+            end: () => `+=${heroVideoWrapper.offsetHeight}`,
+            scrub: 1,
+            markers: false,
+          },
+        });
+      },
+    });
+  }, []);
 
   return (
     <section className="overflow-hidden">
-      <div className="lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper bg-black">
+      <div
+        ref={heroWrapper}
+        className="lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper bg-black z-[2]"
+      >
         <div className="overflow-hidden logoWrapper">
-          <div className="text-[10.5vw] flex items-center font-semibold logo modica flex text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
+          <div className="text-[10.5vw] flex items-center font-semibold logo modica text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
             <img
               className="inline-block w-[9.5vw]   letter"
               src="/images/icons/thunder.svg"
@@ -90,8 +199,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative overflow-hidden h-[100vh]">
-        <div className="absolute top-0 left-0 size-full">
+      <div className="relative h-[100vh] heroVideoWrapper">
+        <div className="absolute top-0 left-0 size-full translate-y-[-45%] z-[-1] heroVideo">
+          <span className="absolute top-0 left-0 size-full bg-black bg-opacity-[0.5]"></span>
           <video
             src="/videos/home-hero.mp4"
             muted

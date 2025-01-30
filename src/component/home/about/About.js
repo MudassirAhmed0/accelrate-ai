@@ -62,13 +62,13 @@ const About = () => {
             src="/images/icons/gradient-rocket.svg"
           ></Image>
         </div>
-        <div className="w-[52%] text-secondary-light relative">
+        <div className="w-[52%] relative">
           <div>
-            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] swiss">
+            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] swiss text-white">
               (About){" "}
             </span>{" "}
             {/* (About) inline with text */}
-            <h3 className="text35 heading inline swiss">
+            <h3 className="text35 heading inline swiss text-white">
               {wrapWordsInSpan(
                 "We don’t just bring AI into your business—we empower you to lead with it. Accelerate-AI transforms workflows, scales operations, and drives unparalleled impact, ensuring you’re ready for the AI-driven future."
               )}

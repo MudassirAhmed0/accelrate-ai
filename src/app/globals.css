@@ -3,17 +3,14 @@
 @tailwind utilities;
 
 :root {
-  /* COLORS  */
-  --deep-blue: #1f4e78; /* Represents trust, intelligence, and professionalism */
-  --electric-teal: #00c1d4; /* Symbolizes innovation and agility */
+  /* Primary Colors */
+  --deep-blue: #0b0252; /* Represents trust, intelligence, and professionalism */
+  --royal-blue: #1d0973; /* Symbolizes innovation and agility */
+  --lighter-blue: #41438c; /* A lighter shade of blue */
+
+  /* Secondary Colors */
   --charcoal-gray: #2d2d2d; /* For neutral elements and text */
-  --light-gray: #f5f5f5; /* For backgrounds to add contrast */
-  --white: #ffffff; /* For negative space and readability */
-  /* COLORS  */
-  /* BACKGROUNDCOLORS */
-  --primary-bg: #2d2d2d; /* Charcoal Gray or Black */
-  --secondary-bg: #c7c7bb; /* Light Gray */
-  /* BACKGROUNDCOLORS */
+  --light-gray: #2e2e30; /* For backgrounds to add contrast */
 }
 
 /* IMPORTING FONTS  */
@@ -193,8 +190,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto";
-  background-color: var(--primary-bg);
-  color: var(--electric-teal);
 }
 html {
   scroll-behavior: smooth;
@@ -335,9 +330,13 @@ input[type="number"] {
   }
 }
 .gradient {
-  background: linear-gradient(135deg, #0b0252, #1d0973, #41438c);
-  background: linear-gradient(135deg, #0b0252, #241180, #41438c);
   background: linear-gradient(135deg, #0b0252, #322b7f, #6565a3);
+}
+.gradient1 {
+  background: linear-gradient(135deg, #0b0252, #1d0973, #41438c);
+}
+.gradient2 {
+  background: linear-gradient(135deg, #0b0252, #241180, #41438c);
 }
 .index-module_type__E-SaG {
   @apply !opacity-[1];

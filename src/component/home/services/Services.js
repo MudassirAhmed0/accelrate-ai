@@ -2,6 +2,8 @@
 import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { BiSolidCaretRightCircle } from "react-icons/bi";
+import Link from "next/link";
 
 const services = [
   {
@@ -48,15 +50,30 @@ const Services = () => {
   useGSAP(() => {
     document.querySelectorAll(".services").forEach((service) => {
       gsap.from(service, {
-        y: "90",
-        duration: "1",
+        y: 90,
+        duration: 1,
         scrollTrigger: {
           trigger: service,
-          start: "-200% 70%",
-          end: () => `end 100%`,
+          start: "top 90%", // Adjusted for smoother effect
+          end: "50% bottom", // Corrected syntax
           scrub: 1,
         },
       });
+
+      // Find `.dividerLn` inside the current service element
+      const divider = service.querySelector(".dividerLn");
+      if (divider) {
+        gsap.from(divider, {
+          scale: 0,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: divider,
+            start: "top 106%",
+            end: "bottom bottom",
+            scrub: 1,
+          },
+        });
+      }
     });
   }, []);
 
@@ -72,27 +89,33 @@ const Services = () => {
             {services.map((service, index) => {
               return (
                 <li key={index} className="services">
-                  <div className="text-[2.6vw] modica  font-medium flex lg:gap-x-[3.125vw] border-b border-[#ffffff4d] mb-[0.8vw] pb-[0.3vw]">
-                    <span className="poppins">0{index + 1}</span>
-                    <span>{formatText(service.title)}</span>
-                  </div>
-                  <div className="flex items-center lg:gap-x-[81px]">
-                    <span className="block size-[12px] rounded-full bg-white"></span>
-                    <div className="text32 flex gap-x-[1.8vw]">
-                      {service?.tag?.map((item, i) => (
-                        <div
-                          key={i}
-                          className="border  border-[#ffffff4d] rounded-[30px] py-[0.6vw] px-[1.8vw]"
-                        >
-                          {item}
-                        </div>
-                      ))}
-                      {/* <div className="border border-primary-blue rounded-[30px] py-[10px] px-[30px]">
+                  <Link href={"/"} className="group">
+                    <div className="text-[2.6vw] modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
+                      <span className="poppins">0{index + 1}</span>
+                      <span>{formatText(service.title)}</span>
+                      <div className="ml-auto rotate-[-45deg] scale-[1] translate-x-[-2.5vw] group-hover:rotate-[360deg] group-hover:scale-[1.7] transition-all duration-300 text-white group-hover:text-black group-hover:translate-x-0">
+                        <BiSolidCaretRightCircle />
+                      </div>
+                    </div>
+                    <span className="h-[2px] bg-black w-full block my-[0.8vw] dividerLn"></span>
+                    <div className="flex items-center lg:gap-x-[81px]">
+                      <span className="block size-[12px] rounded-full bg-white"></span>
+                      <div className="text32 flex gap-x-[1.8vw]">
+                        {service?.tag?.map((item, i) => (
+                          <div
+                            key={i}
+                            className="border  border-[#ffffff4d] rounded-[30px] py-[0.6vw] px-[1.8vw]"
+                          >
+                            {item}
+                          </div>
+                        ))}
+                        {/* <div className="border border-royalblue rounded-[30px] py-[10px] px-[30px]">
                         {secondHalf}
                       </div> */}
+                      </div>
+                      {/* <span className="block size-[12px] rounded-full bg-white ml-auto"></span> */}
                     </div>
-                    {/* <span className="block size-[12px] rounded-full bg-white ml-auto"></span> */}
-                  </div>
+                  </Link>
                 </li>
               );
             })}
