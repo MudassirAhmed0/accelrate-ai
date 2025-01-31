@@ -77,7 +77,7 @@ const Content = () => {
   return (
     <div
       className="px-[40px] py-[60px] lg:py-[8vw] bg-[#1d0973] containerWrap 
-gradient"
+bg-black"
     >
       <div className="overflow-hidden headingWrapper">
         <div className="text60 heading swiss font-[600] flex gap-[1vw]">

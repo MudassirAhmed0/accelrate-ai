@@ -41,7 +41,7 @@ const Testimonials = ({ heading }) => {
       </div>
       <div
         ref={cardsWrapperRef}
-        className="min-w-[50%] w-auto absolute top-0 left-[50%] translate-x-0 flex items-center gradient h-full px-[120px]"
+        className="min-w-[50%] w-auto absolute top-0 left-[50%] translate-x-0 flex items-center bg-black h-full px-[120px]"
         id={`cardsWrapper`}
       >
         <div className="w-full min-h-[65%] flex gap-x-[20px] items-stretch whitespace-nowrap">

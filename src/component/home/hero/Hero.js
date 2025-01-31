@@ -146,7 +146,7 @@ const Hero = ({ variant }) => {
       <div
         ref={heroWrapper}
         className={`lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper ${
-          variant ? (variant == "blue" ? " gradient " : "") : " bg-black "
+          variant ? (variant == "blue" ? " bg-black " : "") : " bg-black "
         } z-[2]`}
       >
         <div className="overflow-hidden logoWrapper">
