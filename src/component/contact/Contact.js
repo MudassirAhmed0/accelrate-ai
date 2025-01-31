@@ -38,7 +38,7 @@ const Contact = ({ variant }) => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="cursor-pointer gradient px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group"
+              className="cursor-pointer bg-[#111] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group"
             >
               <div className="relative overflow-hidden">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">

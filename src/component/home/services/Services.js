@@ -64,7 +64,7 @@ const Services = () => {
 
   return (
     <section>
-      <div className="bg-black lg:py-[6.25vw] py1 px-[40px] text-white swiss">
+      <div className="bg-[#111] lg:py-[6.25vw] py1 px-[40px] text-white swiss">
         <h3 className="modica text-[4vw] tracking-[0.2vw]">
           AI × Automation <span className="poppins">=</span> <br /> Scalable
           Growth
