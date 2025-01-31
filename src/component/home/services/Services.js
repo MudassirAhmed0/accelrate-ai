@@ -54,26 +54,11 @@ const Services = () => {
         duration: 1,
         scrollTrigger: {
           trigger: service,
-          start: "top 90%", // Adjusted for smoother effect
-          end: "50% bottom", // Corrected syntax
+          start: "top 115%", // Adjusted for smoother effect
+          end: "bottom 120%", // Corrected syntax
           scrub: 1,
         },
       });
-
-      // Find `.dividerLn` inside the current service element
-      const divider = service.querySelector(".dividerLn");
-      if (divider) {
-        gsap.from(divider, {
-          scale: 0,
-          opacity: 0,
-          scrollTrigger: {
-            trigger: divider,
-            start: "top 106%",
-            end: "bottom bottom",
-            scrub: 1,
-          },
-        });
-      }
     });
   }, []);
 
@@ -84,20 +69,19 @@ const Services = () => {
           AI × Automation <span className="poppins">=</span> <br /> Scalable
           Growth
         </h3>
-        <div className="w-[70%] ml-auto pt-[4vw]">
+        <div className="w-[70%] ml-auto mt-[4vw]">
           <ul className="flex flex-col gap-y-[4vw]">
             {services.map((service, index) => {
               return (
                 <li key={index} className="services">
                   <Link href={"/"} className="group">
-                    <div className="text-[2.6vw] modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
+                    <div className="relative border-b border-white mb-[0.8vw] text-[2.6vw] modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
                       <span className="poppins">0{index + 1}</span>
                       <span>{formatText(service.title)}</span>
-                      <div className="ml-auto rotate-[-45deg] scale-[1] translate-x-[-2.5vw] group-hover:rotate-[360deg] group-hover:scale-[1.7] transition-all duration-300 text-white group-hover:text-black group-hover:translate-x-0">
+                      <div className="absolute right-0 ml-auto rotate-[-45deg] scale-[1]  group-hover:rotate-[360deg] group-hover:scale-[1.7] transition-all duration-300 text-white">
                         <BiSolidCaretRightCircle />
                       </div>
                     </div>
-                    <span className="h-[2px] bg-black w-full block my-[0.8vw] dividerLn"></span>
                     <div className="flex items-center lg:gap-x-[81px]">
                       <span className="block size-[12px] rounded-full bg-white"></span>
                       <div className="text32 flex gap-x-[1.8vw]">

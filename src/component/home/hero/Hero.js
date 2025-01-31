@@ -150,7 +150,7 @@ const Hero = () => {
         <div className="overflow-hidden logoWrapper">
           <div className="text-[10.5vw] flex items-center font-semibold logo modica text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
             <img
-              className="inline-block w-[9.5vw]   letter"
+              className="inline-block w-[9.5vw] letter"
               src="/images/icons/thunder.svg"
             />
             {[
