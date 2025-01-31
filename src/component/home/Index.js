@@ -7,17 +7,20 @@ import Stats from "./stats/Stats";
 import Expertise from "./expertise/Expertise";
 import Contact from "../contact/Contact";
 
-const HomePage = () => {
+const HomePage = ({ variant }) => {
   return (
     <>
-      <Hero />
-      <About />
-      <Services />
-      <Stats />
-      <Testimonials heading={"Des réponses à vos challenges RH"} />
-      <Expertise />
-      <Testimonials heading={"Show cases"} />
-      <Contact />
+      <Hero variant={variant} />
+      <About variant={variant} />
+      <Services variant={variant} />
+      <Stats variant={variant} />
+      <Testimonials
+        heading={"Des réponses à vos challenges RH"}
+        variant={variant}
+      />
+      <Expertise variant={variant} />
+      <Testimonials heading={"Show cases"} variant={variant} />
+      <Contact variant={variant} />
     </>
   );
 };

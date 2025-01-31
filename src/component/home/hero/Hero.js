@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BottomTexts from "./bottom-texts/BottomTexts";
 import Content from "./Content";
 gsap.registerPlugin(ScrollTrigger);
-const Hero = () => {
+const Hero = ({ variant }) => {
   const heroWrapper = useRef(null);
   useGSAP(() => {
     gsap.from(".logo .letter", {
@@ -145,7 +145,9 @@ const Hero = () => {
     <section className="overflow-hidden">
       <div
         ref={heroWrapper}
-        className="lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper bg-black z-[2]"
+        className={`lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper ${
+          variant ? (variant == "blue" ? " gradient " : "") : " bg-black "
+        } z-[2]`}
       >
         <div className="overflow-hidden logoWrapper">
           <div className="text-[10.5vw] flex items-center font-semibold logo modica text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
