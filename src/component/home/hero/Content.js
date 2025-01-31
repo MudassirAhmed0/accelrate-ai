@@ -89,11 +89,11 @@ gradient"
               // Same substring at the start will only be typed out once, initially
               "Human-Centric Impact. ",
               500, // wait 1s before replacing "Mice" with "Hamsters"
-              "Web Development",
+              "",
               500,
-              "CRM and SaaS Development",
+              "Human-Centric Impact.",
               500,
-              "Fintech Development",
+              "",
               500,
             ]}
             wrapper="span"
