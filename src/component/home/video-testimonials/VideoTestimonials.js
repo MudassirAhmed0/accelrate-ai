@@ -8,45 +8,40 @@ import Card from "./Card";
 import FsLightbox from "fslightbox-react";
 const cardVideos = [
   {
-    cardVideo: {
-      src: "/videos/home-hero.mp4",
-      poster: "/images/testimonials/sample2.jpg",
-    },
+    src: "/videos/home-hero.mp4",
+    poster: "/images/testimonials/sample2.jpg",
   },
+
   {
-    cardVideo: {
-      src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-      poster: "/images/testimonials/sample3.jpg",
-    },
+    src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
+    poster: "/images/testimonials/sample3.jpg",
   },
+
   {
-    cardVideo: {
-      src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-      poster: "/images/testimonials/sample2.jpg",
-    },
+    src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
+    poster: "/images/testimonials/sample2.jpg",
   },
+
   {
-    cardVideo: {
-      src: "/videos/home-hero.mp4",
-      poster: "/images/testimonials/sample3.jpg",
-    },
+    src: "/videos/home-hero.mp4",
+    poster: "/images/testimonials/sample3.jpg",
   },
+
   {
-    cardVideo: {
-      src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-      poster: "/images/testimonials/sample2.jpg",
-    },
+    src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
+    poster: "/images/testimonials/sample2.jpg",
   },
+
   {
-    cardVideo: {
-      src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-      poster: "/images/testimonials/sample3.jpg",
-    },
+    src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
+    poster: "/images/testimonials/sample3.jpg",
   },
 ];
+
+const videoUrls = cardVideos.map((item) => item.src);
 const VideoTestimonials = ({ heading }) => {
   const [toggler, setToggler] = useState(false);
-  const [activeVideo, setActiveVideo] = useState("");
+  const [slideIndex, setSlideIndex] = useState(1);
   const testimonialsSectionRef = useRef(null);
   const cardsWrapperRef = useRef(null);
 
@@ -94,15 +89,21 @@ const VideoTestimonials = ({ heading }) => {
               <Card
                 toggler={toggler}
                 setToggler={setToggler}
-                setActiveVideo={setActiveVideo}
-                cardVideo={cardVideo.cardVideo}
+                setSlideIndex={setSlideIndex}
+                cardVideo={cardVideo}
                 key={index}
+                index={index + 1}
               />
             ))}
           </div>
         </div>
       </section>
-      <FsLightbox toggler={toggler} sources={[activeVideo]} />
+      <FsLightbox
+        onClose={() => setActiveVideo("")}
+        toggler={toggler}
+        slide={slideIndex}
+        sources={videoUrls}
+      />
     </>
   );
 };

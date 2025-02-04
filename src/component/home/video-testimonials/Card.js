@@ -1,14 +1,13 @@
 import React from "react";
 import { BsPlayCircleFill } from "react-icons/bs";
 
-const Card = ({ setToggler, toggler, cardVideo, setActiveVideo }) => {
-  console.log(cardVideo);
+const Card = ({ setToggler, toggler, cardVideo, setSlideIndex, index }) => {
   return (
     <>
       <div
         data-aos="fade"
         onClick={() => {
-          setActiveVideo(cardVideo.src);
+          setSlideIndex(index);
           setToggler(!toggler);
         }}
         className="group cursor-pointer text-white hover:bg-[#7b6d6d4d] transition-all duration-[500ms] testimonialCard relative min-h-full bg-white w-[300px] min-w-[300px] rounded-[20px] text-light p-[1.5625vw] whitespace-normal overflow-hidden"
