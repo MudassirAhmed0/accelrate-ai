@@ -252,6 +252,9 @@ input[type="number"] {
   .text35 {
     @apply lg:text-[1.82291666667vw] lg:leading-[2.08333333333vw];
   }
+  .text38 {
+    @apply lg:text-[1.97916666667vw] lg:leading-[2.5vw];
+  }
   .text40 {
     @apply lg:text-[2.08333333333vw] lg:leading-[2.60416666667vw] sm:text-[30px] sm:leading-[40px]
     text-[25px] leading-[35px] capitalize;
@@ -316,7 +319,7 @@ input[type="number"] {
     @apply lg:mt-[1.5625vw] mt-[22px];
   }
   .py1 {
-    @apply lg:py-[11.4583333333vw] sm:py-[120px] py-[75px];
+    @apply lg:py-[7.8125vw] sm:py-[120px] py-[75px];
   }
   .marqueeSlide {
     @apply lg:w-[4.39238653001vw] lg:min-w-[4.39238653001vw] lg:h-[4.39238653001vw] sm:w-[140px] sm:min-w-[140px] sm:h-[140px] w-[19.5348837209vw] h-[19.5348837209vw];

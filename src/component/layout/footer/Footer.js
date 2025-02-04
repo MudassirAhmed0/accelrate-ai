@@ -5,10 +5,6 @@ const Footer = () => {
     <footer className="bg-[#111] py-[14px] lg:py-[2.5vw] text20 text-white">
       <div className="myContainer">
         <div className="xl:flex flex-wrap items-center justify-between">
-          <p className="w-[22%]">
-            We like automating things, but never relationships. Let’s build
-            something smart, together
-          </p>
           <div className="mb-6 lg:mb-0 xl:mb-0">
             <ul className="xl:flex lg:flex md:flex sm:flex gap-[30px]">
               <li className="hover:text-gray-500 mb-4 sm:mb-0">

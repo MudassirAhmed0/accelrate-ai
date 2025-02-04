@@ -31,9 +31,7 @@ const Stats = ({ variant }) => {
     >
       <div className="relative z-[2] myContainer flex flex-col items-center lg:gap-y-[5.20833333333vw] gap-y-[62px] text-black">
         <div className="lg:w-[61.4583333333vw] flex flex-col items-center text-center">
-          <h2 data-aos="fade-up" className="text50">
-            Stats
-          </h2>
+          <h2 data-aos="fade-up">Stats</h2>
           <div data-aos="fade-up" className={`lg:text25 mt30 mtext18`}>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores

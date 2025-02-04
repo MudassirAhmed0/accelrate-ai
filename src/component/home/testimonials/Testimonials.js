@@ -1,81 +1,118 @@
 "use client";
-import Image from "next/image";
-import React, { useRef, useEffect } from "react";
-import { BiSolidCaretRightCircle } from "react-icons/bi";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const Testimonials = ({ heading }) => {
-  const testimonialsSectionRef = useRef(null);
-  const cardsWrapperRef = useRef(null);
+// Import the Navigation module
+import { Navigation } from "swiper/modules";
 
-  useGSAP(() => {
-    const totalWidth =
-      cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
-    gsap.to(cardsWrapperRef.current, {
-      x: () => `-${totalWidth}px`,
-      scrollTrigger: {
-        trigger: testimonialsSectionRef.current,
-        start: "top top",
-        end: () => `+=${totalWidth}`,
-        pin: testimonialsSectionRef.current,
-        scrub: 1,
-      },
-    });
-  }, []);
-
+export default function Testimonials() {
   return (
-    <section
-      ref={testimonialsSectionRef}
-      className="h-[100vh] flex items-center overflow-hidden relative bg-[#f5f5f5]"
-      id={`testimonialsSection`}
-    >
-      <div
-        data-aos="fade-up"
-        className="w-[40%] px-[40px] flex flex-col justify-center"
-      >
-        <div className="flex items-center gap-x-[8px]">
-          <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
-          <span className="text22 uppercase font-medium">
-            Nos produits & services
-          </span>
-        </div>
-        <h4 className="text70 font-bold poppins text-black">{heading}</h4>
-      </div>
-      <div
-        ref={cardsWrapperRef}
-        className="min-w-[50%] w-auto absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full px-[120px]"
-        id={`cardsWrapper`}
-      >
-        <div className="w-full min-h-[65%] flex gap-x-[20px] items-stretch whitespace-nowrap">
-          {[1, 2, 3, 4, 5, 6].map((v, index) => (
-            <div
-              key={index}
-              className="group text-white hover:bg-[#7b6d6d4d] transition-all duration-[500ms] testimonialCard relative min-h-full bg-white w-[300px] min-w-[300px] rounded-[20px] text-light p-[1.5625vw] whitespace-normal overflow-hidden"
-            >
-              <div className="relative z-[2]">
-                <div className="flex items-center gap-x-[8px] text30">
-                  <span className="font-medium uppercase select-none">
-                    Idoneo
-                  </span>
-                  <BiSolidCaretRightCircle />
+    <div className="overflow-hidden">
+      <div className="flex justify-center items-center flex-col py-12">
+        <h1
+          data-aos="fade-up"
+          className="text-2xl md:text-4xl 2xl:text-5xl leading-10 text-black"
+        >
+          <span className="font-bold">Testimonials</span>
+        </h1>
+        <Swiper
+          data-aos="fade"
+          modules={[Navigation]}
+          centeredSlides={true}
+          loop={true}
+          grabCursor={true}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          slidesPerView={"auto"}
+          spaceBetween={"20"}
+          className="mt-12 md:mt-10 2xl:mt-20 swiper mySwiper"
+        >
+          {[1, 2, 3, 4].map((v, index) => (
+            <SwiperSlide key={index} className="swiper-slide !w-1/2">
+              <div className="flex justify-center items-center flex-col">
+                <div className="w-12 relative z-20">
+                  <img src="/images/testimonials/slide.svg" alt="apple" />
                 </div>
-                <div className="mx-auto mt-[50px] relative lg:size-[120px] lg:min-w-[120px]">
-                  <Image fill alt="icon" src={"/images/about/logos/bmw.svg"} />
+                <div className="-mt-6 flex border h-18 rounded text-left text-black border-black bg-white justify-between items-start flex-col px-4 md:px-6">
+                  <p className="mt-10 text-base leading-normal ">
+                    {index} It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters.
+                  </p>
+                  <div className="flex justify-end pb-6 space-y-11 items-end w-full flex-col h-28">
+                    <div className="flex grow-0 w-6">
+                      <img src="/images/testimonials/quote.svg" alt="quotes" />
+                    </div>
+                    <div className="w-full flex justify-start items-center space-x-2">
+                      <div>
+                        <img
+                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_7_Ellipse%20113.png"
+                          alt="woman avatar"
+                        />
+                      </div>
+                      <div className="flex justify-start items-start flex-col space-y-2">
+                        <p className="text-lg font-medium leading-none">
+                          Casy Camilari
+                        </p>
+                        <p className="text-sm leading-none">
+                          Digital Marketing Director
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p className="text20 mt30 select-none">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
-                  temporibus dicta dolores provident, et suscipit, eveniet
-                  dolorem ipsum in repellat ad quod quasi nulla illo molestiae
-                  odio. Cumque cupiditate sunt ipsum.
-                </p>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
+        </Swiper>
+
+        {/* Navigation buttons */}
+        <div
+          data-aos="fade"
+          className="flex justify-center mt-20 items-center space-x-6 w-full"
+        >
+          <button className="rounded-full p-1.5 flex justify-center items-center bg-black swiper-button-prev w-1.5 h-2.5">
+            <img
+              className="w-6 h-6 scale-x-[-1]"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_7_svg-6_next.svg"
+              alt="prev"
+            />
+          </button>
+          <button className="rounded-full p-1.5 flex justify-center items-center bg-black swiper-button-next w-1.5 h-2.5">
+            <img
+              className="w-6 h-6"
+              src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_7_svg-6_next.svg"
+              alt="next"
+            />
+          </button>
         </div>
       </div>
-    </section>
-  );
-};
 
-export default Testimonials;
+      <style>
+        {`
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: "";
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: relative;
+            right: 0;
+            height: 30px;
+            width: 30px;
+        }
+            .swiper-button-next, .swiper-button-prev {
+  z-index: 10;  
+}
+  .swiper-button-lock{
+  display:block
+  }
+        `}
+      </style>
+    </div>
+  );
+}

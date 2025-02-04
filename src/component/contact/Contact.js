@@ -43,35 +43,22 @@ const Contact = ({ variant }) => {
             : " bg-black "
         }  text-black py1`}
       >
-        <div className="myContainer flex items-start justify-between">
+        <div className="myContainer flex items-stretch justify-between">
           <div className="w-[47%] flex flex-col justify-between gap-y-[2.5vw]">
             <div>
               <h2 data-aos="fade-up">Efficiency starts with a conversation.</h2>
               <div className="text24">
-                <div data-aos="fade-up" className="flex gap-x-[15px] mt30">
-                  <p>(No, we won’t make you speak to a bot)</p>
-                  <Link
-                    href={"/"}
-                    className="font-medium flex items-center gap-x-[5px] group"
-                  >
-                    <span>Let’s get started</span>
-                    <div className="group-hover:translate-x-[3px] transition-all duration-200">
-                      <TbSquareRoundedChevronRight />
-                    </div>
-                  </Link>
-                </div>
-
                 <div data-aos="fade-up" className="mt30">
-                  <span>
-                    Just a quick question? (Fill out the form) <br /> Or write
-                    to us at:
-                  </span>{" "}
-                  <Link
-                    href={"mailto:connect@accelerate-ai.tech"}
-                    className="font-medium"
-                  >
-                    connect@accelerate-ai.tech.
-                  </Link>
+                  <span>Just a quick question? (Fill out the form)</span>
+                  <div className="mt20">
+                    <span> Or write to us at:</span> {""}
+                    <Link
+                      href={"mailto:connect@accelerate-ai.tech"}
+                      className="font-medium"
+                    >
+                      connect@accelerate-ai.tech.
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,7 +70,12 @@ const Contact = ({ variant }) => {
               className="flex items-end w-full rounded-[20px] overflow-hidden relative group h-[350px] mt-auto cursor-pointer"
             >
               <div className="absolute inset-0 size-full">
-                <span className="absolute inset-0 size-full bg-black bg-opacity-[0.5] z-[1]"></span>
+                <span
+                  style={{
+                    background: "linear-gradient(#10101000 25%,#101010 75%)",
+                  }}
+                  className="absolute inset-0 size-full z-[1]"
+                ></span>
                 <div className="absolute z-[1] top-[30%] left-[50%] translate-x-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
                   <BsPlayCircleFill />
                 </div>
@@ -94,18 +86,11 @@ const Contact = ({ variant }) => {
                   loading="lazy"
                 ></video>
               </div>
-              <div className="bg-black p-[2.5vw] pt-[unset] relative z-[2] w-full text-white">
+              <div className="p-[2.5vw] pt-[unset] relative z-[2] w-full text-white">
                 <p className="text24">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-                  tenetur!
+                  We like automating things, but never relationships. Let’s
+                  build something smart, together
                 </p>
-                <div className="mt20 flex items-center gap-x-[15px] text20">
-                  <span>Lorem, ipsum </span>
-                  <span className="h-[1px] w-[50px] bg-white"></span>
-                  <span className="text-white text-opacity-[0.8]">
-                    Lorem, ipsum dolor.{" "}
-                  </span>
-                </div>
               </div>
             </div>
           </div>

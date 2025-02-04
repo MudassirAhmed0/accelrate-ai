@@ -109,7 +109,7 @@ bg-[#111]"
           />
         </div>
       </div>
-      <p className="text50 mt30 text-white desc swiss flex flex-wrap  ">
+      <p className="text50 mt30 text-white desc swiss flex flex-wrap  normal-case">
         {wrapWordsInSpan(
           `By 2030, AI will add $15.7 trillion to the global economy. At Accelerate-AI, we help you claim your share by integrating AI and automation into your business processes—quickly and effectively.`
         )}

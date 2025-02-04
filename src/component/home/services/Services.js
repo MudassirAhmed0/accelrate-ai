@@ -92,7 +92,7 @@ const Services = () => {
               return (
                 <li key={index} className="services">
                   <Link href={"/"} className="group">
-                    <div className="relative border-b border-white mb-[0.8vw] text-[2.6vw] modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
+                    <div className="relative border-b border-white mb-[0.8vw] text40 modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
                       <span className="poppins">0{index + 1}</span>
                       <span className="w-[82%]">
                         {formatText(service.title)}

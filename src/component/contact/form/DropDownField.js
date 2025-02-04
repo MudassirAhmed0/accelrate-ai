@@ -7,11 +7,15 @@ const DropDownField = () => {
   const [selected, setSelected] = useState("Select an option");
 
   const options = [
-    "AI Chatbots",
-    "CRM Automation",
-    "E-commerce AI",
-    "Custom AI",
-    "Others",
+    "AI-Powered Conversational Assistants",
+    "Intelligent Voice AI Solutions",
+    "Business Process Automation & Orchestration",
+    "AI-Driven CRM Optimization & Customer Engagement",
+    "Advanced Data Intelligence & Automation",
+    "Scalable & AI-Integrated Web Solutions",
+    "E-commerce Automation & Secure Payment Systems",
+    "High-Performance API & Backend Engineering",
+    "Database & Storage Scalable Cloud & Data Infrastructure",
   ];
 
   return (

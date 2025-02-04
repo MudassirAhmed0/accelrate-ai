@@ -1,14 +1,14 @@
 import React from "react";
 
-const TextField = ({ lable, placeholder }) => {
+const TextField = ({ label, placeholder, id }) => {
   return (
     <div className="w-[48%] flex flex-col">
-      <label htmlFor="name" className="text20">
-        {lable}
+      <label htmlFor={`${id}`} className="text20">
+        {label}
       </label>
       <input
         required
-        id="name"
+        id={`${id}`}
         type="text"
         autoComplete="off"
         placeholder={placeholder}
