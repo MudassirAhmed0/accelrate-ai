@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import MarqueeSlider from "./marquee/Marquee";
 
-const About = () => {
+const About = ({ variant }) => {
   const aboutContainer = useRef();
   // Function to wrap each word in spans
   const wrapWordsInSpan = (text) => {
@@ -50,7 +50,11 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-black p-[40px] py-[160px] lg:py-[8vw]">
+    <section
+      className={`${
+        variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
+      } p-[40px] py-[160px] lg:py-[8vw]`}
+    >
       <div
         ref={aboutContainer}
         className="flex justify-between items-center  p-[40px]   "
@@ -64,11 +68,11 @@ const About = () => {
         </div>
         <div className="w-[52%] relative">
           <div>
-            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] swiss text-white">
+            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] poppins font-[600] text-black">
               (About){" "}
             </span>{" "}
             {/* (About) inline with text */}
-            <h3 className="text35 heading inline swiss text-white">
+            <h3 className="text35 heading inline poppins font-[600] text-black  opacity-[0.7]">
               {wrapWordsInSpan(
                 "We don’t just bring AI into your business—we empower you to lead with it. Accelerate-AI transforms workflows, scales operations, and drives unparalleled impact, ensuring you’re ready for the AI-driven future."
               )}

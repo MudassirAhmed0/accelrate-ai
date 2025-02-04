@@ -3,9 +3,10 @@ import Layout from "@/component/layout/Index";
 import React from "react";
 
 const page = () => {
+  const variant = "blue";
   return (
     <Layout>
-      <HomePage />
+      <HomePage variant={variant} />
     </Layout>
   );
 };

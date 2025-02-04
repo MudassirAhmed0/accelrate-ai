@@ -1,13 +1,17 @@
 "use client";
 import React from "react";
 
-const Contact = () => {
+const Contact = ({ variant }) => {
   const handleForm = (e) => {
     e.preventDefault();
     console.log("Form submitted");
   };
   return (
-    <section className="bg-black text-white py1">
+    <section
+      className={`${
+        variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
+      }  text-black py1`}
+    >
       <div className="myContainer">
         <h2 className="text-center">Contact</h2>
         <form
@@ -17,23 +21,24 @@ const Contact = () => {
           <div className="w-full border-b pb-[0.9375vw]">
             <input
               required
-              type="text"
-              placeholder="text"
+              type="email"
+              placeholder="email"
               className="w-full outline-none bg-transparent lg:text25 mtext18 placeholder:lg:text25 placeholder:mtext18 capitalize"
             />
           </div>
           <div className="w-full border-b pb-[0.9375vw]">
             <input
               required
-              type="email"
-              placeholder="email"
+              type="text"
+              placeholder="Message"
               className="w-full outline-none bg-transparent lg:text25 mtext18 placeholder:lg:text25 placeholder:mtext18 capitalize"
             />
           </div>
+
           <div className="flex justify-center">
             <button
               type="submit"
-              className="cursor-pointer gradient px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group"
+              className="cursor-pointer bg-[#111] px-6 py-3 rounded-xl border-[1px] border-slate-500 text-white font-medium group"
             >
               <div className="relative overflow-hidden">
                 <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">

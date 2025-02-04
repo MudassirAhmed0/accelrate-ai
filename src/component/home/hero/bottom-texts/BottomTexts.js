@@ -14,11 +14,11 @@ const BottomTexts = () => {
     <div className="flex gap-x-[69px]">
       <div>
         <div className="overflow-hidden">
-          <p className="bottomText">AI. Automation.</p>
+          <p className="bottomText">AI. Automation. Acceleration. </p>
         </div>
-        <div className="overflow-hidden">
+        {/* <div className="overflow-hidden">
           <p className="bottomText"> Acceleration.</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

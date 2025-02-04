@@ -8,10 +8,14 @@ const expertiseLogos = [
   "/images/expertise/nextjs.svg",
   "/images/expertise/tailwind.svg",
 ];
-const Expertise = () => {
+const Expertise = ({ variant }) => {
   return (
-    <section className="bg-black">
-      <div className="px-[40px] text-white py1">
+    <section
+      className={`${
+        variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
+      }`}
+    >
+      <div className="px-[40px] text-black py1">
         <h2 className="text-center">Tech stack expertise</h2>
         <div className="flex justify-center gap-x-[6.25vw] mt-[6.25vw]">
           {expertiseLogos.map((expertiseLogo, index) => (
