@@ -1,4 +1,5 @@
 "use client";
+import useAos from "@/hooks/useAos";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
@@ -27,6 +28,7 @@ const navLinks = [
   },
 ];
 const Header = () => {
+  useAos();
   useGSAP(() => {
     gsap.from(".headerLink span", {
       duration: 0.7,
