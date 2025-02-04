@@ -359,3 +359,58 @@ input[type="number"] {
   background: #211f1f;
   box-shadow: 36px 36px 72px #080808, -36px -36px 72px #1a1a1a;
 }
+
+/* LightBox CSS Start */
+.lightboxContainer {
+  background: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+}
+.lightboxContainer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  border: 5px solid grey;
+  border-top-color: black;
+  animation: loading 2s linear infinite;
+}
+.lightboxContainer::after {
+  @apply w-[50px] h-[50px] md:w-[5vw] h-[5vw];
+}
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.rtl .lightboxNavigationTop {
+  top: 0;
+  left: 0;
+}
+.ltr .lightboxNavigationTop {
+  top: 0;
+  right: 0;
+}
+.rtl .lightboxNextButton {
+  left: 0;
+}
+.ltr .lightboxNextButton {
+  right: 0;
+}
+.rtl .lightboxPrevButton {
+  right: 0;
+}
+.ltr .lightboxPrevButton {
+  left: 0;
+}
+.rtl .lightboxPrevButton svg {
+  transform: scaleX(-1);
+}
+.ltr .lightboxNextButton svg {
+  transform: scaleX(-1);
+}
+
+/* LightBox CSS End */

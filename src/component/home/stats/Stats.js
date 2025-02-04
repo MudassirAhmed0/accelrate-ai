@@ -34,7 +34,7 @@ const Stats = ({ variant }) => {
           <h2 data-aos="fade-up" className="text50">
             Stats
           </h2>
-          <div data-aos="fade-down" className={`lg:text25 mt30 mtext18`}>
+          <div data-aos="fade-up" className={`lg:text25 mt30 mtext18`}>
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
             animi, est nemo sapiente consequuntur temporibus soluta corporis

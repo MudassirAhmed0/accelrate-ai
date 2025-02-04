@@ -7,26 +7,43 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Conversational AI: Voice & Chat Agents",
-    tag: ["Let AI Talk the Talk"],
+    title: "AI-Powered Conversational Assistants",
+    tag: ["Your best salesperson, available 24/7", "never asks for a raise."],
   },
   {
-    title: "Workflow Automation",
-    tag: ["Workflows That Work for You"],
+    title: "Intelligent Voice AI Solutions",
+    tag: ["AI that speaks human", "so you don’t have to repeat yourself."],
   },
   {
-    title: "Intelligent CRM Automation",
-    tag: ["Smarter CRMs", "Happier Teams"],
+    title: "Business Process Automation & Orchestration",
+    tag: ["Delegate to AI — automate the mundane", "focus on growth."],
   },
   {
-    title: "Data Empowerment Solutions",
-    tag: ["Data That Does the Heavy Lifting"],
+    title: "AI-Driven CRM Optimization & Customer Engagement",
+    tag: ["Turning data into relationships", "and relationships into revenue."],
   },
   {
-    title: "Tailored Web Development",
-    tag: ["Websites That Work as Hard as You Do"],
+    title: "Advanced Data Intelligence & Automation",
+    tag: ["Actionable insights", "minus the analysis paralysis."],
+  },
+  {
+    title: "Scalable & AI-Integrated Web Solutions",
+    tag: ["Smart websites that don’t just sit pretty", "they convert."],
+  },
+  {
+    title: "E-commerce Automation & Secure Payment Systems",
+    tag: ["Because abandoned carts", "don’t belong in your business model."],
+  },
+  {
+    title: "High-Performance API & Backend Engineering",
+    tag: ["Invisible yet indispensable", "because great tech works quietly."],
+  },
+  {
+    title: "Database & Storage Scalable Cloud & Data Infrastructure",
+    tag: ["Your data deserves a VIP seat", "in the cloud."],
   },
 ];
+
 const splitText = (text) => {
   const words = text.split(" ");
   const half = Math.ceil(words.length / 2); // Split text at the midpoint
@@ -65,7 +82,7 @@ const Services = () => {
   return (
     <section>
       <div className="bg-[#111] lg:py-[6.25vw] py1 px-[40px] text-white swiss">
-        <h3 className="modica text-[4vw] tracking-[0.2vw]">
+        <h3 data-aos="fade" className="modica text-[4vw] tracking-[0.2vw]">
           AI × Automation <span className="poppins">=</span> <br /> Scalable
           Growth
         </h3>
@@ -77,8 +94,10 @@ const Services = () => {
                   <Link href={"/"} className="group">
                     <div className="relative border-b border-white mb-[0.8vw] text-[2.6vw] modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.3vw]">
                       <span className="poppins">0{index + 1}</span>
-                      <span>{formatText(service.title)}</span>
-                      <div className="absolute right-0 ml-auto rotate-[-45deg] scale-[1]  group-hover:rotate-[360deg] group-hover:scale-[1.7] transition-all duration-300 text-white">
+                      <span className="w-[82%]">
+                        {formatText(service.title)}
+                      </span>
+                      <div className="absolute right-0 ml-auto rotate-[-45deg] scale-[1]  group-hover:rotate-[0deg] group-hover:scale-[1.7] transition-all duration-300 text-white">
                         <BiSolidCaretRightCircle />
                       </div>
                     </div>
@@ -88,7 +107,7 @@ const Services = () => {
                         {service?.tag?.map((item, i) => (
                           <div
                             key={i}
-                            className="border  border-[#ffffff4d] rounded-[30px] py-[0.6vw] px-[1.8vw]"
+                            className="hover:bg-white hover:text-black border border-[#ffffff4d] rounded-[30px] py-[0.6vw] px-[1.8vw]"
                           >
                             {item}
                           </div>

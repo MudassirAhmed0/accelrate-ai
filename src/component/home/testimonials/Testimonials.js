@@ -30,7 +30,10 @@ const Testimonials = ({ heading }) => {
       className="h-[100vh] flex items-center overflow-hidden relative bg-[#f5f5f5]"
       id={`testimonialsSection`}
     >
-      <div className="w-[40%] px-[40px] flex flex-col justify-center">
+      <div
+        data-aos="fade-up"
+        className="w-[40%] px-[40px] flex flex-col justify-center"
+      >
         <div className="flex items-center gap-x-[8px]">
           <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
           <span className="text22 uppercase font-medium">
