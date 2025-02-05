@@ -119,7 +119,7 @@ bg-[#111]"
         <span className="text-white swiss ">
           Turning Complexity into Intelligent Simplicity.
         </span>
-        <span className="text-white swiss max-w-[29vw] mr-[10vw]">
+        <span className="text-white swiss max-w-[29vw]">
           We are not an AI and Automation agency; We are your AI Transformation
           partners.
         </span>

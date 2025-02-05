@@ -98,12 +98,7 @@ const VideoTestimonials = ({ heading }) => {
           </div>
         </div>
       </section>
-      <FsLightbox
-        onClose={() => setActiveVideo("")}
-        toggler={toggler}
-        slide={slideIndex}
-        sources={videoUrls}
-      />
+      <FsLightbox toggler={toggler} slide={slideIndex} sources={videoUrls} />
     </>
   );
 };

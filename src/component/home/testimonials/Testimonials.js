@@ -9,12 +9,9 @@ export default function Testimonials() {
   return (
     <div className="overflow-hidden">
       <div className="flex justify-center items-center flex-col py-12">
-        <h1
-          data-aos="fade-up"
-          className="text-2xl md:text-4xl 2xl:text-5xl leading-10 text-black"
-        >
-          <span className="font-bold">Testimonials</span>
-        </h1>
+        <h2 data-aos="fade-up" className="text-black">
+          Testimonials
+        </h2>
         <Swiper
           data-aos="fade"
           modules={[Navigation]}

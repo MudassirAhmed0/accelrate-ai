@@ -35,6 +35,7 @@ const Contact = ({ variant }) => {
   return (
     <>
       <section
+        id="contact"
         className={`${
           variant
             ? variant == "blue"
