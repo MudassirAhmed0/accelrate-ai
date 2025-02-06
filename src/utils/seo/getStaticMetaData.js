@@ -38,7 +38,7 @@ const getStaticMetaData = ({ title, description, isRobotFollow }) => {
       title: title,
       siteName: title,
       description: description,
-
+      url: "https://accelerate-ai.vercel.app/opengraph-image.png",
       width: 1200,
       height: 628,
     },
@@ -46,7 +46,7 @@ const getStaticMetaData = ({ title, description, isRobotFollow }) => {
       title: title,
       siteName: title,
       description: description,
-
+      url: "https://accelerate-ai.vercel.app/twitter-image.png",
       width: 1200,
       height: 628,
     },
