@@ -157,7 +157,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
                       : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                   }}
                   key={index}
-                  className="lg:text20 text-[16.2790697674vw] leading-[16.2790697674vw] link-active relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
+                  className="lg:text20 text-[7.51072961373vh] leading-[7.51072961373vh] link-active relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
                 >
                   <Link href={`${navLink.link}`} className="block">
                     {navLink.title}
