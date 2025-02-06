@@ -13,7 +13,7 @@ const Card = ({ setToggler, toggler, cardVideo, setSlideIndex, index }) => {
         className="group cursor-pointer text-white testimonialCard relative min-h-full w-[300px] min-w-[300px] sm:w-[350px] sm:min-w-[350px] lg:w-[22vw] lg:min-w-[22vw] rounded-[20px] text-light p-[1.5625vw] whitespace-normal overflow-hidden"
       >
         <div className="absolute inset-0 size-full">
-          <span className="absolute inset-0 size-full z-[1] bg-black bg-opacity-[0.5]"></span>
+          {/* <span className="absolute inset-0 size-full z-[1] bg-black bg-opacity-[0.2]"></span> */}
           <div className="absolute z-[1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
             <BsPlayCircleFill />
           </div>

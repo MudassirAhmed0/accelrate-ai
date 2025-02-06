@@ -84,13 +84,13 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <SwiperSlide
               key={index}
-              className="swiper-slide lg:!w-1/2 !w-[85%] lg:!h-[400px] !h-[550px]"
+              className="swiper-slide lg:!w-1/2 !w-[85%]"
             >
-              <div className="flex justify-center items-center flex-col select-none h-full">
-                <div className="flex border rounded text-left text-black border-black h-full overflow-y-auto hideScroll bg-white justify-between items-start flex-col px-4 md:px-6">
+              <div className="flex justify-center items-center flex-col select-none">
+                <div className="flex border rounded text-left text-black border-black hideScroll bg-white justify-between items-start flex-col px-4 md:px-6">
                   <div
                     dangerouslySetInnerHTML={{ __html: testimonial.review }}
-                    className="mt-10 text-base leading-normal "
+                    className="mt-10 text-base leading-normal  lg:h-[220px] sm:h-[280px] h-[550px]  overflow-y-auto"
                   ></div>
                   <div className="flex justify-end pb-6 space-y-11 items-end w-full flex-col h-28">
                     <div className="flex grow-0 w-6">
