@@ -47,110 +47,25 @@ const Hero = ({ variant }) => {
       }
     );
   }, []);
-
-  // useGSAP(() => {
-  //   const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
-  //   gsap.to(".heroVideo", {
-  //     y: "0%",
-  //     scrollTrigger: {
-  //       trigger: ".heroVideoWrapper",
-  //       start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
-  //       end: `bottom bottom`,
-  //       // markers: true,
-  //       scrub: 1,
-  //     },
-  //   });
-  //   gsap.to(".heroVideo", {
-  //     y: "50%",
-  //     scrollTrigger: {
-  //       trigger: ".heroVideoWrapper",
-  //       start: `top top`,
-  //       end: `bottom bottom`,
-  //       // markers: true,
-  //       scrub: 1,
-  //     },
-  //   });
-  // }, []);
-
-  // useGSAP(() => {
-  //   const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
-
-  //   // Create a timeline to manage both animations smoothly
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".heroVideoWrapper",
-  //       start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
-  //       end: `bottom bottom`,
-  //       scrub: 1,
-  //       markers: false, // you can enable markers if you need to debug the triggers
-  //     },
-  //   });
-
-  //   // First animation (move video to 0% when scrolling)
-  //   tl.to(".heroVideo", {
-  //     y: "0%",
-  //   });
-  //   gsap.set(".heroVideo", { y: "0%" });
-
-  //   // Second animation (move video to 50% when scroll reaches top of the viewport)
-  //   gsap.to(".heroVideo", {
-  //     y: "50%",
-  //     scrollTrigger: {
-  //       trigger: ".heroVideoWrapper",
-  //       start: `top top`, // Start when the top of the wrapper reaches the top of the viewport
-  //       end: () => `+=${heroVideoWrapper.offsetHeight}`,
-  //       scrub: 1,
-  //       markers: false,
-  //     },
-  //   });
-  // }, []);
-
   useGSAP(() => {
-    const heroVideoWrapper = document.querySelector(".heroVideoWrapper");
-
-    // Create a timeline for the first animation
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".heroVideoWrapper",
-        start: () => `top+=-${heroVideoWrapper.offsetTop} top`,
-        end: `bottom bottom`,
-        scrub: 1,
-        markers: false, // Enable for debugging
-      },
+    gsap.from(".heroVideoWrapper", {
+      y: -200,
+      opacity: 0,
+      delay: 0.7,
+      ease: "power1.out",
     });
-
-    // First animation: Move the video to y: 0%
-    tl.to(".heroVideo", {
-      y: "0%",
-      onComplete: () => {
-        // Ensure the position is set to 0 after the first animation finishes
-        gsap.set(".heroVideo", { y: "0%" });
-
-        // Second animation: Move video from 0% to 50% when scrolling further
-        gsap.to(".heroVideo", {
-          y: "50%",
-          scrollTrigger: {
-            trigger: ".heroVideoWrapper",
-            start: `top top`, // Start the animation when the wrapper reaches the top
-            end: () => `+=${heroVideoWrapper.offsetHeight}`,
-            scrub: 1,
-            markers: false,
-          },
-        });
-      },
-    });
-  }, []);
+  });
 
   return (
     <section className="overflow-hidden">
       <div
         ref={heroWrapper}
-        className={`lg:pt-[5.782vw] px-[40px] flex flex-col min-h-[90vh] heroWrapper ${
+        className={`lg:pt-[5.782vw] pt-[30vw] lg:px-[40px] px-[2.79069767442vw] flex flex-col min-h-[90vh] heroWrapper ${
           variant ? (variant == "blue" ? " bg-[#111] " : "") : " bg-black "
         } z-[2]`}
       >
         <div className="overflow-hidden logoWrapper">
-          <div className="text-[10.5vw] flex items-center font-semibold logo modica text-white text-transparent bg-clip-text bg-gradient-to-br from-blue-900 to-teal-500">
+          <div className="text-[10.5vw] lg:text-[10.5vw] flex items-center font-semibold logo modica text-white">
             <img
               className="inline-block w-[9.5vw] letter"
               src="/images/icons/thunder.svg"
@@ -201,8 +116,8 @@ const Hero = ({ variant }) => {
           </div>
         </div>
       </div>
-      <div className="relative h-[100vh] heroVideoWrapper">
-        <div className="absolute top-0 left-0 size-full translate-y-[-45%] z-[-1] heroVideo">
+      <div className="relative h-[100vh] heroVideoWrapper z-[-1]">
+        <div className="absolute top-0 left-0 size-full z-[-1] heroVideo">
           <span className="absolute top-0 left-0 size-full bg-black bg-opacity-[0.5]"></span>
           <video
             src="/videos/home-hero.mp4"

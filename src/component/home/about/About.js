@@ -32,47 +32,34 @@ const About = ({ variant }) => {
       },
     });
   }, []);
-  useGSAP(() => {
-    gsap.from(".bannerImg", {
-      // y: "-90", // Animation effect
-      y: "-60",
-      scale: "1.5",
-
-      duration: "2",
-      scrollTrigger: {
-        trigger: aboutContainer.current, // The element that triggers the scroll animation
-        start: "top bottom", // Animation starts when the top of the aboutContainer hits the top of the viewport
-        end: () => `+=${aboutContainer.current.offsetHeight}`,
-        scrub: 1, // Smooth scroll animation
-        // markers: true, // Optional: Show scroll markers for debugging
-      },
-    });
-  }, []);
 
   return (
     <section
       className={`${
         variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
-      } p-[40px] py-[160px] lg:py-[8vw]`}
+      } py1`}
     >
       <div
         ref={aboutContainer}
-        className="flex justify-between items-center  p-[40px]   "
+        className="flex flex-wrap gap-[40px] justify-between items-center myContainer"
       >
-        <div className="relative lg:w-[34.8958333333vw] lg:h-[53.3333333333vw] bannerImg">
+        <div
+          data-aos="fade"
+          className="relative lg:w-[34.8958333333vw] lg:h-[53.3333333333vw] w-full sm:h-[60vw] h-[85vw]"
+        >
           <Image
             fill
             alt="about"
             src="/images/icons/gradient-rocket.svg"
           ></Image>
         </div>
-        <div className="w-[52%] relative">
+        <div className="lg:w-[52%] w-full relative">
           <div>
-            <span className="inline mr-[1.25vw] text20 relative top-[-4px] opacity-[0.7] poppins font-[600] text-black">
+            <span className="inline mr-[12px] lg:mr-[1.25vw] lg:text20 mtext16 relative top-[-4px] opacity-[0.7] poppins font-[600] text-black">
               (About){" "}
             </span>{" "}
             {/* (About) inline with text */}
-            <h3 className="text38 heading inline poppins font-[600] text-black">
+            <h3 className="lg:text38 mtext22 leading-[22px] heading inline poppins font-[600] text-black">
               {wrapWordsInSpan(
                 "We don’t just bring AI into your business—we empower you to lead with it. Accelerate-AI transforms workflows, scales operations, and drives unparalleled impact, ensuring you’re ready for the AI-driven future."
               )}

@@ -4,11 +4,66 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import the Navigation module
 import { Navigation } from "swiper/modules";
+const testimonials = [
+  {
+    profile: "/images/testimonials/profiles/5.png",
+    review: `
+      <p>I had the pleasure of working with Accelerate-AI, and I recommend the team highly! Their team is exceptionally skilled in Zapier and QuickBooks, bringing deep expertise and innovative solutions to every project. Their professionalism and high work ethic are truly remarkable. They consistently deliver top-notch results, always meeting deadlines and exceeding expectations.</p>
+      <p>Their ability to automate complex workflows and streamline processes has been a game-changer for our business. Beyond their technical skills, the team members are fantastic communicators and are true problem-solvers, making collaboration seamless and efficient.</p>
+      <p>If you're looking for an AI and Automation agency not only for talented people but also highly dependable people, Accelerate-AI is the team you should hire!</p>
+    `,
+    name: "Ashok Balan, Consultant",
+    location: "Medi Trust, India",
+  },
+  {
+    profile: "/images/testimonials/profiles/5.png",
+    review: `
+      <p>I recently had a fantastic experience working with team Accelerate-AI on an AI automation project. They were communicative throughout the process and asked very good questions to make sure they really understood what I was looking for. They delivered on time and the final product was better than I had originally imagined in my head.</p>
+      <p>I’d highly recommend Accelerate-AI and will definitely be reaching out to them again for future projects.</p>
+    `,
+    name: "Todd Leverette, Founding Partner",
+    location: "Apis & Heritage Capital Partners, USA",
+  },
+  {
+    profile: "/images/testimonials/profiles/1.jpeg",
+    review: `
+      <p>Accelerate-AI team is an incredibly sharp, well-versed technical team. They get business, not just tech. They help with brainstorming the best solutions, offer great advice-feedback. They were super quick to respond and get the job done. Highest recommendation.</p>
+    `,
+    name: "Daniel Zsolt Rényi, Founder",
+    location: "Klear B2B, Hungary",
+  },
+  {
+    profile: "/images/testimonials/profiles/2.jpeg",
+    review: `
+      <p>Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging.</p>
+      <p>Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond.</p>
+      <p>We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with them on future projects.</p>
+    `,
+    name: "Diat Khan, CEO ",
+    location: "Remote Office, Australia",
+  },
+  {
+    profile: "/images/testimonials/profiles/3.jpeg",
+    review: `
+      <p>Exceptional developers and communicators! It is rare to be working with a team as technically competent and equally responsive and reliable. We'll definitely work again with Accelerate-AI.</p>
+    `,
+    name: "Eva Christine Reder, Founder & COO",
+    location: "GrowthMasters, USA",
+  },
+  {
+    profile: "/images/testimonials/profiles/4.webp",
+    review: `
+      <p>Team Accelerate-AI isn't just great - they are remarkable! They are talented, knowledgeable and fair. They work quickly but thoroughly with outstanding communication and get things done!</p>
+    `,
+    name: "Shay Rapaport, Founder",
+    location: "Lunamix, Israel",
+  },
+];
 
 export default function Testimonials() {
   return (
     <div className="overflow-hidden">
-      <div className="flex justify-center items-center flex-col py-12">
+      <div className="flex justify-center items-center flex-col py1">
         <h2 data-aos="fade-up" className="text-black">
           Testimonials
         </h2>
@@ -24,38 +79,37 @@ export default function Testimonials() {
           }}
           slidesPerView={"auto"}
           spaceBetween={"20"}
-          className="mt-12 md:mt-10 2xl:mt-20 swiper mySwiper"
+          className="lg:my-[2.5vw] my-[40px] swiper mySwiper"
         >
-          {[1, 2, 3, 4].map((v, index) => (
+          {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="swiper-slide !w-1/2">
               <div className="flex justify-center items-center flex-col">
-                <div className="w-12 relative z-20">
+                <div className="w-12 relative z-20 opacity-0">
                   <img src="/images/testimonials/slide.svg" alt="apple" />
                 </div>
                 <div className="-mt-6 flex border h-18 rounded text-left text-black border-black bg-white justify-between items-start flex-col px-4 md:px-6">
-                  <p className="mt-10 text-base leading-normal ">
-                    {index} It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters.
-                  </p>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: testimonial.review }}
+                    className="mt-10 text-base leading-normal "
+                  ></div>
                   <div className="flex justify-end pb-6 space-y-11 items-end w-full flex-col h-28">
                     <div className="flex grow-0 w-6">
                       <img src="/images/testimonials/quote.svg" alt="quotes" />
                     </div>
                     <div className="w-full flex justify-start items-center space-x-2">
-                      <div>
+                      <div className="size-[2.5vw] rounded-full overflow-hidden">
                         <img
-                          src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_7_Ellipse%20113.png"
-                          alt="woman avatar"
+                          src={testimonial.profile}
+                          alt="avatar"
+                          className="object-contain size-full"
                         />
                       </div>
                       <div className="flex justify-start items-start flex-col space-y-2">
                         <p className="text-lg font-medium leading-none">
-                          Casy Camilari
+                          {testimonial.name}
                         </p>
                         <p className="text-sm leading-none">
-                          Digital Marketing Director
+                          {testimonial.location}
                         </p>
                       </div>
                     </div>
@@ -69,7 +123,7 @@ export default function Testimonials() {
         {/* Navigation buttons */}
         <div
           data-aos="fade"
-          className="flex justify-center mt-20 items-center space-x-6 w-full"
+          className="flex justify-center items-center space-x-6 w-full"
         >
           <button className="rounded-full p-1.5 flex justify-center items-center bg-black swiper-button-prev w-1.5 h-2.5">
             <img

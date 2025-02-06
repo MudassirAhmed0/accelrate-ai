@@ -77,7 +77,7 @@ const Contact = ({ variant }) => {
                   }}
                   className="absolute inset-0 size-full z-[1]"
                 ></span>
-                <div className="absolute z-[1] top-[30%] left-[50%] translate-x-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
+                <div className="text-white absolute z-[1] top-[30%] left-[50%] translate-x-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
                   <BsPlayCircleFill />
                 </div>
                 <video
@@ -90,7 +90,7 @@ const Contact = ({ variant }) => {
               <div className="p-[2.5vw] pt-[unset] relative z-[2] w-full text-white">
                 <p className="text24">
                   We like automating things, but never relationships. Let’s
-                  build something smart, together
+                  build something smart, together.
                 </p>
               </div>
             </div>

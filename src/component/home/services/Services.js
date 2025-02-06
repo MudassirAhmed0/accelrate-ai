@@ -44,14 +44,6 @@ const services = [
   },
 ];
 
-const splitText = (text) => {
-  const words = text.split(" ");
-  const half = Math.ceil(words.length / 2); // Split text at the midpoint
-  const firstHalf = words.slice(0, half).join(" ");
-  const secondHalf = words.slice(half).join(" ");
-  return { firstHalf, secondHalf };
-};
-
 export const formatText = (text) => {
   return text.split(/([^\w\s])/g).map((part, index) =>
     part.match(/[^\w\s]/) ? (
@@ -81,42 +73,41 @@ const Services = () => {
 
   return (
     <section>
-      <div className="bg-[#111] lg:py-[6.25vw] py1 px-[40px] text-white swiss">
-        <h3 data-aos="fade" className="modica text-[4vw] tracking-[0.2vw]">
+      <div className="bg-[#111] lg:py-[6.25vw] py1 lg:px-[40px] px-[2.79069767442vw] text-white swiss">
+        <h3
+          data-aos="fade"
+          className="modica lg:text-[4vw] lg:tracking-[0.2vw] text60"
+        >
           AI × Automation <span className="poppins">=</span> <br /> Scalable
           Growth
         </h3>
-        <div className="w-[70%] ml-auto mt-[4vw]">
-          <ul className="flex flex-col gap-y-[4vw]">
+        <div className="lg:w-[70%] ml-auto lg:mt-[4vw] mt-[64px]">
+          <ul className="flex flex-col lg:gap-y-[4vw] gap-y-[24px]">
             {services.map((service, index) => {
               return (
                 <li key={index} className="services">
                   <Link href={"/"} className="group">
-                    <div className="relative border-b border-white mb-[0.8vw] text40 modica font-medium flex items-center lg:gap-x-[5vw] pb-[0.8vw]">
+                    <div className="relative border-b border-white mb-[12px] lg:mb-[0.8vw] lg:text40 mtext22 modica font-medium flex flex-wrap lg:gap-x-[5vw] sm:gap-x-[25px] gap-x-[15px] lg:pb-[0.8vw] pb-[12px]">
                       <span className="poppins">0{index + 1}</span>
                       <span className="w-[82%]">
                         {formatText(service.title)}
                       </span>
-                      <div className="absolute right-0 ml-auto rotate-[-45deg] scale-[1]  group-hover:rotate-[0deg] group-hover:scale-[1.7] transition-all duration-300 text-white">
+                      <div className="absolute right-0 top-[50%] translate-y-[-50%] ml-auto lg:rotate-[-45deg] scale-[1]  group-hover:lg:rotate-[0deg] group-hover:lg:scale-[1.7] transition-all duration-300 text-white">
                         <BiSolidCaretRightCircle />
                       </div>
                     </div>
-                    <div className="flex items-center lg:gap-x-[81px]">
-                      <span className="block size-[12px] rounded-full bg-white"></span>
-                      <div className="text32 flex gap-x-[1.8vw]">
+                    <div className="flex flex-wrap items-center lg:gap-x-[81px]">
+                      <span className="hidden lg:block size-[12px] rounded-full bg-white"></span>
+                      <div className="lg:text32 mtext14 flex flex-wrap lg:gap-x-[1.8vw] gap-[8px]">
                         {service?.tag?.map((item, i) => (
                           <div
                             key={i}
-                            className="hover:bg-white hover:text-black border border-[#ffffff4d] rounded-[30px] py-[0.6vw] px-[1.8vw]"
+                            className="hover:bg-white hover:text-black border border-[#ffffff4d] rounded-[30px] lg:py-[0.6vw] lg:px-[1.8vw] py-[6px] px-[20px] roboto"
                           >
                             {item}
                           </div>
                         ))}
-                        {/* <div className="border border-royalblue rounded-[30px] py-[10px] px-[30px]">
-                        {secondHalf}
-                      </div> */}
                       </div>
-                      {/* <span className="block size-[12px] rounded-full bg-white ml-auto"></span> */}
                     </div>
                   </Link>
                 </li>

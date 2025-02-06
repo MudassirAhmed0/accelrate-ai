@@ -76,11 +76,11 @@ const Content = () => {
   }, []);
   return (
     <div
-      className="px-[40px] py-[60px] lg:py-[8vw]   containerWrap 
+      className="lg:px-[40px] px-[2.79069767442vw] py-[60px] lg:py-[8vw]   containerWrap 
 bg-[#111]"
     >
       <div className="overflow-hidden headingWrapper">
-        <div className="text60 heading swiss font-[600] flex gap-[1vw]">
+        <div className="sm:text60 text-[30px] heading swiss font-[600] flex flex-wrap lg:flex-row flex-col lg:gap-[1vw]">
           <h2 className="  poppins  font-[600] text-white">
             AI-Powered Precision.
           </h2>
@@ -109,17 +109,17 @@ bg-[#111]"
           />
         </div>
       </div>
-      <p className="text50 mt30 text-white desc swiss flex flex-wrap  normal-case">
+      <p className="sm:text50 mtext22 mt30 text-white desc swiss flex flex-wrap  normal-case">
         {wrapWordsInSpan(
           `By 2030, AI will add $15.7 trillion to the global economy. At Accelerate-AI, we help you claim your share by integrating AI and automation into your business processes—quickly and effectively.`
         )}
       </p>
-      <div className="border border-t mt-[3vw] opacity-[0.3]"></div>
-      <div className="mt-[3vw] flex justify-between text30">
+      <div className="border border-t lg:mt-[3vw] mt-[30px] opacity-[0.3]"></div>
+      <div className="mt-[3vw] flex flex-wrap gap-[8px] justify-between lg:text30 mtext22">
         <span className="text-white swiss ">
           Turning Complexity into Intelligent Simplicity.
         </span>
-        <span className="text-white swiss max-w-[29vw]">
+        <span className="text-white swiss lg:max-w-[29vw]">
           We are not an AI and Automation agency; We are your AI Transformation
           partners.
         </span>

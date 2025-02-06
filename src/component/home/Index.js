@@ -22,7 +22,6 @@ const HomePage = ({ variant }) => {
       <Expertise variant={variant} />
       <VideoTestimonials heading={"Show cases"} variant={variant} />
       <Testimonials variant={variant} />
-
       <Contact variant={variant} />
     </>
   );

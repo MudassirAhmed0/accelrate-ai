@@ -305,6 +305,9 @@ input[type="number"] {
   .mtext26 {
     @apply sm:text-[28px] sm:leading-[38px] text-[26px] leading-[36px];
   }
+  .mtext28 {
+    @apply sm:text-[30px] sm:leading-[40px] text-[28px] leading-[38px];
+  }
   .mtext30 {
     @apply sm:text-[32px] sm:leading-[42px] text-[30px] leading-[40px];
   }
@@ -322,7 +325,7 @@ input[type="number"] {
     @apply lg:py-[7.8125vw] sm:py-[120px] py-[75px];
   }
   .marqueeSlide {
-    @apply lg:w-[4.39238653001vw] lg:min-w-[4.39238653001vw] lg:h-[4.39238653001vw] sm:w-[140px] sm:min-w-[140px] sm:h-[140px] w-[19.5348837209vw] h-[19.5348837209vw];
+    @apply lg:min-w-[4.39238653001vw] lg:size-[4.39238653001vw] sm:min-w-[100px] sm:size-[100px] size-[12.5348837209vw];
   }
   .marqueeSlide {
     @apply ml-[3.72093023256vw] lg:ml-[3.33333333333vw];
@@ -346,6 +349,9 @@ input[type="number"] {
 }
 .link-active:not(:hover):after {
   transform-origin: 100% 50%;
+}
+.overFlowUnset {
+  overflow: unset;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hideScroll::-webkit-scrollbar {
@@ -417,3 +423,10 @@ input[type="number"] {
 }
 
 /* LightBox CSS End */
+
+@media (max-width: 1024px) {
+  body.active {
+    height: 100svh;
+    overflow: hidden;
+  }
+}

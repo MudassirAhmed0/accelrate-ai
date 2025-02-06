@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Card from "./Card";
 import FsLightbox from "fslightbox-react";
+import useResponsivness from "@/hooks/useResponsivness";
 const cardVideos = [
   {
     src: "/videos/home-hero.mp4",
@@ -40,36 +41,39 @@ const cardVideos = [
 
 const videoUrls = cardVideos.map((item) => item.src);
 const VideoTestimonials = ({ heading }) => {
+  const { isDesktop } = useResponsivness();
   const [toggler, setToggler] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);
   const testimonialsSectionRef = useRef(null);
   const cardsWrapperRef = useRef(null);
 
   useGSAP(() => {
-    const totalWidth =
-      cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
-    gsap.to(cardsWrapperRef.current, {
-      x: () => `-${totalWidth}px`,
-      scrollTrigger: {
-        trigger: testimonialsSectionRef.current,
-        start: "top top",
-        end: () => `+=${totalWidth}`,
-        pin: testimonialsSectionRef.current,
-        scrub: 1,
-      },
-    });
-  }, []);
+    if (isDesktop) {
+      const totalWidth =
+        cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
+      gsap.to(cardsWrapperRef.current, {
+        x: () => `-${totalWidth}px`,
+        scrollTrigger: {
+          trigger: testimonialsSectionRef.current,
+          start: "top top",
+          end: () => `+=${totalWidth}`,
+          pin: testimonialsSectionRef.current,
+          scrub: 1,
+        },
+      });
+    }
+  }, [isDesktop]);
 
   return (
     <>
       <section
         ref={testimonialsSectionRef}
-        className="h-[100vh] flex items-center overflow-hidden relative bg-[#f5f5f5]"
+        className="h-[100vh] flex flex-col lg:flex-row items-center overflow-hidden relative bg-[#f5f5f5]"
         id={`testimonialsSection`}
       >
         <div
           data-aos="fade-up"
-          className="w-[40%] px-[40px] flex flex-col justify-center"
+          className="lg:w-[40%] lg:px-[40px] lg:py-[unset] px-[2.79069767442vw] pt-[64px] pb-[40px] flex flex-col justify-center"
         >
           <div className="flex items-center gap-x-[8px]">
             <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
@@ -81,10 +85,10 @@ const VideoTestimonials = ({ heading }) => {
         </div>
         <div
           ref={cardsWrapperRef}
-          className="min-w-[50%] w-auto absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full px-[120px]"
+          className="lg:min-w-[50%] w-full lg:absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full lg:px-[120px]"
           id={`cardsWrapper`}
         >
-          <div className="w-full min-h-[65%] flex gap-x-[20px] items-stretch whitespace-nowrap">
+          <div className="w-full overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[65%] flex gap-x-[20px] items-stretch lg:whitespace-nowrap">
             {cardVideos.map((cardVideo, index) => (
               <Card
                 toggler={toggler}
