@@ -90,7 +90,7 @@ export default function Testimonials() {
                 <div className="flex border rounded text-left text-black border-black hideScroll bg-white justify-between items-start flex-col px-4 md:px-6">
                   <div
                     dangerouslySetInnerHTML={{ __html: testimonial.review }}
-                    className="mt-10 text-base leading-normal  lg:h-[220px] sm:h-[280px] h-[550px]  overflow-y-auto"
+                    className="mt-10 text-base leading-normal  lg:h-[220px] h-[280px] overflow-y-auto"
                   ></div>
                   <div className="flex justify-end pb-6 space-y-11 items-end w-full flex-col h-28">
                     <div className="flex grow-0 w-6">
