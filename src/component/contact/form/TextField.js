@@ -2,7 +2,7 @@ import React from "react";
 
 const TextField = ({ label, placeholder, id }) => {
   return (
-    <div className="w-[48%] flex flex-col">
+    <div className="lg:w-[48%] w-full flex flex-col">
       <label htmlFor={`${id}`} className="text20">
         {label}
       </label>

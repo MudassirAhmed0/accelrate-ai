@@ -13,7 +13,7 @@ const Form = () => {
     <form
       data-aos="fade"
       onSubmit={handleForm}
-      className="swiss lg:w-[50%] text-white flex items-start justify-between flex-wrap gap-x-[0.625vw] lg:gap-y-[30px] bg-[#1a1a1a] p-[4.16666666667vw] rounded-[10px]"
+      className="swiss lg:w-[50%] w-full text-white flex items-start justify-between flex-wrap gap-x-[0.625vw] gap-y-[30px] bg-[#1a1a1a] lg:p-[4.16666666667vw] p-[30px] rounded-[10px]"
     >
       <TextField
         id={"name"}

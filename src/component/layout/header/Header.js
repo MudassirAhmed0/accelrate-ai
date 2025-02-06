@@ -11,17 +11,28 @@ const navLinks = [
     title: "home",
     link: "/",
   },
-  {
-    title: "work",
-    link: "/",
-  },
+
   {
     title: "about",
-    link: "/",
+    link: "#about",
   },
   {
     title: "services",
-    link: "/",
+    link: "#services",
+  },
+  {
+    title: "Show case",
+    link: "#showcase",
+  },
+
+  {
+    title: "Tech stack",
+    link: "#techstack",
+  },
+
+  {
+    title: "Testimonials",
+    link: "#testimonials",
   },
   {
     title: "contact",
@@ -29,7 +40,7 @@ const navLinks = [
   },
 ];
 const Header = () => {
-  const { isDesktop } = useResponsivness();
+  const { isDesktop, isTablet, isMobile } = useResponsivness();
   const sideBarRef = useRef();
   const header = useRef();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,7 +77,7 @@ const Header = () => {
   };
   useGSAP(
     () => {
-      if (!isDesktop) {
+      if (isTablet || isMobile) {
         gsap.set("nav ul li a", { y: 75 });
         gsap.set(".header_SocialLinks .wrapper a", { y: 75 });
 
@@ -93,12 +104,11 @@ const Header = () => {
           });
       }
     },
-    { scope: header },
-    [isDesktop]
+    { scope: header, dependencies: [isTablet, isMobile] }
   );
 
   useEffect(() => {
-    if (!isDesktop) {
+    if (isTablet || isMobile) {
       if (isMenuOpen) {
         tl.current.play();
         document.querySelector("body").classList.add("active");
@@ -107,7 +117,7 @@ const Header = () => {
         document.querySelector("body").classList.remove("active");
       }
     }
-  }, [isMenuOpen, isDesktop]);
+  }, [isMenuOpen, isTablet, isMobile]);
 
   return (
     <header
@@ -153,7 +163,7 @@ const Header = () => {
                   key={index}
                   className="lg:text20 text-[70px] leading-[70px] link-active relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
                 >
-                  <Link href={"/"} className="block">
+                  <Link href={`${navLink.link}`} className="block">
                     {navLink.title}
                   </Link>
                 </li>

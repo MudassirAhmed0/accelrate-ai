@@ -30,7 +30,13 @@ const MarqueeSlider = () => {
     });
   }, []);
   return (
-    <div className="relative lg:mt-[3.125vw] mt30 marqueeWrapper">
+    <div
+      style={{
+        maskImage:
+          "linear-gradient(to right, rgba(248, 248, 255, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0))",
+      }}
+      className="relative lg:mt-[3.125vw] mt30 marqueeWrapper"
+    >
       <Marquee
         pauseOnHover
         speed={100}

@@ -72,7 +72,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section>
+    <section id="services">
       <div className="bg-[#111] lg:py-[6.25vw] py1 lg:px-[40px] px-[2.79069767442vw] text-white swiss">
         <h3
           data-aos="fade"

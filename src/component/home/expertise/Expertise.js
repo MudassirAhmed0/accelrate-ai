@@ -96,6 +96,7 @@ const expertises = [
 const Expertise = ({ variant }) => {
   return (
     <section
+      id="techstack"
       className={`${
         variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
       } py1`}

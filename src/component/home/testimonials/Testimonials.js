@@ -6,25 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 const testimonials = [
   {
-    profile: "/images/testimonials/profiles/5.png",
-    review: `
-      <p>I had the pleasure of working with Accelerate-AI, and I recommend the team highly! Their team is exceptionally skilled in Zapier and QuickBooks, bringing deep expertise and innovative solutions to every project. Their professionalism and high work ethic are truly remarkable. They consistently deliver top-notch results, always meeting deadlines and exceeding expectations.</p>
-      <p>Their ability to automate complex workflows and streamline processes has been a game-changer for our business. Beyond their technical skills, the team members are fantastic communicators and are true problem-solvers, making collaboration seamless and efficient.</p>
-      <p>If you're looking for an AI and Automation agency not only for talented people but also highly dependable people, Accelerate-AI is the team you should hire!</p>
-    `,
-    name: "Ashok Balan, Consultant",
-    location: "Medi Trust, India",
-  },
-  {
-    profile: "/images/testimonials/profiles/5.png",
-    review: `
-      <p>I recently had a fantastic experience working with team Accelerate-AI on an AI automation project. They were communicative throughout the process and asked very good questions to make sure they really understood what I was looking for. They delivered on time and the final product was better than I had originally imagined in my head.</p>
-      <p>I’d highly recommend Accelerate-AI and will definitely be reaching out to them again for future projects.</p>
-    `,
-    name: "Todd Leverette, Founding Partner",
-    location: "Apis & Heritage Capital Partners, USA",
-  },
-  {
     profile: "/images/testimonials/profiles/1.jpeg",
     review: `
       <p>Accelerate-AI team is an incredibly sharp, well-versed technical team. They get business, not just tech. They help with brainstorming the best solutions, offer great advice-feedback. They were super quick to respond and get the job done. Highest recommendation.</p>
@@ -57,6 +38,25 @@ const testimonials = [
     `,
     name: "Shay Rapaport, Founder",
     location: "Lunamix, Israel",
+  },
+  {
+    profile: "/images/testimonials/profiles/5.png",
+    review: `
+      <p>I had the pleasure of working with Accelerate-AI, and I recommend the team highly! Their team is exceptionally skilled in Zapier and QuickBooks, bringing deep expertise and innovative solutions to every project. Their professionalism and high work ethic are truly remarkable. They consistently deliver top-notch results, always meeting deadlines and exceeding expectations.</p>
+      <p>Their ability to automate complex workflows and streamline processes has been a game-changer for our business. Beyond their technical skills, the team members are fantastic communicators and are true problem-solvers, making collaboration seamless and efficient.</p>
+      <p>If you're looking for an AI and Automation agency not only for talented people but also highly dependable people, Accelerate-AI is the team you should hire!</p>
+    `,
+    name: "Ashok Balan, Consultant",
+    location: "Medi Trust, India",
+  },
+  {
+    profile: "/images/testimonials/profiles/5.png",
+    review: `
+      <p>I recently had a fantastic experience working with team Accelerate-AI on an AI automation project. They were communicative throughout the process and asked very good questions to make sure they really understood what I was looking for. They delivered on time and the final product was better than I had originally imagined in my head.</p>
+      <p>I’d highly recommend Accelerate-AI and will definitely be reaching out to them again for future projects.</p>
+    `,
+    name: "Todd Leverette, Founding Partner",
+    location: "Apis & Heritage Capital Partners, USA",
   },
 ];
 

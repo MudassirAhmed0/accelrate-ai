@@ -16,11 +16,16 @@ const HomePage = ({ variant }) => {
       <Services variant={variant} />
       <Stats variant={variant} />
       <VideoTestimonials
-        heading={"Des réponses à vos challenges RH"}
+        id={"showcase"}
+        heading={"Show case"}
         variant={variant}
       />
       <Expertise variant={variant} />
-      <VideoTestimonials heading={"Show cases"} variant={variant} />
+      <VideoTestimonials
+        heading={"Testimonials"}
+        variant={variant}
+        id={"testimonials"}
+      />
       <Testimonials variant={variant} />
       <Contact variant={variant} />
     </>

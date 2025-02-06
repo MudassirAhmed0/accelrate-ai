@@ -40,7 +40,7 @@ const cardVideos = [
 ];
 
 const videoUrls = cardVideos.map((item) => item.src);
-const VideoTestimonials = ({ heading }) => {
+const VideoTestimonials = ({ heading, id }) => {
   const { isDesktop } = useResponsivness();
   const [toggler, setToggler] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);
@@ -69,7 +69,7 @@ const VideoTestimonials = ({ heading }) => {
       <section
         ref={testimonialsSectionRef}
         className="h-[100vh] flex flex-col lg:flex-row items-center overflow-hidden relative bg-[#f5f5f5]"
-        id={`testimonialsSection`}
+        id={`${id}`}
       >
         <div
           data-aos="fade-up"
@@ -85,10 +85,10 @@ const VideoTestimonials = ({ heading }) => {
         </div>
         <div
           ref={cardsWrapperRef}
-          className="lg:min-w-[50%] w-full lg:absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full lg:px-[120px]"
+          className="lg:min-w-[50%] w-full lg:w-[unset] lg:absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full lg:px-[120px]"
           id={`cardsWrapper`}
         >
-          <div className="w-full overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[65%] flex gap-x-[20px] items-stretch lg:whitespace-nowrap">
+          <div className="w-full lg:w-[unset] overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[65%] flex gap-x-[20px] items-stretch lg:whitespace-nowrap">
             {cardVideos.map((cardVideo, index) => (
               <Card
                 toggler={toggler}

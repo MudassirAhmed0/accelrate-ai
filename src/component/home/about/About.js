@@ -35,6 +35,7 @@ const About = ({ variant }) => {
 
   return (
     <section
+      id="about"
       className={`${
         variant ? (variant == "blue" ? " bg-[ghostwhite] " : "") : " bg-black "
       } py1`}

@@ -44,8 +44,8 @@ const Contact = ({ variant }) => {
             : " bg-black "
         }  text-black py1`}
       >
-        <div className="myContainer flex items-stretch justify-between">
-          <div className="w-[47%] flex flex-col justify-between gap-y-[2.5vw]">
+        <div className="myContainer flex flex-wrap gap-[30px] items-stretch justify-between">
+          <div className="lg:w-[47%] w-full flex flex-col justify-between lg:gap-y-[2.5vw] gap-y-[20px]">
             <div>
               <h2 data-aos="fade-up">Efficiency starts with a conversation.</h2>
               <div className="text24">
@@ -77,7 +77,7 @@ const Contact = ({ variant }) => {
                   }}
                   className="absolute inset-0 size-full z-[1]"
                 ></span>
-                <div className="text-white absolute z-[1] top-[30%] left-[50%] translate-x-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
+                <div className="text-white absolute z-[1] top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
                   <BsPlayCircleFill />
                 </div>
                 <video
@@ -87,7 +87,7 @@ const Contact = ({ variant }) => {
                   loading="lazy"
                 ></video>
               </div>
-              <div className="p-[2.5vw] pt-[unset] relative z-[2] w-full text-white">
+              <div className="p-[20px] lg:p-[2.5vw] pt-[unset] relative z-[2] w-full text-white">
                 <p className="text24">
                   We like automating things, but never relationships. Let’s
                   build something smart, together.

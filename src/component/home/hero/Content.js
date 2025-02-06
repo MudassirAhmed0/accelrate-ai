@@ -80,14 +80,14 @@ const Content = () => {
 bg-[#111]"
     >
       <div className="overflow-hidden headingWrapper">
-        <div className="sm:text60 text-[30px] heading swiss font-[600] flex flex-wrap lg:flex-row flex-col lg:gap-[1vw]">
+        <div className="!line-clamp-2 sm:text60 text-[6.97674418605vw] heading swiss font-[600] flex flex-wrap lg:flex-row flex-col lg:gap-[1vw]">
           <h2 className="  poppins  font-[600] text-white">
             AI-Powered Precision.
           </h2>
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              "Human-Centric Impact. ",
+              "Human-Centric Impact.",
               500, // wait 1s before replacing "Mice" with "Hamsters"
               "",
               500,
@@ -105,6 +105,7 @@ bg-[#111]"
               color: "white",
               opacity: "1",
             }}
+            className="!line-clamp-1"
             repeat={Infinity}
           />
         </div>
