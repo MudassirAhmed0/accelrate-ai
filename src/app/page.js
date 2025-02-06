@@ -1,13 +1,17 @@
 import HomePage from "@/component/home/Index";
 import Layout from "@/component/layout/Index";
 import React from "react";
+import Loading from "./loading";
 
 const page = () => {
   const variant = "blue";
   return (
-    <Layout>
-      <HomePage variant={variant} />
-    </Layout>
+    <>
+      <Loading />
+      <Layout>
+        <HomePage variant={variant} />
+      </Layout>
+    </>
   );
 };
 

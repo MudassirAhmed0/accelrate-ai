@@ -364,9 +364,9 @@ input[type="number"] {
   scrollbar-width: none; /* Firefox */
 }
 .testimonialCard {
-  border-radius: 1.5vw;
+  /* border-radius: 1.5vw;
   background: #211f1f;
-  box-shadow: 36px 36px 72px #080808, -36px -36px 72px #1a1a1a;
+  box-shadow: 36px 36px 72px #080808, -36px -36px 72px #1a1a1a; */
 }
 
 /* LightBox CSS Start */

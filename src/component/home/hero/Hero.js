@@ -125,7 +125,7 @@ const Hero = ({ variant }) => {
             loop
             autoPlay
             playsInline
-            className="object-cover size-full"
+            className="object-cover size-full hero-video"
             preload="auto"
             loading="lazy"
           ></video>

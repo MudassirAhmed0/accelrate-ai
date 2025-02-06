@@ -82,8 +82,8 @@ export default function Testimonials() {
           className="lg:my-[2.5vw] my-[40px] swiper mySwiper"
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index} className="swiper-slide !w-1/2">
-              <div className="flex justify-center items-center flex-col">
+            <SwiperSlide key={index} className="swiper-slide !w-1/2 ">
+              <div className="flex justify-center items-center flex-col select-none">
                 <div className="w-12 relative z-20 opacity-0">
                   <img src="/images/testimonials/slide.svg" alt="apple" />
                 </div>

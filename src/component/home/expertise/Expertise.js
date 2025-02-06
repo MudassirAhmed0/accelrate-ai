@@ -113,7 +113,7 @@ const Expertise = ({ variant }) => {
             <div
               data-aos="fade"
               key={index}
-              className="bg-black text-white rounded-[20px] lg:p-[3.125vw] sm:p-[40px] p-[30px] lg:ml-[1.25vw] ml-[20px]"
+              className="bg-[#111] text-white rounded-[20px] lg:p-[3.125vw] sm:p-[40px] p-[30px] lg:ml-[1.25vw] ml-[20px]"
             >
               <h4 className="lg:text30 mtext22 font-medium text-center">
                 {expertise.title}
