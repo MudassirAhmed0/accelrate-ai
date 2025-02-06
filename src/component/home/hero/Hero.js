@@ -57,10 +57,10 @@ const Hero = ({ variant }) => {
   });
 
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden bg-[#111]">
       <div
         ref={heroWrapper}
-        className={`lg:pt-[5.782vw] pt-[30vw] lg:px-[40px] px-[2.79069767442vw] flex flex-col min-h-[90vh] heroWrapper ${
+        className={`lg:pt-[5.782vw] pt-[30vw] lg:px-[40px] px-[2.79069767442vw] flex flex-col lg:min-h-[90vh] h-[500px] heroWrapper ${
           variant ? (variant == "blue" ? " bg-[#111] " : "") : " bg-black "
         } z-[2]`}
       >
@@ -116,7 +116,7 @@ const Hero = ({ variant }) => {
           </div>
         </div>
       </div>
-      <div className="relative h-[100vh] heroVideoWrapper z-[-1]">
+      <div className="relative h-[100vh] heroVideoWrapper">
         <div className="absolute top-0 left-0 size-full z-[-1] heroVideo">
           <span className="absolute top-0 left-0 size-full bg-black bg-opacity-[0.5]"></span>
           <video

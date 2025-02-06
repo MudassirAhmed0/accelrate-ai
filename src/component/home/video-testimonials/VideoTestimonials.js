@@ -88,7 +88,7 @@ const VideoTestimonials = ({ heading, id }) => {
           className="lg:min-w-[50%] w-full lg:w-[unset] lg:absolute top-0 left-[50%] translate-x-0 flex items-center bg-[#111] h-full lg:px-[120px]"
           id={`cardsWrapper`}
         >
-          <div className="w-full lg:w-[unset] overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[65%] flex gap-x-[20px] items-stretch lg:whitespace-nowrap">
+          <div className="w-full lg:w-[unset] overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[60%] flex gap-x-[20px] items-stretch lg:whitespace-nowrap">
             {cardVideos.map((cardVideo, index) => (
               <Card
                 toggler={toggler}

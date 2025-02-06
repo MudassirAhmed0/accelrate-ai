@@ -79,15 +79,15 @@ export default function Testimonials() {
           }}
           slidesPerView={"auto"}
           spaceBetween={"20"}
-          className="lg:my-[2.5vw] my-[40px] swiper mySwiper"
+          className="lg:my-[2.5vw] my-[40px] swiper mySwiper !w-full"
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index} className="swiper-slide !w-1/2 ">
-              <div className="flex justify-center items-center flex-col select-none">
-                <div className="w-12 relative z-20 opacity-0">
-                  <img src="/images/testimonials/slide.svg" alt="apple" />
-                </div>
-                <div className="-mt-6 flex border h-18 rounded text-left text-black border-black bg-white justify-between items-start flex-col px-4 md:px-6">
+            <SwiperSlide
+              key={index}
+              className="swiper-slide lg:!w-1/2 !w-[85%] lg:!h-[400px] !h-[550px]"
+            >
+              <div className="flex justify-center items-center flex-col select-none h-full">
+                <div className="flex border rounded text-left text-black border-black h-full overflow-y-auto hideScroll bg-white justify-between items-start flex-col px-4 md:px-6">
                   <div
                     dangerouslySetInnerHTML={{ __html: testimonial.review }}
                     className="mt-10 text-base leading-normal "
