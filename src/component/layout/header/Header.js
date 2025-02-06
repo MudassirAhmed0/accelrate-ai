@@ -134,7 +134,8 @@ const Header = () => {
                 ? "none"
                 : "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
             }}
-            className="sideBar px-[2.79069767442vw] lg:px-[unset] pt-[24.2424242424vw] pb-[2.79069767442vw] lg:pb-[unset] lg:pt-[2vw] flex lg:flex-row flex-col justify-between gap-[10.4651162791vw] lg:gap-[unset] lg:justify-normal absolute inset-0 w-full h-[100vh] lg:static lg:size-[unset] bg-[#101010] lg:bg-transparent"
+            className="sideBar px-[2.79069767442vw] lg:px-[unset] pt-[24.2424242424vw] pb-[2.79069767442vw] lg:pb-[unset] lg:pt-[2vw] flex lg:flex-row flex-col justify-between gap-[10.4651162791vw] lg:gap-[unset] lg:justify-normal absolute inset-0 w-full fullVhcm
+fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           >
             <Link
               onClick={toggleMenu}

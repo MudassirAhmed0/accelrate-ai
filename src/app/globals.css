@@ -209,6 +209,9 @@ input[type="number"] {
   .fullVh.fullSvh {
     @apply min-h-[100vh] min-h-[100svh];
   }
+  .fullVhcm.fullSvhcm {
+    @apply h-[100vh] h-[100svh];
+  }
   .myContainer {
     @apply lg:w-[91.5625vw] w-[90.699%] mx-[auto];
   }
