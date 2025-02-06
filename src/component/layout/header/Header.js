@@ -8,11 +8,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   {
-    title: "home",
-    link: "/",
-  },
-
-  {
     title: "about",
     link: "#about",
   },
@@ -127,7 +122,7 @@ const Header = () => {
       <div className="lg:h-[4.539vw] lg:py-[0.73206442166vw] lg:pb-[1.40625vw] py-[3.63636363636vw] flex flex-col justify-end">
         <div className="lg:px-[40px] px-[2.79069767442vw] flex lg:items-end items-center justify-between text-white">
           <Link
-            href={"/"}
+            href={"#"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink lg:text20 mtext14 relative z-[2]"
           >
             <span>The Growth Accelerator</span>
