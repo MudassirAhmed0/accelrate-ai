@@ -97,7 +97,7 @@ export default function Testimonials() {
                       <img src="/images/testimonials/quote.svg" alt="quotes" />
                     </div>
                     <div className="w-full flex justify-start items-center space-x-2">
-                      <div className="size-[2.5vw] rounded-full overflow-hidden">
+                      <div className="lg:size-[2.5vw] sm:size-[80px] size-[60px] rounded-full overflow-hidden">
                         <img
                           src={testimonial.profile}
                           alt="avatar"
