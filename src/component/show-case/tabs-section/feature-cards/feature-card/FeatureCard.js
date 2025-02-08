@@ -7,7 +7,7 @@ const FeatureCard = () => {
   return (
     <Link
       data-aos="fade"
-      href={"/"}
+      href={"/showcase/single-page"}
       className="group flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border lg:border-black border-[#f8f8f81a] rounded-[10px] lg:hover:border-[#f8f8f81a] transition-all duration-300"
     >
       <Banner />
