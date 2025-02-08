@@ -5,11 +5,13 @@ import RegularCards from "./regular-cards/RegularCards";
 
 const TabsSections = () => {
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white py1">
       <div className="myContainer">
         <Tabs />
-        <FeatureCards />
-        <RegularCards />
+        <div className="flex flex-col lg:mt-[3.125vw] mt-[30px]">
+          <FeatureCards />
+          <RegularCards />
+        </div>
       </div>
     </section>
   );

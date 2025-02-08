@@ -4,19 +4,24 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const Cta = () => {
   return (
-    <section className="relative w-full bg-black">
+    <section className="relative w-full bg-black overflow-hidden">
       <img
         src="/images/show-case/cta/bg.svg"
         alt="bg"
-        className="absolute inset-0 size-full object-cover"
+        id="bg"
+        className="absolute inset-0 size-full object-cover transition-all duration-700"
       />
-      <div className="relative text-center z-[2] flex flex-col items-center myContainer lg:w-[55%] lg:pt-[11.4583333333vw] lg:pb-[6.25vw] sm:py-[180px] py-[120px]">
-        <h2 className="text-white font-medium">
+      <div className="relative text-center z-[2] flex flex-col items-center myContainer lg:w-[50%] lg:pt-[11.4583333333vw] lg:pb-[6.25vw] sm:py-[180px] py-[120px]">
+        <h2
+          data-aos="fade-up"
+          className="text-white font-medium tracking-tighter"
+        >
           Want to turn your website into your most valuable asset?
         </h2>
         <Link
+          data-aos="fade"
           href={"/"}
-          className="group relative mt30 lg:mt-[2.5vw] flex items-center lg:gap-x-[0.3125vw] bg-white lg:py-[0.625vw] lg:px-[1.5625vw] px-[24px] py-[10px] rounded-[8px] lg:text18 mtext16 font-medium"
+          className="group poppins shadow-[inset_0_-6px_12px_rgba(0,0,0,1)] relative mt30 lg:mt-[2.5vw] flex items-center lg:gap-x-[0.3125vw] bg-white text-black lg:py-[0.625vw] lg:px-[1.5625vw] px-[24px] py-[10px] rounded-[8px] lg:text18 mtext16 font-medium"
         >
           <span className="translate-x-0 group-hover:translate-x-[-10%] transition-all duration-300">
             Contact us today

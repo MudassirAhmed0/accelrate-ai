@@ -341,6 +341,12 @@ input[type="number"] {
 .gradient2 {
   background: linear-gradient(135deg, #0b0252, #241180, #41438c);
 }
+.case-details_content h2 {
+  @apply lg:text40 mtext32 font-medium tracking-tighter;
+}
+.case-details_content a {
+  @apply underline underline-offset-2 font-bold hover:opacity-[0.7] hover:text-[#3F484A] transition-all duration-500;
+}
 .index-module_type__E-SaG {
   @apply !opacity-[1];
 }
@@ -435,4 +441,29 @@ input[type="number"] {
     height: 100svh;
     overflow: hidden;
   }
+}
+
+ul.defaultList,
+.defaultList ul {
+  @apply list-disc;
+}
+ol.defaultList,
+.defaultList ol {
+  @apply list-decimal;
+}
+ol.defaultList li::marker,
+.defaultList ol li::marker {
+  color: inherit;
+  font-size: inherit;
+}
+ul.defaultList li::marker,
+.defaultList ul li::marker {
+  color: inherit;
+  font-size: initial;
+}
+ul.defaultList,
+ol.defaultList,
+.defaultList ul,
+.defaultList ol {
+  @apply lg:pl-[1.66666666667vw] pl-[25px];
 }
