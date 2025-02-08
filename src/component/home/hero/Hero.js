@@ -57,7 +57,7 @@ const Hero = ({ variant }) => {
   });
 
   return (
-    <section className="overflow-hidden bg-[#111]">
+    <section id="hero" className="overflow-hidden bg-[#111]">
       <div
         ref={heroWrapper}
         className={`lg:pt-[5.782vw] pt-[30vw] lg:px-[40px] px-[2.79069767442vw] flex flex-col lg:min-h-[90vh] h-[500px] heroWrapper ${

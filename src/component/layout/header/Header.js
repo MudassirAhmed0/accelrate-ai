@@ -9,29 +9,29 @@ import React, { useEffect, useRef, useState } from "react";
 const navLinks = [
   {
     title: "about",
-    link: "#about",
+    link: "/#about",
   },
   {
     title: "services",
-    link: "#services",
+    link: "/#services",
   },
   {
     title: "Show case",
-    link: "#showcase",
+    link: "/showcase",
   },
 
   {
     title: "Tech stack",
-    link: "#techstack",
+    link: "/#techstack",
   },
 
   {
     title: "Testimonials",
-    link: "#testimonials",
+    link: "/#testimonials",
   },
   {
     title: "contact",
-    link: "#contact",
+    link: "/#contact",
   },
 ];
 const Header = () => {
@@ -122,7 +122,7 @@ const Header = () => {
       <div className="lg:h-[4.539vw] lg:py-[0.73206442166vw] lg:pb-[1.40625vw] py-[3.63636363636vw] flex flex-col justify-end">
         <div className="lg:px-[40px] px-[2.79069767442vw] flex lg:items-end items-center justify-between text-white">
           <Link
-            href={"#"}
+            href={"/#hero"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink lg:text20 mtext14 relative z-[2]"
           >
             <span>The Growth Accelerator</span>
@@ -139,7 +139,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           >
             <Link
               onClick={toggleMenu}
-              href={"#contact"}
+              href={"/#contact"}
               className="lg:hidden grow-[1] inline-flex lg:text20 mtext18 lg:gap-[0.41666666666vw] gap-[5px] items-end relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
             >
               <span className="normal-case group-hover:translate-x-[1.171875vw]">

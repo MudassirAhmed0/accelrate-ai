@@ -27,13 +27,10 @@ const RegularCard = () => {
             </span>
           </div>
           <span className="h-[1px] bg-white grow-[1] lg:mb-[0.625vw] opacity-[0.2]"></span>
-          <Link
-            href={"/"}
-            className="opacity-[0.7] ml-auto lg:mb-[-0.3125vw] lg:text18 mtext16 lg:leading-[2.5vw] flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] font-medium"
-          >
+          <div className="opacity-[0.7] ml-auto lg:mb-[-0.3125vw] lg:text18 mtext16 lg:leading-[2.5vw] flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] font-medium">
             Read case
             <IoMdArrowForward />
-          </Link>
+          </div>
         </div>
       </div>
     </Link>
