@@ -6,6 +6,8 @@ const RegularCards = () => {
     <div className="flex flex-wrap">
       <RegularCard />
       <RegularCard />
+      <RegularCard />
+      <RegularCard />
     </div>
   );
 };

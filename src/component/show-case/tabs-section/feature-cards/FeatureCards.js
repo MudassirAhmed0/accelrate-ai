@@ -5,6 +5,7 @@ const FeatureCards = () => {
   return (
     <div className="w-full flex flex-col">
       <FeatureCard />
+      <FeatureCard />
     </div>
   );
 };
