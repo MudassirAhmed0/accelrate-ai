@@ -3,14 +3,8 @@
 @tailwind utilities;
 
 :root {
-  /* Primary Colors */
-  --deep-blue: #0b0252; /* Represents trust, intelligence, and professionalism */
-  --royal-blue: #1d0973; /* Symbolizes innovation and agility */
-  --lighter-blue: #41438c; /* A lighter shade of blue */
-
-  /* Secondary Colors */
-  --charcoal-gray: #2d2d2d; /* For neutral elements and text */
-  --light-gray: #2e2e30; /* For backgrounds to add contrast */
+  --black: #111;
+  --white: #f8f8ff;
 }
 
 /* IMPORTING FONTS  */
@@ -319,10 +313,10 @@ input[type="number"] {
   }
 
   .mt20 {
-    @apply lg:mt-[1.04166666667vw] mt-[16px];
+    @apply lg:mt-[1.04166666667vw] sm:mt-[16px] mt-[12px];
   }
   .mt30 {
-    @apply lg:mt-[1.5625vw] mt-[22px];
+    @apply lg:mt-[1.5625vw] sm:mt-[22px] mt-[16px];
   }
   .py1 {
     @apply lg:py-[7.8125vw] sm:py-[120px] py-[75px];
@@ -351,6 +345,15 @@ input[type="number"] {
   @apply !opacity-[1];
 }
 .link-active:not(:hover):after {
+  transform-origin: 100% 50%;
+}
+.afterLineHover {
+  @apply relative overflow-hidden;
+}
+.afterLineHover {
+  @apply after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left;
+}
+.afterLineHover:not(:hover):after {
   transform-origin: 100% 50%;
 }
 .overFlowUnset {

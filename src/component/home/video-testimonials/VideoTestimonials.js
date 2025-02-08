@@ -7,6 +7,9 @@ import gsap from "gsap";
 import Card from "./Card";
 import FsLightbox from "fslightbox-react";
 import useResponsivness from "@/hooks/useResponsivness";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Register GSAP Plugin
+gsap.registerPlugin(ScrollTrigger);
 const cardVideos = [
   {
     src: "/videos/home-hero.mp4",
@@ -47,21 +50,48 @@ const VideoTestimonials = ({ heading, id }) => {
   const testimonialsSectionRef = useRef(null);
   const cardsWrapperRef = useRef(null);
 
-  useGSAP(() => {
-    if (isDesktop) {
-      const totalWidth =
-        cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
+  // useGSAP(() => {
+  //   if (isDesktop) {
+  //     const totalWidth =
+  //       cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
+  //     gsap.to(cardsWrapperRef.current, {
+  //       x: () => `-${totalWidth}px`,
+  //       scrollTrigger: {
+  //         trigger: testimonialsSectionRef.current,
+  //         start: "top top",
+  //         end: () => `+=${totalWidth}`,
+  //         pin: testimonialsSectionRef.current,
+  //         scrub: 1,
+  //       },
+  //     });
+  //   }
+  // }, [isDesktop]);
+
+  useEffect(() => {
+    if (
+      !isDesktop ||
+      !testimonialsSectionRef.current ||
+      !cardsWrapperRef.current
+    )
+      return;
+
+    const totalWidth =
+      cardsWrapperRef.current.offsetWidth - window.innerWidth / 2;
+
+    let ctx = gsap.context(() => {
       gsap.to(cardsWrapperRef.current, {
-        x: () => `-${totalWidth}px`,
+        x: `-${totalWidth}px`,
         scrollTrigger: {
           trigger: testimonialsSectionRef.current,
           start: "top top",
-          end: () => `+=${totalWidth}`,
-          pin: testimonialsSectionRef.current,
+          end: `+=${totalWidth}`,
+          pin: true,
           scrub: 1,
         },
       });
-    }
+    });
+
+    return () => ctx.revert(); // Clean up animation on unmount
   }, [isDesktop]);
 
   return (

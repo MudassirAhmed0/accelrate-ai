@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useRef, useState } from "react";
 import { TbSquareRoundedChevronRight } from "react-icons/tb";
 import { BsPlayCircleFill } from "react-icons/bs";
-import MyLightBox from "../common/MyLightBox/Index";
+import MyLightBox from "../../common/MyLightBox/Index";
 import Form from "./form/Form";
 
 const Contact = ({ variant }) => {

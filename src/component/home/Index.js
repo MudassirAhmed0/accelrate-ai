@@ -4,7 +4,7 @@ import About from "./about/About";
 import Services from "./services/Services";
 import Stats from "./stats/Stats";
 import Expertise from "./expertise/Expertise";
-import Contact from "../contact/Contact";
+import Contact from "./contact/Contact";
 import VideoTestimonials from "./video-testimonials/VideoTestimonials";
 import Testimonials from "./testimonials/Testimonials";
 

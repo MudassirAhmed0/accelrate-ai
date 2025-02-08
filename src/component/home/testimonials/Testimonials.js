@@ -3,7 +3,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import the Navigation module
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/autoplay";
 const testimonials = [
   {
     profile: "/images/testimonials/profiles/1.jpeg",
@@ -69,9 +70,10 @@ export default function Testimonials() {
         </h2>
         <Swiper
           data-aos="fade"
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           centeredSlides={true}
           loop={true}
+          autoplay={{ disableOnInteraction: false }}
           grabCursor={true}
           navigation={{
             nextEl: ".swiper-button-next",

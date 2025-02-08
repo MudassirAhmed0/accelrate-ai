@@ -4,8 +4,11 @@ import Aos from "aos";
 
 const isVideoLoaded = () => {
   const video = document.querySelector(".hero-video"); // Select the video in the header
-  return video && video.readyState >= 4; // Check if the video is ready to play
-  return true;
+  if (video) {
+    return video && video.readyState >= 4; // Check if the video is ready to play
+  } else {
+    return true;
+  }
 };
 
 function areAllAssetsLoaded() {
