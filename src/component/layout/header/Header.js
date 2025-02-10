@@ -1,10 +1,14 @@
 "use client";
+import LinkBtn from "@/component/common/buttons/LinkBtn";
 import useAos from "@/hooks/useAos";
 import useResponsivness from "@/hooks/useResponsivness";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { IoArrowDownOutline } from "react-icons/io5";
+import DropDown from "./dropdown/DropDown";
 
 const navLinks = [
   {
@@ -13,7 +17,7 @@ const navLinks = [
   },
   {
     title: "services",
-    link: "/#services",
+    dropDown: true,
   },
   {
     title: "Show case",
@@ -39,6 +43,7 @@ const Header = () => {
   const sideBarRef = useRef();
   const header = useRef();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const headerDropDown = useRef();
   useAos();
   useGSAP(() => {
     gsap.from(".headerLink span", {
@@ -57,6 +62,10 @@ const Header = () => {
         opacity: 0,
         stagger: 0.03,
       });
+      setTimeout(() => {
+        gsap.killTweensOf("nav ul li");
+        gsap.set("nav ul li", { clearProps: "all" });
+      }, 2000);
       gsap.from(".contactLink a", {
         duration: 2,
         ease: "power4.out",
@@ -113,7 +122,18 @@ const Header = () => {
       }
     }
   }, [isMenuOpen, isTablet, isMobile]);
-
+  const handleDropDown = () => {
+    const headerDropDownEl = headerDropDown.current;
+    const wrapperElHeight =
+      headerDropDownEl.querySelector(".wrapper").offsetHeight;
+    if (headerDropDownEl.classList.contains("active")) {
+      headerDropDownEl.style.maxHeight = `0`;
+      headerDropDownEl.classList.remove("active");
+    } else {
+      headerDropDownEl.style.maxHeight = `${wrapperElHeight}px`;
+      headerDropDownEl.classList.add("active");
+    }
+  };
   return (
     <header
       ref={header}
@@ -147,21 +167,38 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
               </span>
               <span>↗</span>
             </Link>
-            <ul className="flex lg:flex-row grow-[1] flex-col lg:gap-[0.81666666666vw] overflow-hidden">
+            <ul className="flex lg:flex-row grow-[1] flex-col lg:gap-[0.81666666666vw] overflow-hidden overflow-y-auto">
               {navLinks.map((navLink, index) => (
                 <li
-                  onClick={toggleMenu}
+                  onClick={navLink.dropDown ? handleDropDown : toggleMenu}
                   style={{
                     clipPath: isDesktop
                       ? "none"
                       : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                   }}
                   key={index}
-                  className="lg:text20 text-[7.51072961373vh] leading-[7.51072961373vh] link-active relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
+                  className={`lg:text20 text-[7.51072961373vh] leading-[7.51072961373vh]`}
                 >
-                  <Link href={`${navLink.link}`} className="block">
-                    {navLink.title}
-                  </Link>
+                  {navLink.dropDown ? (
+                    <div
+                      className={`
+                        ${navLink.dropDown ? "group/dropDown" : ""}
+                       block cursor-pointer`}
+                    >
+                      <div className="flex items-center lg:gap-x-[0.55555555555vw] afterLineHover relative z-[2]">
+                        {navLink.title}
+                        <IoArrowDownOutline className="group-hover/dropDown:scale-y-[-1]" />
+                      </div>
+                      <DropDown headerDropDown={headerDropDown} />
+                    </div>
+                  ) : (
+                    <Link
+                      href={`${navLink.link}`}
+                      className="block afterLineHover relative z-[2]"
+                    >
+                      {navLink.title}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

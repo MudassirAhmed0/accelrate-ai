@@ -18,10 +18,7 @@ const services = [
     title: "Business Process Automation & Orchestration",
     tag: ["Delegate to AI — automate the mundane", "focus on growth."],
   },
-  {
-    title: "AI-Driven CRM Optimization & Customer Engagement",
-    tag: ["Turning data into relationships", "and relationships into revenue."],
-  },
+
   {
     title: "Advanced Data Intelligence & Automation",
     tag: ["Actionable insights", "minus the analysis paralysis."],
@@ -33,14 +30,6 @@ const services = [
   {
     title: "E-commerce Automation & Secure Payment Systems",
     tag: ["Because abandoned carts", "don’t belong in your business model."],
-  },
-  {
-    title: "High-Performance API & Backend Engineering",
-    tag: ["Invisible yet indispensable", "because great tech works quietly."],
-  },
-  {
-    title: "Database & Storage Scalable Cloud & Data Infrastructure",
-    tag: ["Your data deserves a VIP seat", "in the cloud."],
   },
 ];
 

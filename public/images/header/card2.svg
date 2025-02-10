@@ -1,0 +1,42 @@
+<svg width="560" height="272" viewBox="0 0 560 272" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_3557_20597)">
+<circle cx="280.472" cy="124.913" r="172.868" fill="url(#paint0_radial_3557_20597)"/>
+<circle cx="453.339" cy="273.935" r="172.868" fill="url(#paint1_radial_3557_20597)"/>
+<circle cx="107.603" cy="273.935" r="172.868" fill="url(#paint2_radial_3557_20597)"/>
+<rect x="-109.973" y="-54.5752" width="270.752" height="308.172" rx="5.50308" fill="url(#pattern0_3557_20597)"/>
+<rect width="270.752" height="308.172" rx="5.50308" transform="matrix(1 0 0 -1 173.436 285.515)" fill="url(#pattern1_3557_20597)"/>
+<rect x="388.057" y="-47.9714" width="270.752" height="308.172" rx="5.50308" fill="url(#pattern2_3557_20597)"/>
+</g>
+<rect x="-19.9629" y="1.07202" width="601.392" height="270.144" fill="url(#paint3_linear_3557_20597)"/>
+<defs>
+<pattern id="pattern0_3557_20597" patternContentUnits="objectBoundingBox" width="0.813008" height="0.535714">
+<use xlink:href="#image0_3557_20597" transform="scale(0.00101626 0.000892857)"/>
+</pattern>
+<pattern id="pattern1_3557_20597" patternContentUnits="objectBoundingBox" width="0.813008" height="0.535714">
+<use xlink:href="#image0_3557_20597" transform="scale(0.00101626 0.000892857)"/>
+</pattern>
+<pattern id="pattern2_3557_20597" patternContentUnits="objectBoundingBox" width="0.813008" height="0.535714">
+<use xlink:href="#image0_3557_20597" transform="scale(0.00101626 0.000892857)"/>
+</pattern>
+<radialGradient id="paint0_radial_3557_20597" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280.472 124.913) rotate(90) scale(172.868)">
+<stop offset="0.800074" stop-color="#FDD33C" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDD33C"/>
+</radialGradient>
+<radialGradient id="paint1_radial_3557_20597" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(453.339 273.935) rotate(90) scale(172.868)">
+<stop offset="0.800074" stop-color="#FDD33C" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDD33C"/>
+</radialGradient>
+<radialGradient id="paint2_radial_3557_20597" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(107.603 273.935) rotate(90) scale(172.868)">
+<stop offset="0.800074" stop-color="#FDD33C" stop-opacity="0"/>
+<stop offset="1" stop-color="#FDD33C"/>
+</radialGradient>
+<linearGradient id="paint3_linear_3557_20597" x1="281" y1="226.5" x2="280.733" y2="116.652" gradientUnits="userSpaceOnUse">
+<stop offset="0.18" stop-color="#101010"/>
+<stop offset="1" stop-color="#101010" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_3557_20597">
+<rect width="770.982" height="283.409" fill="white" transform="translate(-105.02 -22.6572)"/>
+</clipPath>
+<image id="image0_3557_20597" width="800" height="600" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAJYBAMAAABoWJ9DAAAAGFBMVEVHcEz///////////////////////////8dS1W+AAAACHRSTlMAys2K+P8zZb1TzX8AAAF+SURBVHgB7d2xbYUwFIbR3ylI6xGiNwEFA9CwBxU1+1eZAQn8bHHOBEifbgHAdcYBAAAAVJcNXGFCAeATBAGGVvJqAACwzOkJ2xpMCAAAAAAAAAAAAAAAFiIBAAAAAAAAAAAAADiTDkHwWwQAAAAAAAAAAAD4tBJB4L2mPQgCAABAL0oAAAAAAAAA4JIzCHIFAAAAbvMEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFjm9IRtTROYEAAAjjwKQQAAAAAAAAAAAAAAAGrGxZnmEAQAAAAAAMBblWnPmAQBAAAAAAAAAAAAAGzdAgAAAAAAAAAAAAAAAAAAAAAAKLkLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAIxKAn78gCAAAAAAAfNO0B0EAAAAAAAAAAKAXR3hQbRkEzBUAAAAAAAAAAAAA1AAAAAB4jgEAAAAAAAAAAAAAAAAAAAAAAABAz7vlAAAAAAAAAD5BkFv9ngEAAIB3KKGdfw7SDKdR76z7AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

@@ -1,3 +1,4 @@
+import LinkBtn from "@/component/common/buttons/LinkBtn";
 import Link from "next/link";
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
@@ -21,20 +22,8 @@ const Hero = () => {
             studies to discover the impact of our agency.
           </p>
           <span className="h-[1px] bg-white grow-[1] lg:min-w-[unset] lg:w-[unset] sm:min-w-[65%] sm:w-[65%] min-w-full w-full lg:mb-[0.625vw] opacity-[0.2]"></span>
-          <Link
-            href={"/"}
-            className="ml-auto lg:mb-[-0.3125vw] lg:text22 mtext18 lg:leading-[2.5vw] flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] font-medium group afterLineHover"
-          >
-            Let&apos;s work together
-            <div className="lg:text30 mtext24 relative overflow-hidden">
-              <div className="translate-x-0 group-hover:translate-x-[100%] group-hover:duration-[600ms] group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
-                <IoMdArrowForward />
-              </div>
-              <div className="absolute top-0 left-[-100%] group-hover:left-0 group-hover:duration-[600ms] group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
-                <IoMdArrowForward />
-              </div>
-            </div>
-          </Link>
+
+          <LinkBtn text={"Let's work together"} link={"/"} />
         </div>
       </div>
     </section>
