@@ -10,6 +10,7 @@ const LinkBtn = ({
   isLoading,
   isExternal = false, // Default to false
   smallVarient,
+  blackVersion,
 }) => {
   if (!text) {
     return <></>;
@@ -25,7 +26,9 @@ const LinkBtn = ({
         smallVarient
           ? "lg:text16 mtext12"
           : "lg:text22 mtext18 font-medium ml-auto lg:mb-[-0.3125vw]"
-      }  lg:leading-[2.5vw]  flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] group afterLineHover poppins`}
+      } ${
+        blackVersion ? "after:bg-black" : "after:bg-white"
+      } lg:leading-[2.5vw]  flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] group afterLineHover poppins`}
     >
       {text}
       <div

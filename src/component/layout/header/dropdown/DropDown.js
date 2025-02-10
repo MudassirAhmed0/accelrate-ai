@@ -1,13 +1,13 @@
 import LinkBtn from "@/component/common/buttons/LinkBtn";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 
 const DropDown = ({ headerDropDown }) => {
   return (
     <div
       ref={headerDropDown}
-      className="opacity-0 pointer-events-none group-hover/dropDown:opacity-[1] group-hover/dropDown:pointer-events-auto transition-all duration-500 lg:duration-0 lg:transition-none max-h-0 lg:max-h-[unset] overflow-hidden lg:overFlowUnset lg:absolute inset-0 size-full bg-transparent lg:bg-[#1C1C1C] lg:pt-[5.20833333333vw]"
+      className="opacity-0 lg:pointer-events-none group-hover/dropDown:lg:opacity-[1] group-hover/dropDown:lg:pointer-events-auto transition-all duration-500 lg:duration-0 lg:transition-none max-h-0 lg:max-h-[unset] overflow-hidden lg:overflow-visible lg:absolute inset-0 size-full bg-transparent lg:bg-[#1C1C1C] lg:pt-[5.20833333333vw]"
     >
       <div className="bg-transparent lg:bg-[#1C1C1C] wrapper lg:mt-[unset] sm:mt-[30px] mt-[20px]">
         <div className="flex lg:flex-row flex-col flex-wrap items-stretch lg:gap-[4.16666666667vw] sm:gap-[24px] gap-[20px] border-t border-[#4B4B4B] lg:mx-[40px] lg:px-[unset] px-[2.79069767442vw] poppins lg:py-[2.5vw] sm:py-[30px] py-[20px]">
@@ -15,16 +15,28 @@ const DropDown = ({ headerDropDown }) => {
             Our services
           </span>
           <div className="flex flex-col lg:gap-y-[unset] sm:gap-y-[15px] gap-y-[10px] justify-start lg:text38 sm:mtext28 mtext22 lg:leading-[3.125vw] tracking-tight w-full lg:w-[unset]">
-            <Link href={"/"} className="block afterLineHover">
+            <Link
+              href={"/"}
+              className="block after:hidden lg:after:block afterLineHover"
+            >
               Web Design
             </Link>
-            <Link href={"/"} className="block afterLineHover">
+            <Link
+              href={"/"}
+              className="block after:hidden lg:after:block afterLineHover"
+            >
               Webflow Development
             </Link>
-            <Link href={"/"} className="block afterLineHover">
+            <Link
+              href={"/"}
+              className="block after:hidden lg:after:block afterLineHover"
+            >
               Migration
             </Link>
-            <Link href={"/"} className="block afterLineHover">
+            <Link
+              href={"/"}
+              className="block after:hidden lg:after:block afterLineHover"
+            >
               Support & Growth
             </Link>
           </div>
@@ -34,7 +46,7 @@ const DropDown = ({ headerDropDown }) => {
               <Link
                 key={i}
                 href={"/"}
-                className="w-full group afterLineHoverHandler flex justify-center items-center lg:h-[11.9791666667vw] h-[120px] relative border-[#f8f8f81a] border rounded-[4px]"
+                className="w-full group afterLineHoverHandler flex justify-center items-center lg:h-[11.9791666667vw] h-[120px] relative border-[#f8f8f81a] border rounded-[4px] overflow-hidden"
               >
                 <div className="absolute inset-0 size-full pointer-events-none">
                   <Image

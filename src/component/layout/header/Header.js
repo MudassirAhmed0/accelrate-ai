@@ -44,6 +44,7 @@ const Header = () => {
   const header = useRef();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerDropDown = useRef();
+  const dropDownChevron = useRef();
   useAos();
   useGSAP(() => {
     gsap.from(".headerLink span", {
@@ -82,7 +83,7 @@ const Header = () => {
   useGSAP(
     () => {
       if (isTablet || isMobile) {
-        gsap.set("nav ul li a", { y: 75 });
+        gsap.set("nav ul li .item", { y: 75 });
         gsap.set(".header_SocialLinks .wrapper a", { y: 75 });
 
         tl.current = gsap
@@ -92,7 +93,7 @@ const Header = () => {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             ease: "power4.inOut",
           })
-          .to("nav ul li a", {
+          .to("nav ul li .item", {
             y: 0,
             duration: 1,
             stagger: 0.1,
@@ -123,15 +124,21 @@ const Header = () => {
     }
   }, [isMenuOpen, isTablet, isMobile]);
   const handleDropDown = () => {
-    const headerDropDownEl = headerDropDown.current;
-    const wrapperElHeight =
-      headerDropDownEl.querySelector(".wrapper").offsetHeight;
-    if (headerDropDownEl.classList.contains("active")) {
-      headerDropDownEl.style.maxHeight = `0`;
-      headerDropDownEl.classList.remove("active");
-    } else {
-      headerDropDownEl.style.maxHeight = `${wrapperElHeight}px`;
-      headerDropDownEl.classList.add("active");
+    if (!isDesktop) {
+      const headerDropDownEl = headerDropDown.current;
+      const wrapperElHeight =
+        headerDropDownEl.querySelector(".wrapper").offsetHeight;
+      if (headerDropDownEl.classList.contains("active")) {
+        headerDropDownEl.style.maxHeight = `0`;
+        headerDropDownEl.style.opacity = `0`;
+        dropDownChevron.current.style.transform = "scaleY(1)";
+        headerDropDownEl.classList.remove("active");
+      } else {
+        headerDropDownEl.style.maxHeight = `${wrapperElHeight}px`;
+        headerDropDownEl.style.opacity = `1`;
+        dropDownChevron.current.style.transform = "scaleY(-1)";
+        headerDropDownEl.classList.add("active");
+      }
     }
   };
   return (
@@ -167,10 +174,16 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
               </span>
               <span>↗</span>
             </Link>
-            <ul className="flex lg:flex-row grow-[1] flex-col lg:gap-[0.81666666666vw] overflow-hidden overflow-y-auto">
+            <ul className="flex lg:flex-row grow-[1] flex-col lg:gap-[0.81666666666vw] overflow-hidden overflow-y-auto lg:overflow-hidden">
               {navLinks.map((navLink, index) => (
                 <li
-                  onClick={navLink.dropDown ? handleDropDown : toggleMenu}
+                  onClick={
+                    isDesktop
+                      ? undefined
+                      : navLink.dropDown
+                      ? handleDropDown
+                      : toggleMenu
+                  }
                   style={{
                     clipPath: isDesktop
                       ? "none"
@@ -181,20 +194,24 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
                 >
                   {navLink.dropDown ? (
                     <div
-                      className={`
-                        ${navLink.dropDown ? "group/dropDown" : ""}
-                       block cursor-pointer`}
+                      className={`item
+                        ${
+                          navLink.dropDown ? "group/dropDown" : ""
+                        }  cursor-pointer`}
                     >
-                      <div className="flex items-center lg:gap-x-[0.55555555555vw] afterLineHover relative z-[2]">
+                      <div className="flex items-center lg:gap-x-[0.55555555555vw] after:hidden lg:after:block afterLineHover relative z-[2]">
                         {navLink.title}
-                        <IoArrowDownOutline className="group-hover/dropDown:scale-y-[-1]" />
+                        <IoArrowDownOutline
+                          ref={dropDownChevron}
+                          className="group-hover/dropDown:lg:scale-y-[-1]"
+                        />
                       </div>
                       <DropDown headerDropDown={headerDropDown} />
                     </div>
                   ) : (
                     <Link
                       href={`${navLink.link}`}
-                      className="block afterLineHover relative z-[2]"
+                      className="block after:hidden lg:after:block afterLineHover relative z-[2] item"
                     >
                       {navLink.title}
                     </Link>
