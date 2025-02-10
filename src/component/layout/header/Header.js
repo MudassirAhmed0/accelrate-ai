@@ -88,6 +88,7 @@ const Header = () => {
 
         tl.current = gsap
           .timeline({ paused: true })
+
           .to(".sideBar", {
             duration: 1.25,
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -275,9 +276,30 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           </div>
           <button
             onClick={toggleMenu}
-            className="relative z-[2] lg:hidden block mtext18 bg-[#ffffff21] px-[20px] py-[12px] capitalize"
+            className="relative z-[2] h-[50px] overflow-hidden flex items-end justify-center lg:hidden mtext18 bg-[#ffffff21] px-[20px] py-[12px] capitalize"
           >
-            menu
+            <div
+              className={`${
+                isMenuOpen
+                  ? "sm:translate-y-[58%] translate-y-[60%]"
+                  : "translate-y-0"
+              } flex flex-col gap-y-[10px] transition-all duration-1000`}
+            >
+              <span
+                className={`${
+                  isMenuOpen ? "opacity-[1]" : "opacity-0"
+                } transition-all duration-1000`}
+              >
+                close
+              </span>
+              <span
+                className={`${
+                  isMenuOpen ? "opacity-0" : "opacity-1"
+                } transition-all duration-1000`}
+              >
+                menu
+              </span>
+            </div>
           </button>
         </div>
       </div>
