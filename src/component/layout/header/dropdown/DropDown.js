@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const DropDown = ({ headerDropDown }) => {
+const DropDown = ({ headerDropDown, toggleMenu }) => {
   return (
     <div
       ref={headerDropDown}
@@ -16,25 +16,29 @@ const DropDown = ({ headerDropDown }) => {
           </span>
           <div className="flex flex-col lg:gap-y-[unset] sm:gap-y-[15px] gap-y-[10px] justify-start lg:text38 sm:mtext28 mtext22 lg:leading-[3.125vw] tracking-tight w-full lg:w-[unset]">
             <Link
-              href={"/"}
+              onClick={toggleMenu}
+              href={"/service-singlepage"}
               className="block after:hidden lg:after:block afterLineHover"
             >
               Web Design
             </Link>
             <Link
-              href={"/"}
+              onClick={toggleMenu}
+              href={"/service-singlepage"}
               className="block after:hidden lg:after:block afterLineHover"
             >
               Webflow Development
             </Link>
             <Link
-              href={"/"}
+              onClick={toggleMenu}
+              href={"/service-singlepage"}
               className="block after:hidden lg:after:block afterLineHover"
             >
               Migration
             </Link>
             <Link
-              href={"/"}
+              onClick={toggleMenu}
+              href={"/service-singlepage"}
               className="block after:hidden lg:after:block afterLineHover"
             >
               Support & Growth
@@ -45,7 +49,8 @@ const DropDown = ({ headerDropDown }) => {
             {[1, 2].map((c, i) => (
               <Link
                 key={i}
-                href={"/"}
+                onClick={toggleMenu}
+                href={"/service-singlepage"}
                 className="w-full group afterLineHoverHandler flex justify-center items-center lg:h-[11.9791666667vw] h-[120px] relative border-[#f8f8f81a] border rounded-[4px] overflow-hidden"
               >
                 <div className="absolute inset-0 size-full pointer-events-none">

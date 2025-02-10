@@ -66,7 +66,7 @@ const Header = () => {
       setTimeout(() => {
         gsap.killTweensOf("nav ul li");
         gsap.set("nav ul li", { clearProps: "all" });
-      }, 2000);
+      }, 800);
       gsap.from(".contactLink a", {
         duration: 2,
         ease: "power4.out",
@@ -167,7 +167,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
             <Link
               onClick={toggleMenu}
               href={"/#contact"}
-              className="lg:hidden grow-[1] inline-flex lg:text20 mtext18 lg:gap-[0.41666666666vw] gap-[5px] items-end relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
+              className="lg:hidden grow-[1] inline-flex lg:text20 mtext18 lg:gap-[0.41666666666vw] gap-[5px] items-end relative"
             >
               <span className="normal-case group-hover:translate-x-[1.171875vw]">
                 Let&apos;s talk
@@ -206,7 +206,10 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
                           className="group-hover/dropDown:lg:scale-y-[-1]"
                         />
                       </div>
-                      <DropDown headerDropDown={headerDropDown} />
+                      <DropDown
+                        headerDropDown={headerDropDown}
+                        toggleMenu={toggleMenu}
+                      />
                     </div>
                   ) : (
                     <Link

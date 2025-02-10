@@ -36,10 +36,10 @@ const LinkBtn = ({
           smallVarient ? "lg:text20 mtext16" : "lg:text30 mtext24"
         }  relative overflow-hidden`}
       >
-        <div className="translate-x-0 group-hover:translate-x-[100%] group-hover:duration-[600ms] group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
+        <div className="translate-x-0 group-hover:translate-x-[100%] group-hover:duration-500 group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
           <IoMdArrowForward />
         </div>
-        <div className="absolute top-0 left-[-100%] group-hover:left-0 group-hover:duration-[600ms] group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
+        <div className="absolute top-0 left-[-100%] group-hover:left-0 group-hover:duration-500 group-hover:transition-[cubic-bezier(0.62,0.05,0.01,0.99)]">
           <IoMdArrowForward />
         </div>
       </div>
