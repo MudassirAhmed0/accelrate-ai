@@ -14,7 +14,6 @@ const ServiceSinglePage = () => {
       <KeyMetrics />
       <VideoTestimonials heading={"Testimonials"} id={"testimonials"} />
       <Testimonials />
-      <Cta />
     </>
   );
 };

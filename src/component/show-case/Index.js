@@ -13,7 +13,6 @@ const ShowCasePage = () => {
         heading={"testimonials"}
         id={"show-case-testimonials"}
       />
-      <Cta />
     </>
   );
 };

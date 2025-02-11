@@ -5,16 +5,28 @@ import { IoMdArrowForward } from "react-icons/io";
 const Cta = () => {
   return (
     <section className="relative w-full bg-black overflow-hidden">
-      <img
+      {/* <img
         src="/images/show-case/cta/bg.svg"
         alt="bg"
         id="bg"
-        className="absolute inset-0 size-full object-cover transition-all duration-700"
+        className="absolute inset-0 size-full object-cover"
+      /> */}
+      <img
+        src="/images/show-case/cta/bg.png"
+        alt="bg"
+        id="bg"
+        className="absolute top-[50%] translate-y-[-50%] left-0 size-full object-contain animate-pulse"
       />
+
       <div className="relative text-center z-[2] flex flex-col items-center myContainer lg:w-[50%] lg:pt-[11.4583333333vw] lg:pb-[6.25vw] sm:py-[180px] py-[120px]">
         <h2
+          style={{
+            textShadow:
+              "rgba(0, 0, 0, 1) 6px -10px 10px, rgba(0, 0, 0, 0.7) -4px 4px 10px",
+            WebkitTextStroke: "1px black", // Thicker stroke for better contrast
+          }}
           data-aos="fade-up"
-          className="text-white font-medium tracking-tighter"
+          className="text-white font-medium tracking-tighter backdrop-blur-[1px]"
         >
           Want to turn your website into your most valuable asset?
         </h2>

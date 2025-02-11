@@ -19,7 +19,6 @@ const SinglePage = () => {
         <DynamicContent />
         <Review />
         <ExploreMore />
-        <Cta />
       </section>
     </>
   );
