@@ -26,7 +26,7 @@ const Cta = () => {
             WebkitTextStroke: "1px black", // Thicker stroke for better contrast
           }}
           data-aos="fade-up"
-          className="text-white font-medium tracking-tighter backdrop-blur-[1px]"
+          className="text-white tracking-tighter backdrop-blur-[1px]"
         >
           Want to turn your website into your most valuable asset?
         </h2>
