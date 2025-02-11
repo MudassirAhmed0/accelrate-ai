@@ -13,7 +13,7 @@ import DropDown from "./dropdown/DropDown";
 const navLinks = [
   {
     title: "Home",
-    link: "/",
+    link: "#",
   },
   {
     title: "services",
@@ -21,25 +21,25 @@ const navLinks = [
   },
   {
     title: "Expertise",
-    link: "/showcase",
+    link: "#",
   },
 
   {
     title: "Case Studies",
-    link: "/",
+    link: "/showcase",
   },
 
   {
     title: "Blogs",
-    link: "/",
+    link: "#",
   },
   {
     title: "Careers",
-    link: "/",
+    link: "#",
   },
   {
     title: "contact",
-    link: "/",
+    link: "#",
   },
 ];
 const Header = () => {

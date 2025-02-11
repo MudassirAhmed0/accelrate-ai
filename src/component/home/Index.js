@@ -23,7 +23,7 @@ const HomePage = ({ variant }) => {
       <Expertise variant={variant} />
       <VideoTestimonials
         heading={"In our client's words"}
-        headingTag={"The Journey with us in one line"}
+        headingTag={"The Journey with us"}
         variant={variant}
         id={"testimonials"}
       />
