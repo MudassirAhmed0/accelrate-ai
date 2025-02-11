@@ -105,7 +105,7 @@ const Expertise = ({ variant }) => {
         className="myContainer text-center text-black mx-auto"
         data-aos="fade-up"
       >
-        Tech stack expertise
+        Built on Best-in-Class Technology
       </h2>
       <div className="lg:mt-[6.25vw] mt-[40px] flex flex-col">
         <Marquee speed={120} className="flex">

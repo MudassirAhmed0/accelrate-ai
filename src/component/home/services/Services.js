@@ -15,21 +15,16 @@ const services = [
     tag: ["AI that speaks human", "so you don’t have to repeat yourself."],
   },
   {
-    title: "Business Process Automation & Orchestration",
-    tag: ["Delegate to AI — automate the mundane", "focus on growth."],
-  },
-
-  {
-    title: "Advanced Data Intelligence & Automation",
-    tag: ["Actionable insights", "minus the analysis paralysis."],
+    title: "Workflow & Business Process Automation",
+    tag: ["Delegate to AI", "one task at a time."],
   },
   {
-    title: "Scalable & AI-Integrated Web Solutions",
-    tag: ["Smart websites that don’t just sit pretty", "they convert."],
+    title: "AI Consulting & Business Transformation",
+    tag: ["Your AI Playbook:", "From Guesswork to Game-Changer"],
   },
   {
-    title: "E-commerce Automation & Secure Payment Systems",
-    tag: ["Because abandoned carts", "don’t belong in your business model."],
+    title: "Scalable Web Design & Development",
+    tag: ["Smart websites", "that don’t just sit pretty."],
   },
 ];
 

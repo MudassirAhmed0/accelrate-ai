@@ -60,7 +60,7 @@ const Card = ({ data }) => {
   return (
     <div
       ref={cardRef}
-      className="sm:border-[1px] border-[0.23255813953vw] border-[#B8A56733] rounded-[20px] lg:py-[40px] lg:px-[1.5625vw] sm:p-[30px] p-[6.51162790698vw] flex flex-col lg:gap-y-[4.32291666667vw] sm:gap-y-[60px] gap-y-[6.97674418605vw] lg:w-[20vw] sm:w-[47%] w-full"
+      className="sm:border-[1px] border-[0.23255813953vw] border-[#B8A56733] rounded-[20px] lg:py-[40px] lg:px-[1.5625vw] sm:p-[30px] p-[6.51162790698vw] flex flex-col lg:gap-y-[4.32291666667vw] sm:gap-y-[60px] gap-y-[6.97674418605vw] lg:w-[16vw] w-[47%]"
     >
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap items-baseline lg:gap-[0.52083333333vw] sm:gap-[5px] gap-[1.16279069767vw]">

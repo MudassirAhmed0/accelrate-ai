@@ -43,7 +43,7 @@ const cardVideos = [
 ];
 
 const videoUrls = cardVideos.map((item) => item.src);
-const VideoTestimonials = ({ heading, id }) => {
+const VideoTestimonials = ({ heading, headingTag, id }) => {
   const { isDesktop } = useResponsivness();
   const [toggler, setToggler] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);
@@ -103,12 +103,12 @@ const VideoTestimonials = ({ heading, id }) => {
       >
         <div
           data-aos="fade-up"
-          className="lg:w-[40%] lg:px-[40px] lg:py-[unset] px-[2.79069767442vw] pt-[64px] pb-[40px] flex flex-col justify-center"
+          className="lg:w-[47%] lg:px-[40px] lg:py-[unset] px-[2.79069767442vw] pt-[64px] pb-[40px] flex flex-col justify-center"
         >
           <div className="flex items-center gap-x-[8px]">
             <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
             <span className="text22 uppercase font-medium">
-              Nos produits & services
+              {headingTag ? headingTag : " Nos produits & services"}
             </span>
           </div>
           <h4 className="text70 font-bold poppins text-black">{heading}</h4>

@@ -12,30 +12,34 @@ import DropDown from "./dropdown/DropDown";
 
 const navLinks = [
   {
-    title: "about",
-    link: "/#about",
+    title: "Home",
+    link: "/",
   },
   {
     title: "services",
     dropDown: true,
   },
   {
-    title: "Show case",
+    title: "Expertise",
     link: "/showcase",
   },
 
   {
-    title: "Tech stack",
-    link: "/#techstack",
+    title: "Case Studies",
+    link: "/",
   },
 
   {
-    title: "Testimonials",
-    link: "/#testimonials",
+    title: "Blogs",
+    link: "/",
+  },
+  {
+    title: "Careers",
+    link: "/",
   },
   {
     title: "contact",
-    link: "/#contact",
+    link: "/",
   },
 ];
 const Header = () => {
@@ -153,7 +157,7 @@ const Header = () => {
             href={"/#hero"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink lg:text20 mtext14 relative z-[2]"
           >
-            <span>The Growth Accelerator</span>
+            <span>The Accelerate-AI</span>
           </Link>
           <nav
             ref={sideBarRef}
@@ -167,7 +171,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           >
             <Link
               onClick={toggleMenu}
-              href={"/#contact"}
+              href={"/"}
               className="lg:hidden grow-[1] inline-flex lg:text20 mtext18 lg:gap-[0.41666666666vw] gap-[5px] items-end relative"
             >
               <span className="normal-case group-hover:translate-x-[1.171875vw]">
@@ -198,7 +202,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
                       className={`item
                         ${
                           navLink.dropDown ? "group/dropDown" : ""
-                        }  cursor-pointer`}
+                        }  cursor-pointer flex flex-col`}
                     >
                       <div className="flex items-center lg:gap-x-[0.55555555555vw] after:hidden lg:after:block afterLineHover relative z-[2]">
                         {navLink.title}
@@ -260,7 +264,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           </nav>
           <div className="contactLink overflow-hidden hidden lg:block">
             <Link
-              href={"#contact"}
+              href={"/"}
               className="inline-flex lg:text20 lg:gap-[0.41666666666vw] items-center group relative overflow-hidden after:bg-white after:w-full after:h-[1px] after:absolute after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-[1] after:transition-transform after:duration-[600ms] after:ease-[cubic-bezier(0.85,0,0.15,1)] after:origin-top-left"
             >
               <span className="absolute transform group-hover:translate-x-0 group-hover:translate-y-0 translate-x-[-125%] translate-y-[50%] group-hover:opacity-[1] opacity-[0] transition-all duration-[700ms] ease-[cubic-bezier(0.52,0,0,1)]">
