@@ -107,7 +107,7 @@ const VideoTestimonials = ({ heading, headingTag, id }) => {
         >
           <div className="flex items-center gap-x-[8px]">
             <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
-            <span className="text22 uppercase font-medium">
+            <span className="text22 capitalize font-medium">
               {headingTag ? headingTag : " Nos produits & services"}
             </span>
           </div>

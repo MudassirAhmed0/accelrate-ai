@@ -3,11 +3,11 @@ import Tabs from "./tabs/Tabs";
 import FeatureCards from "./feature-cards/FeatureCards";
 import RegularCards from "./regular-cards/RegularCards";
 
-const TabsSections = () => {
+const TabsSections = ({tabs}) => {
   return (
     <section className="bg-black text-white py1">
       <div className="myContainer">
-        <Tabs />
+        <Tabs  tabs={tabs}/>
         <div className="flex flex-col lg:mt-[3.125vw] mt-[30px]">
           <FeatureCards />
           <RegularCards />

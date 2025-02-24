@@ -1,5 +1,7 @@
 "use client";
 import LinkBtn from "@/component/common/buttons/LinkBtn";
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 import useAos from "@/hooks/useAos";
 import useResponsivness from "@/hooks/useResponsivness";
 import { useGSAP } from "@gsap/react";
@@ -39,7 +41,7 @@ const navLinks = [
   },
   {
     title: "contact",
-    link: "#",
+    link: "/#contact",
   },
 ];
 const Header = () => {
@@ -146,6 +148,24 @@ const Header = () => {
       }
     }
   };
+
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis({
+      
+      smoothWheel: true,
+      smoothTouch: true, // Ensure touchpad support
+      gestureOrientation: "both", // Supports both vertical & horizontal gestures
+    });
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <header
       ref={header}
@@ -171,7 +191,7 @@ fullSvhcm lg:static lg:!size-[unset] bg-[#101010] lg:bg-transparent"
           >
             <Link
               onClick={toggleMenu}
-              href={"/"}
+              href={"/#contact"}
               className="lg:hidden grow-[1] inline-flex lg:text20 mtext18 lg:gap-[0.41666666666vw] gap-[5px] items-end relative"
             >
               <span className="normal-case group-hover:translate-x-[1.171875vw]">
