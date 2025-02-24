@@ -10,12 +10,12 @@ const Card = ({ setToggler, toggler, cardVideo, setSlideIndex, index }) => {
           setSlideIndex(index);
           setToggler(!toggler);
         }}
-        className="group cursor-pointer text-white testimonialCard relative min-h-full w-[300px] min-w-[300px] sm:w-[350px] sm:min-w-[350px] lg:w-[22vw] lg:min-w-[22vw] rounded-[20px] text-light p-[1.5625vw] whitespace-normal overflow-hidden"
+        className="shadow-2xl border-2 border-white group cursor-pointer text-white testimonialCard relative min-h-full w-[400px] min-w-[400px] sm:w-[550px] sm:min-w-[550px] lg:w-[50vw] lg:min-w-[50vw] rounded-[20px] text-light p-[1.5625vw] whitespace-normal overflow-hidden"
       >
         <div className="absolute inset-0 size-full">
           {/* <span className="absolute inset-0 size-full z-[1] bg-black bg-opacity-[0.2]"></span> */}
-          <div className="absolute z-[1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
-            <BsPlayCircleFill />
+          <div className="shadow-2xl overflow-hidden bg-black rounded-full absolute z-[1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
+            <BsPlayCircleFill className="border-[5px] border-black shadow-2xl rounded-full" />
           </div>
           <video
             src={cardVideo.src}

@@ -31,16 +31,16 @@ const FeatureCard = () => {
               />
             </div>
           </div>
-          <p className="lg:text22 mtext16 mt30">
+          <p className="lg:text24 mtext20 mt30">
             Establish Leeto as the #1 reference in the CSE support market.
           </p>
         </div>
-        <div className="flex lg:gap-x-[0.9375vw] gap-x-[12px] items-end font-medium lg:mt-[3.125vw] mt-[30px]">
+        {/* <div className="flex lg:gap-x-[0.9375vw] gap-x-[12px] items-end font-medium lg:mt-[3.125vw] mt-[30px]">
           <span className="lg:text-[8vw] lg:leading-[6vw] text-[64px] leading-[54px]">
             3+
           </span>
           <span className="lg:text18 mtext14">Months of collaboration</span>
-        </div>
+        </div> */}
       </div>
     </Link>
   );

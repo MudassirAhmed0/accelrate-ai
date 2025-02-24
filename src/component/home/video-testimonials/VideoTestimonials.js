@@ -13,32 +13,32 @@ gsap.registerPlugin(ScrollTrigger);
 const cardVideos = [
   {
     src: "/videos/home-hero.mp4",
-    poster: "/images/testimonials/sample2.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 
   {
     src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-    poster: "/images/testimonials/sample3.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 
   {
     src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-    poster: "/images/testimonials/sample2.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 
   {
     src: "/videos/home-hero.mp4",
-    poster: "/images/testimonials/sample3.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 
   {
     src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-    poster: "/images/testimonials/sample2.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 
   {
     src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-    poster: "/images/testimonials/sample3.jpg",
+    poster: "/images/testimonials/thumbnail.jpg",
   },
 ];
 
