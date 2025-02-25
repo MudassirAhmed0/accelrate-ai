@@ -341,10 +341,25 @@ input[type="number"] {
 .gradient2 {
   background: linear-gradient(135deg, #0b0252, #241180, #41438c);
 }
-.case-details_content h2 {
+.case_details_content div {
+  @apply flex flex-col gap-2;
+}
+.case_details_content h2 {
   @apply lg:text40 mtext32 font-medium tracking-tighter;
 }
-.case-details_content a {
+.case_details_content h3 {
+  @apply lg:text38 mtext30 font-medium tracking-tighter;
+}
+.case_details_content h4 {
+  @apply lg:text35 mtext28 font-medium tracking-tighter;
+}
+.case_details_content h5 {
+  @apply lg:text30 mtext22 font-medium tracking-tighter;
+}
+.case_details_content h6 {
+  @apply lg:text26 mtext22 font-medium tracking-tighter;
+}
+.case_details_content a {
   @apply underline underline-offset-2 font-bold hover:opacity-[0.7] hover:text-[#3F484A] transition-all duration-500;
 }
 .index-module_type__E-SaG {

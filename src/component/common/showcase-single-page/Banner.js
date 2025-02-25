@@ -1,17 +1,13 @@
 import Image from "next/image";
 import React from "react";
 
-const Banner = () => {
+const Banner = ({ bannerImage }) => {
   return (
     <div
       data-aos="fade"
       className="aspect-video relative rounded-[10px] overflow-hidden w-full"
     >
-      <Image
-        fill
-        alt="banner"
-        src={"/images/show-case/feature-cards/1/banner/main.webp"}
-      />
+      <Image fill alt="banner" unoptimized src={bannerImage.image} />
     </div>
   );
 };

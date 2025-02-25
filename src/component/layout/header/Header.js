@@ -15,7 +15,7 @@ import DropDown from "./dropdown/DropDown";
 const navLinks = [
   {
     title: "Home",
-    link: "#",
+    link: "/",
   },
   {
     title: "services",
@@ -152,7 +152,6 @@ const Header = () => {
   useEffect(() => {
     // Initialize Lenis
     const lenis = new Lenis({
-      
       smoothWheel: true,
       smoothTouch: true, // Ensure touchpad support
       gestureOrientation: "both", // Supports both vertical & horizontal gestures

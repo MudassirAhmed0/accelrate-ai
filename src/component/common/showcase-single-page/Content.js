@@ -1,25 +1,25 @@
 import React from "react";
 import { IoMdArrowUp } from "react-icons/io";
 import Link from "next/link";
-import LinkBtn from "../common/buttons/LinkBtn";
+import LinkBtn from "../buttons/LinkBtn";
 
-const Content = () => {
+const Content = ({ content }) => {
   return (
     <div className="py1">
-      <img
+      {/* <img
         data-aos="fade"
         src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/673b5cc930b7152407c39d0e_logo-leeto-white.svg"
         alt="logo"
         className="w-auto lg:h-[3.496vw] sm:h-[48px] h-[32px] object-contain"
-      />
+      /> */}
       <h1
         data-aos="fade-up"
-        className="text60 font-medium tracking-tighter lg:w-[60%] lg:my-[3.125vw] my-[40px]"
+        className="lg:text60 mtext32 font-medium tracking-tighter lg:w-[90%] lg:my-[3.125vw] my-[40px]"
       >
-        Establish Leeto as the #1 reference in the CSE support market.
+        {content.heading}
       </h1>
       <div className="mt30 w-full poppins flex lg:items-end items-center justify-between lg:gap-[1.5625vw] gap-[20px] flex-wrap">
-        <div className="lg:text60 mtext32 flex lg:flex-row flex-col gap-y-[24px] lg:gap-x-[6.25vw] w-full lg:w-[unset]">
+        {/* <div className="lg:text60 mtext32 flex lg:flex-row flex-col gap-y-[24px] lg:gap-x-[6.25vw] w-full lg:w-[unset]">
           <div
             data-aos="fade-right"
             data-aos-delay="50"
@@ -48,7 +48,7 @@ const Content = () => {
               CMS Collections
             </span>
           </div>
-        </div>
+        </div> */}
         <span className="h-[1px] bg-white grow-[1] lg:mb-[0.625vw] opacity-[0.2]"></span>
 
         <LinkBtn text={"Visit website"} link={"/"} />

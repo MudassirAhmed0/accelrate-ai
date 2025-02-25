@@ -3,7 +3,7 @@ import Banner from "./Banner";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 
-const RegularCard = ({cardData}) => {
+const RegularCard = ({ cardData }) => {
   return (
     <Link
       data-aos="fade"
@@ -13,7 +13,7 @@ const RegularCard = ({cardData}) => {
       <Banner images={cardData?.images} />
       <div className="w-full">
         <div>
-          <p className="lg:text20 mtext16 mt30">
+          <p className="lg:text20 mtext16 mt30 group-hover:underline">
             {cardData?.desc}
           </p>
         </div>
@@ -28,7 +28,7 @@ const RegularCard = ({cardData}) => {
             </span>
           </div> */}
           <span className="h-[1px] bg-white grow-[1] lg:mb-[0.625vw] opacity-[0.2]"></span>
-          <div className="opacity-[0.7] ml-auto lg:mb-[-0.3125vw] lg:text18 mtext16 lg:leading-[2.5vw] flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] font-medium">
+          <div className="opacity-[0.7] group-hover:opacity-100 ml-auto lg:mb-[-0.3125vw] lg:text18 mtext16 lg:leading-[2.5vw] flex items-center lg:gap-x-[0.3125vw] gap-x-[4px] font-medium">
             Read case
             <IoMdArrowForward />
           </div>

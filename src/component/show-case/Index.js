@@ -34,7 +34,7 @@ const cardsData = [
   {
     images: [
       "https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A6bd7f00d-c906-4992-898f-c97bd81b0a65%3AScreenshot_2025-02-25_at_10.24.53_AM.png?table=block&id=1a56ef92-20db-80be-87ce-c16676b7f608&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A7b98e9cf-4d9e-4f47-8b44-ce0bc161cf9e%3AScreenshot_2025-02-13_at_6.49.10_AM.png?table=block&id=1996ef92-20db-80b1-b00b-f9fdd0d14bbd&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
       "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
@@ -43,9 +43,10 @@ const cardsData = [
   },
   {
     images: [
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A60f07eea-230e-4f04-a3cb-e326062795fa%3AScreenshot_2025-02-18_at_10.32.31_PM.png?table=block&id=19e6ef92-20db-809a-baa9-c399daab9f3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
       "https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A2eb3a55b-403c-4a4c-a79b-9fa2d523bc2f%3AAI_Voice_Agents__Bots_(1).png?table=block&id=1a26ef92-20db-808e-ab87-c3a9b4783be1&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://images.pexels.com/photos/6153344/pexels-photo-6153344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A0940561b-14af-4635-9fc8-6581275e4a16%3AScreenshot_2025-02-25_at_10.15.57_AM.png?table=block&id=1a56ef92-20db-80f7-85da-ec1235556c93&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
+      "https://images.pexels.com/photos/5905960/pexels-photo-5905960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ],
     desc: "From Confusion to Clarity: How AI Empowered Student Engagement!",
     featured: true,
@@ -53,7 +54,7 @@ const cardsData = [
   {
     images: [
       "https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A1fb1d694-e3ed-4c21-9a96-9cbf0e23049d%3AScreenshot_2025-02-25_at_11.54.27_AM.png?table=block&id=1a56ef92-20db-800e-9b8b-db14ea134e30&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
       // "https://www.pexels.com/photo/person-shopping-online-7679865/",
       // "https://www.pexels.com/photo/man-in-white-shirt-standing-beside-woman-in-white-shirt-6169641/",
     ],

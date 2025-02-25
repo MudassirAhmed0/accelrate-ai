@@ -1,102 +1,76 @@
+import LinkBtn from "@/component/common/buttons/LinkBtn";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
     <footer className="bg-[#111] lg:py-[2.5vw] sm:py-[60px] py-[40px] lg:text20 mtext18 text-white">
-      <div className="myContainer">
-        <div className="flex flex-wrap gap-[20px] items-center sm:justify-between justify-center">
-          <ul className="flex flex-wrap lg:justify-start justify-between items-center gap-[30px]">
-            <li className="hover:text-gray-500">
-              <a href="/">Terms of service</a>
+      <div className="myContainer flex flex-wrap items-center justify-between lg:gap-[3.125vw] gap-9 pb-9 border-b">
+        <div className="lg:w-[30vw] pb-9 border-b lg:pb-0 lg:border-0">
+          <div className="lg:w-[30vw] sm:w-[70%] w-full">
+            <Link href={"/"}>
+              <div className="text-[8vw] sm:text-[5vw] lg:text-[2vw] flex items-center font-semibold logo modica text-white">
+                <img
+                  className="inline-block lg:w-[4.5vw] sm:w-[12vw] w-[22vw] letter"
+                  src="/images/icons/thunder.svg"
+                />
+                {[
+                  // "A",
+                  "C",
+                  "C",
+                  "E",
+                  "L",
+                  "E",
+                  "R",
+                  "A",
+                  "T",
+                  "E",
+                  "-",
+                  "A",
+                  "I",
+                ].map((letter, index) => (
+                  <span
+                    key={index}
+                    className={`letter inline-block ${
+                      letter == "-" ? " poppins " : ""
+                    }`}
+                  >
+                    {letter}
+                  </span>
+                ))}
+              </div>
+            </Link>
+            <p className="lg:text22 mtext18 mt20">
+              Your Partner in AI & Automation for Building Scalable, Next-Gen
+              Digital Experiences
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row justify-center lg:gap-12 sm:gap-12 gap-4 lg:text30 sm:mtext32 mtext24 w-full lg:w-[unset] pb-9 border-b lg:pb-0 lg:border-0">
+          <ul className="flex flex-wrap flex-col sm:flex-row lg:flex-col sm:justify-between lg:gap-y-[1.25vw] lg:gap-12 sm:gap-12 gap-4">
+            <li className="afterLineHover">
+              <Link href={"/"}>Home</Link>
             </li>
-            <li className="hover:text-gray-500">
-              <a href="/">Privacy Policy</a>
+            <li className="afterLineHover">
+              <Link href={"/"}>Services</Link>
             </li>
           </ul>
-          <div className="flex justify-start sm:justify-start xl:justify-end space-x-6">
-            <div>
-              <a href="/">
-                <svg
-                  aria-label="Twitter"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-twitter"
-                >
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a href="/">
-                <svg
-                  aria-label="Instagram"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-instagram"
-                >
-                  <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a href="/">
-                <svg
-                  aria-label="Dribble"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="icon icon-tabler icon-tabler-dribbble"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#fff"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <circle cx={12} cy={12} r={9} />
-                  <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />
-                  <path d="M6.4 19c3.5-3.5 6-6.5 14.5-6.4" />
-                  <path d="M3.1 10.75c5 0 9.814-.38 15.314-5" />
-                </svg>
-              </a>
-            </div>
-            <div>
-              <a href="/">
-                <svg
-                  aria-label="Github"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#fff"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="feather feather-github"
-                >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-              </a>
-            </div>
-          </div>
+          <ul className="flex flex-wrap flex-col sm:flex-row lg:flex-col sm:justify-between lg:gap-y-[1.25vw] lg:gap-12 sm:gap-12 gap-4">
+            <li className="afterLineHover">
+              <Link href={"/"}>Case Studies</Link>
+            </li>
+            <li className="afterLineHover">
+              <Link href={"/"}>Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="w-full lg:w-[unset] flex flex-wrap lg:items-end items-center justify-between lg:gap-[0.625vw] gap-[12px]">
+          <p className="lg:text30 sm:mtext32 mtext24 w-full">
+            Stay ahead of the curve!
+          </p>
+          <span className="h-[1px] bg-white grow-[1] lg:mb-[0.625vw] opacity-[0.2]"></span>
+
+          <LinkBtn text={"Contact Us Now"} link={"/#contact"} />
         </div>
       </div>
     </footer>
