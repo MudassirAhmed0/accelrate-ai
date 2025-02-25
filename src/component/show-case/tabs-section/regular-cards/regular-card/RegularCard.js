@@ -3,18 +3,18 @@ import Banner from "./Banner";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 
-const RegularCard = () => {
+const RegularCard = ({cardData}) => {
   return (
     <Link
       data-aos="fade"
       href={"/"}
       className="group sm:w-[50%] w-full flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border border-black rounded-[10px] hover:border-[#f8f8f81a] transition-all duration-300"
     >
-      <Banner />
+      <Banner images={cardData?.images} />
       <div className="w-full">
         <div>
           <p className="lg:text20 mtext16 mt30">
-            Rich text component editing platform: a tailored solution for Septeo
+            {cardData?.desc}
           </p>
         </div>
 

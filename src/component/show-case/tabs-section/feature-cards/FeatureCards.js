@@ -1,12 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
 import FeatureCard from "./feature-card/FeatureCard";
 
-const FeatureCards = () => {
+const FeatureCards = ({ cardsData}) => {
   return (
     <div className="w-full flex flex-col lg:gap-y-[3.125vw] sm:gap-y-[40px] gap-y-[20px]">
-      <FeatureCard />
+      {
+        cardsData.map((cardData,index) => (
+          index <2 &&   <Fragment key={index}>
+          <FeatureCard  images={cardData.images} desc={cardData.desc} />
+          {index ==0 &&
       <span className="w-full h-[1px] bg-[#f8f8f81a]"></span>
-      <FeatureCard />
+          
+          }
+          </Fragment>)
+        )
+      }
+       
     </div>
   );
 };
