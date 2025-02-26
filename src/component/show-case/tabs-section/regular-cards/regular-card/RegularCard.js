@@ -7,8 +7,8 @@ const RegularCard = ({ cardData }) => {
   return (
     <Link
       data-aos="fade"
-      href={"/"}
-      className="group sm:w-[50%] w-full flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border border-black rounded-[10px] hover:border-[#f8f8f81a] transition-all duration-300"
+      href={`/showcase/${cardData.slug}`}
+      className="group text-white sm:w-[50%] w-full flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border border-black rounded-[10px] hover:border-[#f8f8f81a] transition-all duration-300"
     >
       <Banner images={cardData?.images} />
       <div className="w-full">

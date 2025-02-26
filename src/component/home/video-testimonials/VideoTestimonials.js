@@ -8,42 +8,12 @@ import Card from "./Card";
 import FsLightbox from "fslightbox-react";
 import useResponsivness from "@/hooks/useResponsivness";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import RegularCard from "@/component/show-case/tabs-section/regular-cards/regular-card/RegularCard";
 // Register GSAP Plugin
 gsap.registerPlugin(ScrollTrigger);
-const cardVideos = [
-  {
-    src: "/videos/home-hero.mp4",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
 
-  {
-    src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
-
-  {
-    src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
-
-  {
-    src: "/videos/home-hero.mp4",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
-
-  {
-    src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
-
-  {
-    src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
-    poster: "/images/testimonials/thumbnail.jpg",
-  },
-];
-
-const videoUrls = cardVideos.map((item) => item.src);
-const VideoTestimonials = ({ heading, headingTag, id }) => {
+const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
+  const videoUrls = data.map((item) => item.src);
   const { isDesktop } = useResponsivness();
   const [toggler, setToggler] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);
@@ -107,9 +77,7 @@ const VideoTestimonials = ({ heading, headingTag, id }) => {
         >
           <div className="flex items-center gap-x-[8px]">
             <span className="block size-[5px] rounded-full bg-black mb-[2px]"></span>
-            <span className="text22 capitalize font-medium">
-              {headingTag ? headingTag : " Nos produits & services"}
-            </span>
+            <span className="text22 capitalize font-medium">{headingTag}</span>
           </div>
           <h4 className="text70 font-bold poppins text-black">{heading}</h4>
         </div>
@@ -119,16 +87,23 @@ const VideoTestimonials = ({ heading, headingTag, id }) => {
           id={`cardsWrapper`}
         >
           <div className="w-full lg:w-[unset] overflow-auto px-[60px] lg:px-[unset] lg:overFlowUnset hideScroll min-h-[60%] flex lg:gap-x-[1.5625vw] gap-x-[20px] items-stretch lg:whitespace-nowrap">
-            {cardVideos.map((cardVideo, index) => (
-              <Card
-                toggler={toggler}
-                setToggler={setToggler}
-                setSlideIndex={setSlideIndex}
-                cardVideo={cardVideo}
-                key={index}
-                index={index + 1}
-              />
-            ))}
+            {videoCard
+              ? data?.map((cardVideo, index) => (
+                  <Card
+                    toggler={toggler}
+                    setToggler={setToggler}
+                    setSlideIndex={setSlideIndex}
+                    cardVideo={cardVideo}
+                    key={index}
+                    index={index + 1}
+                  />
+                ))
+              : data?.map(
+                  (cardData, index) =>
+                    cardData.featured || (
+                      <RegularCard key={index} cardData={cardData} />
+                    )
+                )}
           </div>
         </div>
       </section>

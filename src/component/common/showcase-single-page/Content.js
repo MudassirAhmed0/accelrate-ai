@@ -3,7 +3,7 @@ import { IoMdArrowUp } from "react-icons/io";
 import Link from "next/link";
 import LinkBtn from "../buttons/LinkBtn";
 
-const Content = ({ content }) => {
+const Content = ({ pageData }) => {
   return (
     <div className="py1">
       {/* <img
@@ -16,7 +16,7 @@ const Content = ({ content }) => {
         data-aos="fade-up"
         className="lg:text60 mtext32 font-medium tracking-tighter lg:w-[90%] lg:my-[3.125vw] my-[40px]"
       >
-        {content.heading}
+        {pageData?.desc}
       </h1>
       <div className="mt30 w-full poppins flex lg:items-end items-center justify-between lg:gap-[1.5625vw] gap-[20px] flex-wrap">
         {/* <div className="lg:text60 mtext32 flex lg:flex-row flex-col gap-y-[24px] lg:gap-x-[6.25vw] w-full lg:w-[unset]">

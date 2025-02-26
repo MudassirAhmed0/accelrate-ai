@@ -1,6 +1,6 @@
 import React from "react";
 
-const DynamicContent = ({ dynamicContent }) => {
+const DynamicContent = ({ pageData }) => {
   const content = `
   <ul role="list">
     <li><strong>Industry:</strong> B2B Technology & SaaS</li>
@@ -95,10 +95,12 @@ const DynamicContent = ({ dynamicContent }) => {
             </span>
           </div>
         </div> */}
-        <div
-          dangerouslySetInnerHTML={{ __html: dynamicContent.content }}
-          className="text-black defaultList lg:text20 mtext16 case_details_content flex flex-col lg:gap-y-[1.25vw] gap-y-[20px]"
-        ></div>
+        {pageData?.content && (
+          <div
+            dangerouslySetInnerHTML={{ __html: pageData?.content }}
+            className="text-black defaultList lg:text20 mtext16 case_details_content flex flex-col lg:gap-y-[1.25vw] gap-y-[20px]"
+          ></div>
+        )}
       </div>
     </section>
   );

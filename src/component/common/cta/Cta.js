@@ -19,6 +19,23 @@ const Cta = () => {
       />
 
       <div className="relative text-center z-[2] flex flex-col items-center myContainer lg:w-[70%] lg:pt-[11.4583333333vw] lg:pb-[6.25vw] sm:py-[180px] py-[120px]">
+        <div className="relative w-full h-[80vh] lg:h-[70vh] rounded-xl overflow-hidden p-6 lg:p-8 border border-neutral-500">
+          <span className="absolute top-0 left-0 size-full bg-black opacity-[0.5]"></span>
+          <video
+            style={{
+              boxShadow:
+                "rgba(255, 255, 255, 0.4) 2px -5px 20px, rgba(255, 255, 255, 0.4) -2px 5px 20px",
+            }}
+            src="/videos/home-hero.mp4"
+            muted
+            loop
+            autoPlay
+            playsInline
+            className="object-cover size-full rounded-xl overflow-hidden border border-white"
+            preload="auto"
+            loading="lazy"
+          ></video>
+        </div>
         <h2
           style={{
             textShadow:
@@ -26,9 +43,10 @@ const Cta = () => {
             WebkitTextStroke: "1px black", // Thicker stroke for better contrast
           }}
           data-aos="fade-up"
-          className="text-white tracking-tighter backdrop-blur-[1px]"
+          className="text-white tracking-tighter backdrop-blur-[1px] mt30"
         >
-     Is your business ready for a tech evolution? Let’s automate, innovate, and accelerate together.
+          Is your business ready for a tech evolution? Let’s automate, innovate,
+          and accelerate together.
         </h2>
         <Link
           data-aos="fade"

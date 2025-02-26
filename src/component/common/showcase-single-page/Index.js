@@ -7,17 +7,17 @@ import Review from "./Review";
 import ExploreMore from "./explore-more/ExploreMore";
 import Cta from "../cta/Cta";
 
-const SinglePage = ({ content, bannerImage, dynamicContent, review }) => {
+const SinglePage = ({ pageData }) => {
   return (
     <>
       <section className="bg-black text-white py1 pb-[unset]">
-        <BreadCrumbs />
+        <BreadCrumbs pageData={pageData} />
         <div className="myContainer">
-          <Content content={content} />
-          <Banner bannerImage={bannerImage} />
+          <Content pageData={pageData} />
+          <Banner pageData={pageData} />
         </div>
-        <DynamicContent dynamicContent={dynamicContent} />
-        <Review review={review} />
+        <DynamicContent pageData={pageData} />
+        <Review pageData={pageData} />
         <ExploreMore />
       </section>
     </>

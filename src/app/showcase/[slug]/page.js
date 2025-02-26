@@ -1,18 +1,22 @@
-import { caseStudiesData } from '@/component/show-case/Index'
-import React from 'react'
+import Loading from "@/app/loading";
+import SinglePage from "@/component/common/showcase-single-page/Index";
+import Layout from "@/component/layout/Index";
+import { caseStudiesData } from "@/component/show-case/Index";
+import React from "react";
 
+const page = async ({ params }) => {
+  const slug = (await params).slug;
 
- 
+  // get the data for the post
+  const pageData = caseStudiesData.find((caseStudy) => caseStudy.slug === slug);
+  return (
+    <>
+      <Loading />
+      <Layout>
+        <SinglePage pageData={pageData} />
+      </Layout>
+    </>
+  );
+};
 
-const page = async ({params}) => {
-    const slug = (await params).slug
-
-    // get the data for the post
-    const pageData = caseStudiesData.find((caseStudy) => caseStudy.slug === slug)
-    return <div>My Post: {pageData.desc}
-    
-        <img src={pageData.images[0]}/>
-    </div>
-}
-
-export default page
+export default page;

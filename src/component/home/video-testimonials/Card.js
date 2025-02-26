@@ -14,8 +14,14 @@ const Card = ({ setToggler, toggler, cardVideo, setSlideIndex, index }) => {
       >
         <div className="absolute inset-0 size-full">
           {/* <span className="absolute inset-0 size-full z-[1] bg-black bg-opacity-[0.2]"></span> */}
-          <div className="shadow-2xl overflow-hidden bg-black rounded-full absolute z-[1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text60 group-hover:scale-[1.1] transition-all duration-500">
-            <BsPlayCircleFill className="border-[5px] border-black shadow-2xl rounded-full" />
+          <div
+            style={{
+              boxShadow: " 0 3px 10px rgb(255 255 255 / 0.2)",
+            }}
+            className="flex items-center gap-4 border-white border-2 py-2 px-6 shadow-2xl overflow-hidden bg-black rounded-full absolute z-[1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text60 group-hover:scale-[1.06] group-hover:text-black group-hover:bg-white  transition-all duration-500 ease-out"
+          >
+            <BsPlayCircleFill />
+            <span>play</span>
           </div>
           <video
             src={cardVideo.src}
