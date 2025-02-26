@@ -30,7 +30,7 @@ const tabs = [
   },
 ];
 
-const cardsData = [
+export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -40,6 +40,7 @@ const cardsData = [
     ],
     desc: "From Missed Opportunities to Instant Lead Engagement: How AI Appointment Booking Voice Agents Changed the Game for this B2B Technology & SaaS company!",
     featured: true,
+    slug: "from-missed-opportunities-to-instant-lead-engagement",
   },
   {
     images: [
@@ -50,6 +51,7 @@ const cardsData = [
     ],
     desc: "From Confusion to Clarity: How AI Empowered Student Engagement!",
     featured: true,
+    slug: "from-confusion-to-clarity",
   },
   {
     images: [
@@ -95,7 +97,7 @@ const ShowCasePage = () => {
   return (
     <>
       <Hero />
-      <TabsSections tabs={tabs} cardsData={cardsData} />
+      <TabsSections tabs={tabs} cardsData={caseStudiesData} />
       <VideoTestimonials
         heading={"testimonials"}
         id={"show-case-testimonials"}

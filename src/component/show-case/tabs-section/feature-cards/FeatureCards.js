@@ -7,7 +7,7 @@ const FeatureCards = ({ cardsData}) => {
       {
         cardsData.map((cardData,index) => (
           index <2 &&   <Fragment key={index}>
-          <FeatureCard  images={cardData.images} desc={cardData.desc} />
+          <FeatureCard  images={cardData.images} desc={cardData.desc} slug={cardData.slug} />
           {index ==0 &&
       <span className="w-full h-[1px] bg-[#f8f8f81a]"></span>
           
