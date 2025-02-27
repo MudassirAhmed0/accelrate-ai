@@ -11,17 +11,15 @@ import { caseStudiesData } from "@/component/show-case/Index";
 
 const cardVideos = [
   {
-    src: "/videos/home-hero.mp4",
+    src: "/videos/juan-short.mp4",
     poster: "/images/testimonials/thumbnail.jpg",
   },
-
   {
-    src: "https://youtu.be/qBXjSlkpwFk?si=Xt8kt6Uq08FbDZZU",
+    src: "/videos/seema-short.mp4",
     poster: "/images/testimonials/thumbnail.jpg",
   },
-
   {
-    src: "https://youtu.be/d9a92iJwLWg?si=HX1EL3gOecn_x1YZ",
+    src: "/videos/daniel-short.mp4",
     poster: "/images/testimonials/thumbnail.jpg",
   },
 ];

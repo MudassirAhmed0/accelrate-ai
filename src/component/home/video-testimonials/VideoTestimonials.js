@@ -19,6 +19,7 @@ const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
   const [slideIndex, setSlideIndex] = useState(1);
   const testimonialsSectionRef = useRef(null);
   const cardsWrapperRef = useRef(null);
+  const [activeVideo, setActiveVideo] = useState(null);
 
   // useGSAP(() => {
   //   if (isDesktop) {
@@ -96,6 +97,8 @@ const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
                     cardVideo={cardVideo}
                     key={index}
                     index={index + 1}
+                    activeVideo={activeVideo}
+                    setActiveVideo={setActiveVideo}
                   />
                 ))
               : data?.map(
