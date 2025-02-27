@@ -4,12 +4,12 @@ import React from "react";
 import Banner from "./Banner";
 import { IoMdArrowForward } from "react-icons/io";
 
-const FeatureCard = ({ images, desc,slug }) => {
+const FeatureCard = ({ images, desc, slug }) => {
   return (
     <Link
       data-aos="fade"
       href={`/showcase/${slug}`}
-      className="group flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border lg:border-black border-[#f8f8f81a] rounded-[10px] lg:hover:border-[#f8f8f81a] transition-all duration-300"
+      className="group flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] p-5 border lg:border-black border-[#f8f8f81a] rounded-[10px] lg:hover:border-[#f8f8f81a] transition-all duration-300"
     >
       <Banner images={images} />
       <div className="lg:grow-[.20] grow-[1] lg:border-b lg:border-[#f8f8f81a] lg:pb-[1.25vw] lg:max-w-[43.3333333333vw] lg:w-[43.3333333333vw]">

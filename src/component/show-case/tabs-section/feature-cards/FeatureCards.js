@@ -3,7 +3,7 @@ import FeatureCard from "./feature-card/FeatureCard";
 
 const FeatureCards = ({ cardsData }) => {
   return (
-    <div className="w-full flex flex-col lg:gap-y-[3.125vw] sm:gap-y-[40px] gap-y-[20px]">
+    <div className="w-full flex flex-col lg:gap-y-[3.125vw] sm:gap-y-[40px] gap-y-[20px] lg:pb-[3.125vw] sm:pb-[40px] pb-[20px]">
       {cardsData.map(
         (cardData, index) =>
           cardData.featured && (
@@ -13,9 +13,7 @@ const FeatureCards = ({ cardsData }) => {
                 desc={cardData.desc}
                 slug={cardData.slug}
               />
-              {index == 0 && (
-                <span className="w-full h-[1px] bg-[#f8f8f81a]"></span>
-              )}
+              <span className="w-full h-[1px] bg-[#f8f8f81a]"></span>
             </Fragment>
           )
       )}

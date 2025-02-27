@@ -101,7 +101,11 @@ const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
               : data?.map(
                   (cardData, index) =>
                     cardData.featured || (
-                      <RegularCard key={index} cardData={cardData} />
+                      <RegularCard
+                        key={index}
+                        cardData={cardData}
+                        fromPinSection
+                      />
                     )
                 )}
           </div>

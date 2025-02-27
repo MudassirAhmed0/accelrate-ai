@@ -3,17 +3,21 @@ import Banner from "./Banner";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 
-const RegularCard = ({ cardData }) => {
+const RegularCard = ({ cardData, fromPinSection }) => {
   return (
     <Link
       data-aos="fade"
       href={`/showcase/${cardData.slug}`}
-      className="group text-white sm:w-[50%] w-full flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] sm:p-[20px] p-[10px] border border-black rounded-[10px] hover:border-[#f8f8f81a] transition-all duration-300"
+      className={`${
+        fromPinSection
+          ? "min-w-[400px] w-[400px] sm:min-w-[500px] sm:w-[500px] lg:min-w-[unset]"
+          : "w-full"
+      } sm:w-[47%] group self-start text-white flex flex-wrap lg:flex-row flex-col lg:gap-x-[1.5625vw] lg:p-[1.5625vw] p-5 border rounded-[10px] border-[#f8f8f81a] lg:border-transparent hover:lg:border-[#f8f8f81a] transition-all duration-300`}
     >
       <Banner images={cardData?.images} />
       <div className="w-full">
         <div>
-          <p className="lg:text20 mtext16 mt30 group-hover:underline">
+          <p className="lg:text20 mtext16 mt30 group-hover:underline line-clamp-3">
             {cardData?.desc}
           </p>
         </div>
