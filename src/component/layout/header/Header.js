@@ -21,24 +21,24 @@ const navLinks = [
     title: "services",
     dropDown: true,
   },
-  {
-    title: "Expertise",
-    link: "#",
-  },
+  // {
+  //   title: "Expertise",
+  //   link: "#",
+  // },
 
   {
     title: "Case Studies",
     link: "/showcase",
   },
 
-  {
-    title: "Blogs",
-    link: "#",
-  },
-  {
-    title: "Careers",
-    link: "#",
-  },
+  // {
+  //   title: "Blogs",
+  //   link: "#",
+  // },
+  // {
+  //   title: "Careers",
+  //   link: "#",
+  // },
   {
     title: "contact",
     link: "/#contact",
