@@ -23,7 +23,7 @@ const LazyVideo = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/0w8nGZL4nWQ?autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/jGk4piCqBO8?autoplay=1&mute=1"
           frameBorder="0"
           allow="autoplay; encrypted-media"
           allowFullScreen

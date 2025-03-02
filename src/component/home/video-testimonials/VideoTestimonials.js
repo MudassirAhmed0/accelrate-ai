@@ -13,7 +13,7 @@ import RegularCard from "@/component/show-case/tabs-section/regular-cards/regula
 gsap.registerPlugin(ScrollTrigger);
 
 const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
-  const videoUrls = data.map((item) => item.src);
+  const videoUrls = data.map((item) => item. youtubeSrc );
   const { isDesktop } = useResponsivness();
   const [toggler, setToggler] = useState(false);
   const [slideIndex, setSlideIndex] = useState(1);

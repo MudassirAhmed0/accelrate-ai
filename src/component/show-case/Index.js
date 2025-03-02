@@ -30,17 +30,20 @@ const tabs = [
   },
 ];
 
+ 
+const categories=["ai-voice-agents","ai-chat-agents","workflow-automations","web-design-development","ai-consulting"] 
 export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6bd7f00d-c906-4992-898f-c97bd81b0a65%3AScreenshot_2025-02-25_at_10.24.53_AM.png?table=block&id=1a56ef92-20db-80be-87ce-c16676b7f608&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
+      "https://images.pexels.com/photos/6153344/pexels-photo-6153344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A7b98e9cf-4d9e-4f47-8b44-ce0bc161cf9e%3AScreenshot_2025-02-13_at_6.49.10_AM.png?table=block&id=1996ef92-20db-80b1-b00b-f9fdd0d14bbd&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
       "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "From Missed Opportunities to Instant Lead Engagement: How AI Appointment Booking Voice Agents Changed the Game for this B2B Technology & SaaS company!",
     featured: true,
     slug: "from-missed-opportunities-to-instant-lead-engagement",
+    category:categories[0],
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -129,14 +132,398 @@ export const caseStudiesData = [
   },
   {
     images: [
-      "https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6153344/pexels-photo-6153344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A0940561b-14af-4635-9fc8-6581275e4a16%3AScreenshot_2025-02-25_at_10.15.57_AM.png?table=block&id=1a56ef92-20db-80f7-85da-ec1235556c93&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
       "https://images.pexels.com/photos/5905960/pexels-photo-5905960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      " https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A60f07eea-230e-4f04-a3cb-e326062795fa%3AScreenshot_2025-02-18_at_10.32.31_PM.png?table=block&id=19e6ef92-20db-809a-baa9-c399daab9f3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://lh3.google.com/u/0/d/1a16CBPOJbR4vpV3T5rIwxm4ORgYoXdGh=k",
     ],
     desc: "From Confusion to Clarity: How AI Empowered Student Engagement!",
     featured: true,
     slug: "from-confusion-to-clarity",
+    category:categories[1],
+    content: `
+  <h2><strong>Client Overview</strong></h2>
+  
+  <div>
+    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
+    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
+    <p><strong>Location:</strong> Australia</p>
+    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
+    <p><strong>Tools Used:</strong> 
+      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
+      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
+      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
+      Python
+    </p>
+  </div>
+
+  <h2><strong>Challenges & Objectives</strong></h2>
+  
+  <div>
+    <h5><strong>Challenges:</strong></h5>
+    <ul>
+      <li>Manual outbound calling was inefficient and resource-intensive</li>
+      <li>Appointment scheduling required human intervention, leading to delays</li>
+      <li>Missed follow-ups resulted in lost business opportunities</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Objectives:</strong></h5>
+    <ul>
+      <li>Automate outbound sales calls to qualify and schedule appointments</li>
+      <li>Implement an AI-powered agent to handle customer inquiries</li>
+      <li>Integrate an automated follow-up mechanism for potential leads</li>
+    </ul>
+  </div>
+
+  <h2><strong>Our Solution</strong></h2>
+
+  <div>
+    <h5><strong>Technology & Tools Used:</strong></h5>
+    <ul>
+      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
+      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
+      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
+      <li>Python for custom integrations</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Implementation Process:</strong></h5>
+    <ol>
+      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
+      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
+      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
+      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
+    </ol>
+  </div>
+
+  <h2><strong>Results & Impact</strong></h2>
+
+  <div>
+    <h5><strong>Key Outcomes:</strong></h5>
+    <ul>
+      <li>Reduction in manual call handling</li>
+      <li>Increase in qualified appointment bookings</li>
+      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
+      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Client Feedback:</strong></h5>
+    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
+  </div>
+
+  <hr>
+
+  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
+`,
+    review: {
+      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
+      name: "Diat Khan",
+      info: "CEO - Remote Office, Australia",
+      logo: "/images/testimonials/profiles/2.jpeg",
+    },
+  },
+  {
+    images: [
+     "https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/6169641/pexels-photo-6169641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A1fb1d694-e3ed-4c21-9a96-9cbf0e23049d%3AScreenshot_2025-02-25_at_11.54.27_AM.png?table=block&id=1a56ef92-20db-800e-9b8b-db14ea134e30&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://lh3.google.com/u/0/d/1PVRucF6YsjJKeL5l6QGDw3Fnb3qCiZCo=k"
+    ],
+    desc: "From Manual Mishaps to Automated Excellence: Revolutionizing Purchase Order Management",
+    slug: "From-Manual-Mishaps-to-Automated",
+    category:categories[2],
+    featured: false,
+    content: `
+  <h2><strong>Client Overview</strong></h2>
+  
+  <div>
+    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
+    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
+    <p><strong>Location:</strong> Australia</p>
+    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
+    <p><strong>Tools Used:</strong> 
+      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
+      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
+      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
+      Python
+    </p>
+  </div>
+
+  <h2><strong>Challenges & Objectives</strong></h2>
+  
+  <div>
+    <h5><strong>Challenges:</strong></h5>
+    <ul>
+      <li>Manual outbound calling was inefficient and resource-intensive</li>
+      <li>Appointment scheduling required human intervention, leading to delays</li>
+      <li>Missed follow-ups resulted in lost business opportunities</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Objectives:</strong></h5>
+    <ul>
+      <li>Automate outbound sales calls to qualify and schedule appointments</li>
+      <li>Implement an AI-powered agent to handle customer inquiries</li>
+      <li>Integrate an automated follow-up mechanism for potential leads</li>
+    </ul>
+  </div>
+
+  <h2><strong>Our Solution</strong></h2>
+
+  <div>
+    <h5><strong>Technology & Tools Used:</strong></h5>
+    <ul>
+      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
+      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
+      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
+      <li>Python for custom integrations</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Implementation Process:</strong></h5>
+    <ol>
+      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
+      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
+      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
+      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
+    </ol>
+  </div>
+
+  <h2><strong>Results & Impact</strong></h2>
+
+  <div>
+    <h5><strong>Key Outcomes:</strong></h5>
+    <ul>
+      <li>Reduction in manual call handling</li>
+      <li>Increase in qualified appointment bookings</li>
+      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
+      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Client Feedback:</strong></h5>
+    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
+  </div>
+
+  <hr>
+
+  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
+`,
+    review: {
+      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
+      name: "Diat Khan",
+      info: "CEO - Remote Office, Australia",
+      logo: "/images/testimonials/profiles/2.jpeg",
+    },
+  },
+  {
+    images: [
+      "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A03c461a6-1c2f-4b1f-ae7d-cfe3a1e82867%3AScreenshot_2025-02-23_at_8.39.39_PM.png?table=block&id=1a36ef92-20db-8023-9349-e7190fb288c0&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A4d64feff-ac52-460d-acd0-6b0d1b28a8c5%3AScreenshot_2025-02-23_at_8.40.02_PM.png?table=block&id=1a36ef92-20db-80c1-ae61-dee2a5ddbe3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+    ],
+    desc: "From Outdated Listings to a Digital Showcase: Transforming Real Estate in Canada",
+    slug: "From-Outdated-Listings",
+    category:categories[3],
+    featured: false,
+    content: `
+  <h2><strong>Client Overview</strong></h2>
+  
+  <div>
+    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
+    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
+    <p><strong>Location:</strong> Australia</p>
+    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
+    <p><strong>Tools Used:</strong> 
+      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
+      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
+      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
+      Python
+    </p>
+  </div>
+
+  <h2><strong>Challenges & Objectives</strong></h2>
+  
+  <div>
+    <h5><strong>Challenges:</strong></h5>
+    <ul>
+      <li>Manual outbound calling was inefficient and resource-intensive</li>
+      <li>Appointment scheduling required human intervention, leading to delays</li>
+      <li>Missed follow-ups resulted in lost business opportunities</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Objectives:</strong></h5>
+    <ul>
+      <li>Automate outbound sales calls to qualify and schedule appointments</li>
+      <li>Implement an AI-powered agent to handle customer inquiries</li>
+      <li>Integrate an automated follow-up mechanism for potential leads</li>
+    </ul>
+  </div>
+
+  <h2><strong>Our Solution</strong></h2>
+
+  <div>
+    <h5><strong>Technology & Tools Used:</strong></h5>
+    <ul>
+      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
+      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
+      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
+      <li>Python for custom integrations</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Implementation Process:</strong></h5>
+    <ol>
+      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
+      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
+      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
+      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
+    </ol>
+  </div>
+
+  <h2><strong>Results & Impact</strong></h2>
+
+  <div>
+    <h5><strong>Key Outcomes:</strong></h5>
+    <ul>
+      <li>Reduction in manual call handling</li>
+      <li>Increase in qualified appointment bookings</li>
+      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
+      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Client Feedback:</strong></h5>
+    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
+  </div>
+
+  <hr>
+
+  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
+`,
+    review: {
+      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
+      name: "Diat Khan",
+      info: "CEO - Remote Office, Australia",
+      logo: "/images/testimonials/profiles/2.jpeg",
+    },
+  },
+  {
+    images: [
+      "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg",
+      "https://lh3.google.com/u/0/d/1JTvZMAfk4Lyk8K1x6TxnsmftxoLSOb-6=k", 
+    ],
+    desc: "How We Did Shopify Chat Fusion: Blending AI with E-Commerce Excellence",
+    slug: "How-We-Did-Shopify-Chat",
+    category:categories[1],
+    featured: false,
+    review: {
+      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
+      name: "Diat Khan",
+      info: "CEO - Remote Office, Australia",
+      logo: "/images/testimonials/profiles/2.jpeg",
+    },
+    content: `
+  <h2><strong>Client Overview</strong></h2>
+  
+  <div>
+    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
+    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
+    <p><strong>Location:</strong> Australia</p>
+    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
+    <p><strong>Tools Used:</strong> 
+      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
+      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
+      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
+      Python
+    </p>
+  </div>
+
+  <h2><strong>Challenges & Objectives</strong></h2>
+  
+  <div>
+    <h5><strong>Challenges:</strong></h5>
+    <ul>
+      <li>Manual outbound calling was inefficient and resource-intensive</li>
+      <li>Appointment scheduling required human intervention, leading to delays</li>
+      <li>Missed follow-ups resulted in lost business opportunities</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Objectives:</strong></h5>
+    <ul>
+      <li>Automate outbound sales calls to qualify and schedule appointments</li>
+      <li>Implement an AI-powered agent to handle customer inquiries</li>
+      <li>Integrate an automated follow-up mechanism for potential leads</li>
+    </ul>
+  </div>
+
+  <h2><strong>Our Solution</strong></h2>
+
+  <div>
+    <h5><strong>Technology & Tools Used:</strong></h5>
+    <ul>
+      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
+      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
+      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
+      <li>Python for custom integrations</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Implementation Process:</strong></h5>
+    <ol>
+      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
+      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
+      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
+      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
+    </ol>
+  </div>
+
+  <h2><strong>Results & Impact</strong></h2>
+
+  <div>
+    <h5><strong>Key Outcomes:</strong></h5>
+    <ul>
+      <li>Reduction in manual call handling</li>
+      <li>Increase in qualified appointment bookings</li>
+      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
+      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
+    </ul>
+  </div>
+
+  <div>
+    <h5><strong>Client Feedback:</strong></h5>
+    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
+  </div>
+
+  <hr>
+
+  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
+`,
+  },
+  {
+    images: [
+      "https://images.pexels.com/photos/5474299/pexels-photo-5474299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://lh3.google.com/u/0/d/12iae6JExVkJFwaCzVbuzhMTYdM4-mFfF=k"
+    ],
+    desc: "From Manual Data Entry to Automated Brilliance: How AI Revolutionized Video Data Management",
+    slug: "From-Manual-Data-Entry",
+    category:categories[2],
+    featured: false,
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -226,13 +613,13 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/8204403/pexels-photo-8204403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6bd7f00d-c906-4992-898f-c97bd81b0a65%3AScreenshot_2025-02-25_at_10.24.53_AM.png?table=block&id=1a56ef92-20db-80be-87ce-c16676b7f608&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A7b98e9cf-4d9e-4f47-8b44-ce0bc161cf9e%3AScreenshot_2025-02-13_at_6.49.10_AM.png?table=block&id=1996ef92-20db-80b1-b00b-f9fdd0d14bbd&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://images.pexels.com/photos/8204403/pexels-photo-8204403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+       
     ],
     desc: "How AI-Powered Calls Transformed Lead Qualification & Sales for This Business!",
-    featured: true,
+    featured: false,
     slug: "How-AI-Powered-Calls",
+    category:categories[0],
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -326,14 +713,37 @@ export const caseStudiesData = [
   },
   {
     images: [
+      "https://images.pexels.com/photos/7621136/pexels-photo-7621136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7621136/pexels-photo-7621136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+       
+    ],
+    desc: "How We Did Multi-Channel Chat Integration: From Shopify to Instagram, Converting Conversations into Conversions",
+    featured: false,
+    slug: "How-We-Did-Multi-Channel",
+    category:categories[1],
+    
+  },
+  {
+    images: [
+      "https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+       
+    ],
+    desc: "From Data Overload to Intelligent Insights: How AI Consulting Transformed Strategic Decision-Making",
+    featured: false,
+    slug: "From-Data-Overload",
+    category:categories[4],
+    
+  },
+  {
+    images: [
       "https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6bd7f00d-c906-4992-898f-c97bd81b0a65%3AScreenshot_2025-02-25_at_10.24.53_AM.png?table=block&id=1a56ef92-20db-80be-87ce-c16676b7f608&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A7b98e9cf-4d9e-4f47-8b44-ce0bc161cf9e%3AScreenshot_2025-02-13_at_6.49.10_AM.png?table=block&id=1996ef92-20db-80b1-b00b-f9fdd0d14bbd&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
     ],
     desc: "How AI Chatbots Rescued Lost Sales for an E-Commerce Brand!",
-    featured: true,
+     
     slug: "How-AI-Chatbots",
+    category:categories[1],
     content: `
   <h2><strong>Client Overview</strong></h2>
 
@@ -430,13 +840,13 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/6131578/pexels-photo-6131578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6bd7f00d-c906-4992-898f-c97bd81b0a65%3AScreenshot_2025-02-25_at_10.24.53_AM.png?table=block&id=1a56ef92-20db-80be-87ce-c16676b7f608&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A7b98e9cf-4d9e-4f47-8b44-ce0bc161cf9e%3AScreenshot_2025-02-13_at_6.49.10_AM.png?table=block&id=1996ef92-20db-80b1-b00b-f9fdd0d14bbd&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://images.pexels.com/photos/6131578/pexels-photo-6131578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      
     ],
     desc: "From Chaos to Convenience: How AI Helped a Pet Services Brand Handle Bookings Effortlessly!",
-    featured: true,
+    featured: false,
     slug: "From-Chaos-to-Convenience",
+    category:categories[0],
     content: `
   <h2><strong>Client Overview</strong></h2>
 
@@ -520,388 +930,10 @@ export const caseStudiesData = [
       logo: "/images/testimonials/profiles/2.jpeg",
     },
   },
-  {
-    images: [
-      "https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A1fb1d694-e3ed-4c21-9a96-9cbf0e23049d%3AScreenshot_2025-02-25_at_11.54.27_AM.png?table=block&id=1a56ef92-20db-800e-9b8b-db14ea134e30&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
-      "https://images.pexels.com/photos/7679865/pexels-photo-7679865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6169641/pexels-photo-6169641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    ],
-    desc: "From Manual Mishaps to Automated Excellence: Revolutionizing Purchase Order Management",
-    slug: "From-Manual-Mishaps-to-Automated",
-    featured: false,
-    content: `
-  <h2><strong>Client Overview</strong></h2>
+
+ 
+ 
   
-  <div>
-    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
-    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
-    <p><strong>Location:</strong> Australia</p>
-    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
-    <p><strong>Tools Used:</strong> 
-      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
-      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
-      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
-      Python
-    </p>
-  </div>
-
-  <h2><strong>Challenges & Objectives</strong></h2>
-  
-  <div>
-    <h5><strong>Challenges:</strong></h5>
-    <ul>
-      <li>Manual outbound calling was inefficient and resource-intensive</li>
-      <li>Appointment scheduling required human intervention, leading to delays</li>
-      <li>Missed follow-ups resulted in lost business opportunities</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Objectives:</strong></h5>
-    <ul>
-      <li>Automate outbound sales calls to qualify and schedule appointments</li>
-      <li>Implement an AI-powered agent to handle customer inquiries</li>
-      <li>Integrate an automated follow-up mechanism for potential leads</li>
-    </ul>
-  </div>
-
-  <h2><strong>Our Solution</strong></h2>
-
-  <div>
-    <h5><strong>Technology & Tools Used:</strong></h5>
-    <ul>
-      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
-      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
-      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
-      <li>Python for custom integrations</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Implementation Process:</strong></h5>
-    <ol>
-      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
-      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
-      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
-      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
-    </ol>
-  </div>
-
-  <h2><strong>Results & Impact</strong></h2>
-
-  <div>
-    <h5><strong>Key Outcomes:</strong></h5>
-    <ul>
-      <li>Reduction in manual call handling</li>
-      <li>Increase in qualified appointment bookings</li>
-      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
-      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Client Feedback:</strong></h5>
-    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
-  </div>
-
-  <hr>
-
-  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
-`,
-    review: {
-      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
-      name: "Diat Khan",
-      info: "CEO - Remote Office, Australia",
-      logo: "/images/testimonials/profiles/2.jpeg",
-    },
-  },
-  {
-    images: [
-      "https://images.pexels.com/photos/5474299/pexels-photo-5474299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6ed2636c-bed4-4a9f-9201-1d79ca2cfcda%3AUntitled_design_(1).png?table=block&id=1a36ef92-20db-8022-ab04-cb9dfeda9c8d&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A8db8b2d0-c86d-4e6d-ad31-be9bd78a2986%3AScreenshot_2025-02-23_at_8.26.50_PM.png?table=block&id=1a36ef92-20db-80d7-abab-e9f094b8fa47&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-    ],
-    desc: "From Manual Data Entry to Automated Brilliance: How AI Revolutionized Video Data Management",
-    slug: "From-Manual-Data-Entry",
-    featured: false,
-    content: `
-  <h2><strong>Client Overview</strong></h2>
-  
-  <div>
-    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
-    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
-    <p><strong>Location:</strong> Australia</p>
-    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
-    <p><strong>Tools Used:</strong> 
-      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
-      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
-      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
-      Python
-    </p>
-  </div>
-
-  <h2><strong>Challenges & Objectives</strong></h2>
-  
-  <div>
-    <h5><strong>Challenges:</strong></h5>
-    <ul>
-      <li>Manual outbound calling was inefficient and resource-intensive</li>
-      <li>Appointment scheduling required human intervention, leading to delays</li>
-      <li>Missed follow-ups resulted in lost business opportunities</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Objectives:</strong></h5>
-    <ul>
-      <li>Automate outbound sales calls to qualify and schedule appointments</li>
-      <li>Implement an AI-powered agent to handle customer inquiries</li>
-      <li>Integrate an automated follow-up mechanism for potential leads</li>
-    </ul>
-  </div>
-
-  <h2><strong>Our Solution</strong></h2>
-
-  <div>
-    <h5><strong>Technology & Tools Used:</strong></h5>
-    <ul>
-      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
-      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
-      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
-      <li>Python for custom integrations</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Implementation Process:</strong></h5>
-    <ol>
-      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
-      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
-      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
-      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
-    </ol>
-  </div>
-
-  <h2><strong>Results & Impact</strong></h2>
-
-  <div>
-    <h5><strong>Key Outcomes:</strong></h5>
-    <ul>
-      <li>Reduction in manual call handling</li>
-      <li>Increase in qualified appointment bookings</li>
-      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
-      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Client Feedback:</strong></h5>
-    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
-  </div>
-
-  <hr>
-
-  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
-`,
-    review: {
-      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
-      name: "Diat Khan",
-      info: "CEO - Remote Office, Australia",
-      logo: "/images/testimonials/profiles/2.jpeg",
-    },
-  },
-  {
-    images: [
-      "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A03c461a6-1c2f-4b1f-ae7d-cfe3a1e82867%3AScreenshot_2025-02-23_at_8.39.39_PM.png?table=block&id=1a36ef92-20db-8023-9349-e7190fb288c0&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A4d64feff-ac52-460d-acd0-6b0d1b28a8c5%3AScreenshot_2025-02-23_at_8.40.02_PM.png?table=block&id=1a36ef92-20db-80c1-ae61-dee2a5ddbe3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-    ],
-    desc: "From Outdated Listings to a Digital Showcase: Transforming Real Estate in Canada",
-    slug: "From-Outdated-Listings",
-    featured: false,
-    content: `
-  <h2><strong>Client Overview</strong></h2>
-  
-  <div>
-    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
-    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
-    <p><strong>Location:</strong> Australia</p>
-    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
-    <p><strong>Tools Used:</strong> 
-      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
-      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
-      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
-      Python
-    </p>
-  </div>
-
-  <h2><strong>Challenges & Objectives</strong></h2>
-  
-  <div>
-    <h5><strong>Challenges:</strong></h5>
-    <ul>
-      <li>Manual outbound calling was inefficient and resource-intensive</li>
-      <li>Appointment scheduling required human intervention, leading to delays</li>
-      <li>Missed follow-ups resulted in lost business opportunities</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Objectives:</strong></h5>
-    <ul>
-      <li>Automate outbound sales calls to qualify and schedule appointments</li>
-      <li>Implement an AI-powered agent to handle customer inquiries</li>
-      <li>Integrate an automated follow-up mechanism for potential leads</li>
-    </ul>
-  </div>
-
-  <h2><strong>Our Solution</strong></h2>
-
-  <div>
-    <h5><strong>Technology & Tools Used:</strong></h5>
-    <ul>
-      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
-      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
-      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
-      <li>Python for custom integrations</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Implementation Process:</strong></h5>
-    <ol>
-      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
-      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
-      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
-      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
-    </ol>
-  </div>
-
-  <h2><strong>Results & Impact</strong></h2>
-
-  <div>
-    <h5><strong>Key Outcomes:</strong></h5>
-    <ul>
-      <li>Reduction in manual call handling</li>
-      <li>Increase in qualified appointment bookings</li>
-      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
-      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Client Feedback:</strong></h5>
-    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
-  </div>
-
-  <hr>
-
-  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
-`,
-    review: {
-      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
-      name: "Diat Khan",
-      info: "CEO - Remote Office, Australia",
-      logo: "/images/testimonials/profiles/2.jpeg",
-    },
-  },
-  {
-    images: [
-      "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3Ac686ed44-4c67-426a-b994-8dd8cb924446%3AScreenshot_2025-02-23_at_8.57.08_PM.png?table=block&id=1a36ef92-20db-806e-b507-f21f538ca276&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3Aadd491cb-05fe-4a19-be37-8ac81066999a%3AScreenshot_2025-02-23_at_8.57.40_PM.png?table=block&id=1a36ef92-20db-8067-b368-fcbfdba6e38f&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://accelerate-tech-ai.notion.site/image/attachment%3A6dec2c61-df68-4ac9-91dc-e72315bd1478%3AScreenshot_2025-02-23_at_8.57.50_PM.png?table=block&id=1a36ef92-20db-809e-85a4-f73d68b4a5c3&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-    ],
-    desc: "How We Did Shopify Chat Fusion: Blending AI with E-Commerce Excellence",
-    slug: "How-We-Did-Shopify-Chat",
-    featured: false,
-    review: {
-      review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
-      name: "Diat Khan",
-      info: "CEO - Remote Office, Australia",
-      logo: "/images/testimonials/profiles/2.jpeg",
-    },
-    content: `
-  <h2><strong>Client Overview</strong></h2>
-  
-  <div>
-    <p><strong>Industry:</strong> B2B Technology & SaaS</p>
-    <p><strong>Company Size:</strong> Mid-sized enterprise</p>
-    <p><strong>Location:</strong> Australia</p>
-    <p><strong>Service Provided:</strong> AI-Powered Outbound & Inbound Call Automation</p>
-    <p><strong>Tools Used:</strong> 
-      <a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a>, 
-      <a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi AI</a>, 
-      <a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a>, 
-      Python
-    </p>
-  </div>
-
-  <h2><strong>Challenges & Objectives</strong></h2>
-  
-  <div>
-    <h5><strong>Challenges:</strong></h5>
-    <ul>
-      <li>Manual outbound calling was inefficient and resource-intensive</li>
-      <li>Appointment scheduling required human intervention, leading to delays</li>
-      <li>Missed follow-ups resulted in lost business opportunities</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Objectives:</strong></h5>
-    <ul>
-      <li>Automate outbound sales calls to qualify and schedule appointments</li>
-      <li>Implement an AI-powered agent to handle customer inquiries</li>
-      <li>Integrate an automated follow-up mechanism for potential leads</li>
-    </ul>
-  </div>
-
-  <h2><strong>Our Solution</strong></h2>
-
-  <div>
-    <h5><strong>Technology & Tools Used:</strong></h5>
-    <ul>
-      <li><a href="https://cal.com" target="_blank" rel="noopener noreferrer">Cal.com</a> for automated appointment booking</li>
-      <li><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi.ai</a> for AI-driven voice agent</li>
-      <li><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make.com</a> for workflow automation</li>
-      <li>Python for custom integrations</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Implementation Process:</strong></h5>
-    <ol>
-      <li><strong>Assessment:</strong> Analyzed the client’s outbound sales process and appointment scheduling workflow.</li>
-      <li><strong>AI Integration:</strong> Developed "Chris," an AI agent capable of both inbound and outbound calls, trained on the client’s knowledge base.</li>
-      <li><strong>Testing & Optimization:</strong> Ensured the AI agent effectively handled queries, scheduled appointments, and followed up with leads.</li>
-      <li><strong>Deployment:</strong> Implemented Chris to operate during working hours, adhering to follow-up rules and automating appointment confirmation via email.</li>
-    </ol>
-  </div>
-
-  <h2><strong>Results & Impact</strong></h2>
-
-  <div>
-    <h5><strong>Key Outcomes:</strong></h5>
-    <ul>
-      <li>Reduction in manual call handling</li>
-      <li>Increase in qualified appointment bookings</li>
-      <li><strong>Automated follow-ups</strong> reduced missed opportunities</li>
-      <li><strong>Increased accuracy</strong> in appointment scheduling and confirmation</li>
-    </ul>
-  </div>
-
-  <div>
-    <h5><strong>Client Feedback:</strong></h5>
-    <blockquote>“The AI agent has significantly reduced our workload and improved lead conversions. The automation ensures we never miss follow-ups and customers get instant scheduling assistance.”</blockquote>
-  </div>
-
-  <hr>
-
-  <p><strong>Confidentiality Notice:</strong> For confidentiality reasons, all client names and identifying details have been altered.</p>
-`,
-  },
 ];
 const cardVideos = [
   {
