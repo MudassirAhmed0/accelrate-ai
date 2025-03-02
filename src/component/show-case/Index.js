@@ -44,6 +44,7 @@ export const caseStudiesData = [
     featured: true,
     slug: "from-missed-opportunities-to-instant-lead-engagement",
     category:categories[0],
+    relatedCaseStudies: ["How-AI-Powered-Calls", "From-Chaos-to-Convenience"],
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -141,6 +142,7 @@ export const caseStudiesData = [
     featured: true,
     slug: "from-confusion-to-clarity",
     category:categories[1],
+    relatedCaseStudies: ["How-We-Did-Shopify-Chat", "How-We-Did-Multi-Channel"],
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -237,6 +239,7 @@ export const caseStudiesData = [
     desc: "From Manual Mishaps to Automated Excellence: Revolutionizing Purchase Order Management",
     slug: "From-Manual-Mishaps-to-Automated",
     category:categories[2],
+    relatedCaseStudies: ["From-Manual-Data-Entry", "From-Outdated-Listings"],
     featured: false,
     content: `
   <h2><strong>Client Overview</strong></h2>
@@ -333,6 +336,7 @@ export const caseStudiesData = [
     desc: "From Outdated Listings to a Digital Showcase: Transforming Real Estate in Canada",
     slug: "From-Outdated-Listings",
     category:categories[3],
+     relatedCaseStudies: ["from-missed-opportunities-to-instant-lead-engagement", "from-confusion-to-clarity"],
     featured: false,
     content: `
   <h2><strong>Client Overview</strong></h2>
@@ -428,6 +432,7 @@ export const caseStudiesData = [
     desc: "How We Did Shopify Chat Fusion: Blending AI with E-Commerce Excellence",
     slug: "How-We-Did-Shopify-Chat",
     category:categories[1],
+    relatedCaseStudies: ["from-confusion-to-clarity", "How-We-Did-Multi-Channel"],
     featured: false,
     review: {
       review: `Working with team Accelerate-AI has been an absolute pleasure! Their mastery in chatbot development is truly remarkable, delivering solutions that are not only technically sound but also delightfully user-friendly. The team has an incredible knack for turning complex requirements into seamless, intelligent conversations that feel natural and engaging. </br> Their ability to implement custom features and integrations sets them apart. Their attention to detail and focus on quality ensure every project is executed flawlessly. Beyond their technical expertise, their collaborative nature and problem-solving mindset make them a valued partner who’s always ready to go above and beyond. </br> We’re grateful for the innovation and dedication Accelerate-AI team brought to the table. Their work has made a huge difference, and we look forward to working with him on future projects.`,
@@ -523,6 +528,7 @@ export const caseStudiesData = [
     desc: "From Manual Data Entry to Automated Brilliance: How AI Revolutionized Video Data Management",
     slug: "From-Manual-Data-Entry",
     category:categories[2],
+    relatedCaseStudies: ["From-Manual-Mishaps-to-Automated", "How-AI-Powered-Calls"],
     featured: false,
     content: `
   <h2><strong>Client Overview</strong></h2>
@@ -620,6 +626,7 @@ export const caseStudiesData = [
     featured: false,
     slug: "How-AI-Powered-Calls",
     category:categories[0],
+    relatedCaseStudies: ["from-missed-opportunities-to-instant-lead-engagement", "From-Chaos-to-Convenience"],
     content: `
   <h2><strong>Client Overview</strong></h2>
   
@@ -720,6 +727,7 @@ export const caseStudiesData = [
     desc: "How We Did Multi-Channel Chat Integration: From Shopify to Instagram, Converting Conversations into Conversions",
     featured: false,
     slug: "How-We-Did-Multi-Channel",
+    relatedCaseStudies: ["from-confusion-to-clarity", "How-We-Did-Shopify-Chat"],
     category:categories[1],
     
   },
@@ -733,6 +741,8 @@ export const caseStudiesData = [
     featured: false,
     slug: "From-Data-Overload",
     category:categories[4],
+    relatedCaseStudies: ["from-missed-opportunities-to-instant-lead-engagement", "from-confusion-to-clarity"]
+
     
   },
   {
@@ -744,6 +754,8 @@ export const caseStudiesData = [
      
     slug: "How-AI-Chatbots",
     category:categories[1],
+    relatedCaseStudies: ["from-confusion-to-clarity", "How-We-Did-Shopify-Chat"]
+,
     content: `
   <h2><strong>Client Overview</strong></h2>
 
@@ -847,6 +859,7 @@ export const caseStudiesData = [
     featured: false,
     slug: "From-Chaos-to-Convenience",
     category:categories[0],
+    relatedCaseStudies: ["from-missed-opportunities-to-instant-lead-engagement", "How-AI-Powered-Calls"],
     content: `
   <h2><strong>Client Overview</strong></h2>
 

@@ -18,7 +18,7 @@ const SinglePage = ({ pageData }) => {
         </div>
         <DynamicContent pageData={pageData} />
         <Review pageData={pageData} />
-        <ExploreMore />
+        <ExploreMore data={pageData.relatedCaseStudies} />
       </section>
     </>
   );
