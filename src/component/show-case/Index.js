@@ -1112,13 +1112,13 @@ const ShowCasePage = () => {
     <>
       <Hero />
       <TabsSections tabs={tabs} cardsData={caseStudiesData} />
-      <VideoTestimonials
+      {/* <VideoTestimonials
         id={"show-case-testimonials"}
         heading={"testimonials"}
         headingTag={"The Journey with us"}
         videoCard
         data={cardVideos}
-      />
+      /> */}
     </>
   );
 };
