@@ -6,7 +6,7 @@ const RegularCards = ({ cardsData }) => {
     <div className="flex lg:gap-y-[3.125vw] gap-[20px] flex-wrap">
       {cardsData.map(
         (cardData, index) =>
-          cardData.featured || <RegularCard key={index} cardData={cardData} />
+           <RegularCard key={index} cardData={cardData} />
       )}
     </div>
   );

@@ -103,7 +103,7 @@ const VideoTestimonials = ({ heading, headingTag, id, videoCard, data }) => {
                 ))
               : data?.map(
                   (cardData, index) =>
-                    cardData.featured || (
+                   index <5 && (
                       <RegularCard
                         key={index}
                         cardData={cardData}

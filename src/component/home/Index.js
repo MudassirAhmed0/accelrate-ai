@@ -12,7 +12,7 @@ import { caseStudiesData } from "@/component/show-case/Index";
 const cardVideos = [
   {
     src: "/videos/daniel-short.mp4",
-    youtubeSrc: "https://www.youtube.com/watch?v=1Dz9VSOpOlw",
+    youtubeSrc: "https://www.youtube.com/watch?v=kVfjNfReacQ",
 
     poster: "/images/testimonials/thumbnail.jpg",
   },
@@ -23,7 +23,7 @@ const cardVideos = [
   },
   {
     src: "/videos/juan-short.mp4",
-    youtubeSrc: "https://www.youtube.com/watch?v=kVfjNfReacQ",
+    youtubeSrc: "https://www.youtube.com/watch?v=1Dz9VSOpOlw",
     poster: "/images/testimonials/thumbnail.jpg",
   },
 ];

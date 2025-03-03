@@ -66,7 +66,7 @@ const About = ({ variant }) => {
               )}
             </h3>
           </div>
-          <MarqueeSlider />
+          {/* <MarqueeSlider /> */}
         </div>
       </div>
     </section>

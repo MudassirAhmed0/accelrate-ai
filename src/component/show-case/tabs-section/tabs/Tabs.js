@@ -8,10 +8,10 @@ const Tabs = ({ tabs, active, setActive }) => {
     >
       {tabs?.map((tab, index) => (
         <button
-          onClick={() => setActive(index)}
+          onClick={() => setActive(tab.slug)}
           key={index}
           className={`${
-            active === index
+            active === tab.slug
               ? "underline underline-offset-[6px]"
               : "opacity-[0.7]"
           }  afterLineHover !overflow-visible lg:overflow-hidden`}
