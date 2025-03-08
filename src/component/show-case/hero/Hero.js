@@ -10,7 +10,11 @@ const Hero = () => {
       className="relative lg:pt-[11.4583333333vw] lg:pb-[6.25vw] py1 sm:pt-[180px] pt-[120px] bg-black text-white fullVh
 fullSvh flex items-end"
     >
-      <Backgrounds />
+      <Backgrounds
+        image={
+          "https://images.pexels.com/photos/586113/pexels-photo-586113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      />
       <div className="myContainer relative z-[2]">
         <h1
           data-aos="fade-up"

@@ -11,7 +11,7 @@ const Review = ({ pageData }) => {
         <div className="py1 mb-10 flex flex-col lg:gap-y-[4.16666666667vw] gap-y-[60px] border-b border-[#f8f8f81a]">
           {pageData?.images?.map(
             (image, index) =>
-              index > 0 && (
+              index > 1 && (
                 <div
                   key={index}
                   data-aos="fade"

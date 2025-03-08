@@ -29,7 +29,7 @@ const logos = [
   "https://cdn.prod.website-files.com/67053868fc01e494462e71c9/67472ccbbc480f7360b99522_logo-bsport-grey.svg",
   "https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6745a3c7ec1f59c603082ed4_logo-uff-grey.svg",
 ];
-const Partners = () => {
+const Partners = ({ brandLogos }) => {
   useGSAP(() => {
     gsap.from(".marqueeWrapper", {
       opacity: "0",
@@ -48,11 +48,15 @@ const Partners = () => {
           "linear-gradient(to right, rgba(248, 248, 255, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0))",
       }}
     >
-      <Marquee>
-        {logos?.map((logo, index) => (
-          <Logo logo={logo} key={index} />
-        ))}
-      </Marquee>
+      {brandLogos?.name ? (
+        ""
+      ) : (
+        <Marquee>
+          {brandLogos?.map((logo, index) => (
+            <Logo logo={logo} key={index} />
+          ))}
+        </Marquee>
+      )}
     </div>
   );
 };

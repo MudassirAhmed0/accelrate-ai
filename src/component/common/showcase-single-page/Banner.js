@@ -5,13 +5,13 @@ const Banner = ({ pageData }) => {
   return (
     <div
       data-aos="fade"
-      className="aspect-video relative rounded-[10px] overflow-hidden w-full"
+      className="myContainer aspect-video relative rounded-[10px] overflow-hidden"
     >
       <Image
         fill
         alt="banner"
         unoptimized
-        src={pageData?.images[0]}
+        src={pageData?.images[1]}
         className="object-cover"
       />
     </div>

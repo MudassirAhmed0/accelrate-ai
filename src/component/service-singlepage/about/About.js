@@ -3,14 +3,14 @@ import Partners from "./partners/Partners";
 import LinkBtn from "@/component/common/buttons/LinkBtn";
 import Image from "next/image";
 
-const About = () => {
+const About = ({ brandLogos, about }) => {
   return (
     <section className="bg-white lg:py-[4.16666666667vw] py1">
-      <Partners />
+      <Partners brandLogos={brandLogos} />
       <div className="myContainer flex lg:flex-row flex-col-reverse flex-wrap lg:gap-[2.5vw] gap-[20px] items-center justify-between lg:mt-[3.125vw] mt-[40px]">
         <div className="flex flex-col items-start lg:gap-y-[2.5vw] gap-y-[20px] lg:w-[40%] poppins lg:mt-[3.125vw] tracking-tight">
           <h2 data-aos="fade-up" className="font-medium normal-case">
-            At Digidop, we believe website design should follow 3 key rules...
+            {about.heading}
           </h2>
           <div
             data-aos="fade-up"
@@ -44,9 +44,7 @@ const About = () => {
             fill
             alt="banner"
             className="object-cover"
-            src={
-              "https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/677c076fa99d4d3c556f362b_webdesign-p-800.webp"
-            }
+            src={about.image}
           />
         </div>
       </div>

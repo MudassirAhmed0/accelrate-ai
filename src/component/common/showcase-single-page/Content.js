@@ -5,7 +5,7 @@ import LinkBtn from "../buttons/LinkBtn";
 
 const Content = ({ pageData }) => {
   return (
-    <div className="py1">
+    <div className="py1 myContainer relative z-[2]">
       {/* <img
         data-aos="fade"
         src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/673b5cc930b7152407c39d0e_logo-leeto-white.svg"

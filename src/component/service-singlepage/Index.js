@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Hero from "./hero/Hero";
 import About from "./about/About";
@@ -21,12 +22,17 @@ const cardVideos = [
     poster: "/images/testimonials/thumbnail.jpg",
   },
 ];
-const ServiceSinglePage = () => {
+const ServiceSinglePage = ({ pageData }) => {
   return (
     <>
-      <Hero />
-      <About />
-      <KeyMetrics />
+      <Hero
+        hero={pageData?.hero}
+        image={
+          "https://images.pexels.com/photos/17483874/pexels-photo-17483874/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-was-inspired-by-neural-networks-used-in-deep-learning-it-was-created-by-novoto-studio-as-part-of-the-visualising-ai-pr.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      />
+      <About brandLogos={pageData?.brandLogos} about={pageData?.about} />
+      {/* <KeyMetrics /> */}
       <VideoTestimonials
         heading={"Testimonials"}
         id={"testimonials"}
