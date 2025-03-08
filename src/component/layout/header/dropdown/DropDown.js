@@ -11,7 +11,8 @@ elevating <strong>customer engagement</strong>, streamlining <strong>appointment
 and driving <strong>conversions through targeted cold and follow-up calls</strong>.
 `,
     },
-    slug: "AI Voice Agents & Bots",
+    slug: "ai-voice-agents-and-bots", // URL-friendly slug
+    title: "AI Voice Agents & Bots", // Title derived from slug
     brandLogos: [
       "https://ml-eu.globenewswire.com/Resource/Download/d3c2f313-5934-4eb4-8800-74d8159409a3",
       "https://ph-files.imgix.net/bc16937c-807e-4c49-b9aa-74971c697e31.png?auto=format",
@@ -23,7 +24,6 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
     about: {
       heading:
         "At Accelerate-AI, our Voice Agents & Bots leverage advanced speech recognition and synthesis to drive efficiency and enhance customer engagement across various touchpoints.",
-
       image:
         "https://images.pexels.com/photos/3183172/pexels-photo-3183172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
@@ -77,7 +77,8 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       desc: `Transform customer support and engagement with chatbots that deliver <strong>personalized, context-aware conversations</strong>  across <strong>digital channels.</strong> 
 `,
     },
-    slug: "AI Chat Agents & Bots",
+    slug: "ai-chat-agents-and-bots", // URL-friendly slug
+    title: "AI Chat Agents & Bots", // Title derived from slug
     brandLogos: [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twilio-logo-red.svg/2560px-Twilio-logo-red.svg.png",
@@ -142,7 +143,8 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       desc: ` Transform your business by <strong>automating routine tasks</strong> and <strong>optimizing workflows</strong>. Our solutions <strong>streamline operations</strong>, <strong>eliminate manual errors</strong>, and <strong>drive efficiency</strong>, enabling you to focus on <strong>strategic growth</strong> and <strong>innovation</strong>.
 `,
     },
-    slug: "Workflow and Business Process Automation",
+    slug: "workflow-and-business-process-automation", // URL-friendly slug
+    title: "Workflow and Business Process Automation", // Title derived from slug
     brandLogos: [
       "https://banner2.cleanpng.com/20181117/gha/kisspng-scalable-vector-graphics-javascript-python-logo-python-png-1713921410142.webp",
       "https://logos-world.net/wp-content/uploads/2022/01/HubSpot-Logo.png",
@@ -205,7 +207,8 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       heading: "AI Consulting and Business Transformation",
       desc: ` Transform your business with Accelerate AI’s AI consulting and transformation services. We analyze your existing processes to <strong>uncover hidden opportunities for automation and intelligence</strong>, converting mundane tasks into smart, streamlined workflows. By eliminating manual errors and optimizing operations, we empower you to shift your focus from day-to-day tasks to strategic growth and innovation.`,
     },
-    slug: "AI Consulting and Business Transformation",
+    slug: "ai-consulting-and-business-transformation", // URL-friendly slug
+    title: "AI Consulting and Business Transformation", // Title derived from slug
     brandLogos: [
       {
         names: [
@@ -273,7 +276,8 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       heading: "Web Design & Development",
       desc: `Empower your business with <strong>visually captivating, high-performance</strong> websites that feel as intuitive as a human conversation – elevating customer engagement, streamlining online appointment bookings, enhancing digital service delivery, and driving conversions with smart, interactive design and seamless functionality.`,
     },
-    slug: "Web Design & Development",
+    slug: "web-design-and-development", // URL-friendly slug
+    title: "Web Design & Development", // Title derived from slug
     brandLogos: [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiVFipteR2tqCVnH---TvKLazlim_pfwt7CQ&s",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/2560px-Shopify_logo_2018.svg.png",
@@ -351,10 +355,10 @@ const DropDown = ({ headerDropDown, toggleMenu }) => {
               <Link
                 key={index}
                 onClick={toggleMenu}
-                href={`service/${value.slug}`}
+                href={`/service/${value.slug}`}
                 className="block after:hidden lg:after:block afterLineHover"
               >
-                {value.slug}
+                {value.title}
               </Link>
             ))}
           </div>
@@ -367,7 +371,7 @@ const DropDown = ({ headerDropDown, toggleMenu }) => {
                 href={`service/${value.slug}`}
                 className="block after:hidden lg:after:block afterLineHover"
               >
-                {value.slug}
+                {value.title}
               </Link>
             ))}
           </div>
