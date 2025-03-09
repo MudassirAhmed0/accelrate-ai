@@ -59,6 +59,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Twilio-logo-red.svg/2560px-Twilio-logo-red.svg.png",
     ],
     about: {
+      filterSlug: "ai-voice-agents",
       heading:
         "At Accelerate-AI, our Voice Agents & Bots leverage advanced speech recognition and synthesis to drive efficiency and enhance customer engagement across various touchpoints.",
       image:
@@ -179,6 +180,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       "https://ml.globenewswire.com/Resource/Download/8ffa0ae9-98bf-486b-b407-426eb03ec175",
     ],
     about: {
+      filterSlug: "ai-chat-agents",
       heading:
         "At Accelerate, AI Our AI Chat Agents harness advanced NLP and machine learning to drive instant support and meaningful interactions, reducing reliance on human agents",
       image:
@@ -287,6 +289,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       "https://upload.wikimedia.org/wikipedia/commons/5/5d/Pipedrive_Logo.svg",
     ],
     about: {
+      filterSlug: "workflow-automations",
       heading:
         "At Accelerate AI, our Workflow Automation solutions leverage cutting-edge integration, custom scripting, and real-time analytics to streamline processes and drive business transformation, significantly reducing manual tasks and optimizing operational efficiency.",
       image:
@@ -399,6 +402,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       },
     ],
     about: {
+      filterSlug: "ai-consulting",
       heading:
         "At Accelerate AI, our AI Consulting & Transformation services harness industry-leading methodologies and advanced analytics to assess your business processes, pinpoint areas ripe for AI integration, and craft bespoke strategies that drive strategic innovation and operational excellence. We transform raw data into actionable insights, enabling you to automate routine tasks and unlock new opportunities for growth.",
       image:
@@ -508,6 +512,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHJe0JBz5AjVpgkcbDWM-FD9vj87nJaZ7vuA&s",
     ],
     about: {
+      filterSlug: "web-design-development",
       heading: `At Accelerate-AI, our Web Design & Development services leverage modern frameworks and cutting-edge design principles to create high-performance, visually stunning digital experiences. We focus on delivering seamless user journeys and engaging interfaces across all touchpoints—empowering businesses to captivate audiences, drive conversions, and scale effortlessly.`,
       image:
         "https://images.pexels.com/photos/7550581/pexels-photo-7550581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

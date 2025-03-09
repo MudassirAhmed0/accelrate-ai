@@ -33,7 +33,7 @@ const About = ({ brandLogos, about }) => {
           <div data-aos="fade">
             <LinkBtn
               text={"Discover the results of our latest projects"}
-              link="/"
+              link={`/showcase?service=${about.filterSlug}`}
               blackVersion
             />
           </div>

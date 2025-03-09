@@ -21,7 +21,7 @@ const Content = ({ hero }) => {
         ></div>
         <span className="h-[1px] bg-white grow-[1] lg:min-w-[unset] lg:w-[unset] sm:min-w-[65%] sm:w-[65%] min-w-full w-full lg:mb-[0.625vw] opacity-[0.2]"></span>
 
-        <LinkBtn text={"Let's work together"} link={"/"} />
+        <LinkBtn text={"Let's work together"} link={"/#contact"} />
       </div>
     </div>
   );

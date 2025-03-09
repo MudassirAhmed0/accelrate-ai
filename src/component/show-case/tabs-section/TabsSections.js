@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Tabs from "./tabs/Tabs";
 import FeatureCards from "./feature-cards/FeatureCards";
 import RegularCards from "./regular-cards/RegularCards";
@@ -8,30 +8,67 @@ import Link from "next/link";
 const TabsSections = ({ tabs, cardsData }) => {
   const [active, setActive] = useState("");
   const [regularCardsData, setRegularCardsData] = useState([]);
-  const [limit,setLimit]=useState(6)
+  const [limit, setLimit] = useState(6);
+  const containerRef = useRef(null);
 
-
-  useEffect(()=>{
-    if(active){
-      setRegularCardsData(cardsData.filter(card=>card.category
-        .toLowerCase()
-        .includes(active.toLowerCase())).slice(0,limit))    
-
-    }else{
-      setRegularCardsData(cardsData.filter(card=>!card.featured))
+  const updateScroll = () => {
+    // if (window.innerWidth < 768) {
+    const offset = document.querySelector("header").offsetHeight;
+    const y =
+      containerRef.current.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    // }
+  };
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const service = url.searchParams.get("service");
+    if (service) {
+      setActive(service);
+      updateScroll();
     }
-  },[active])
+  }, []);
 
+  useEffect(() => {
+    if (active) {
+      setRegularCardsData(
+        cardsData
+          .filter((card) =>
+            card.category.toLowerCase().includes(active.toLowerCase())
+          )
+          .slice(0, limit)
+      );
 
-  useEffect(()=>{
-    setRegularCardsData(cardsData.filter(card=>!card.featured))
-  },[])
+      const url = new URL(window.location.href);
+
+      // Set or update the query parameter
+      url.searchParams.set("service", active);
+
+      // Use history.pushState to update the URL in the address bar without reloading the page
+      history.pushState(null, "", url.toString());
+    } else {
+      setRegularCardsData(cardsData.filter((card) => !card.featured));
+      const url = new URL(window.location.href);
+
+      // Set or update the query parameter
+      //remove search param
+      url.searchParams.delete("service");
+
+      // Use history.pushState to update the URL in the address bar without reloading the page
+      history.pushState(null, "", url.toString());
+    }
+  }, [active]);
+
+  useEffect(() => {
+    setRegularCardsData(cardsData.filter((card) => !card.featured));
+  }, []);
   return (
     <section className="bg-black text-white py1">
-      <div className="myContainer">
+      <div ref={containerRef} className="myContainer">
         <Tabs active={active} setActive={setActive} tabs={tabs} />
         <div className="flex flex-col lg:mt-[3.125vw] mt-[30px]">
-         {active ?"": <FeatureCards cardsData={cardsData} />}
+          {active ? "" : <FeatureCards cardsData={cardsData} />}
 
           <RegularCards cardsData={regularCardsData} />
           {/* <div className="relative flex justify-center w-full lg:mt-[3.125vw] mt-14">
