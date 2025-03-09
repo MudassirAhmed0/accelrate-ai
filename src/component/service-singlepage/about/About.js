@@ -42,13 +42,15 @@ const About = ({ brandLogos, about }) => {
           data-aos="fade"
           className="lg:w-[40%] w-full lg:h-[34.6354166667vw] sm:h-[500px] h-[400px] relative rounded-[8px] overflow-hidden"
         >
-          <Image
-            unoptimized
-            fill
-            alt="banner"
-            className="object-cover"
-            src={about.image}
-          />
+          {about?.image && (
+            <Image
+              unoptimized
+              fill
+              alt="banner"
+              className="object-cover"
+              src={about.image}
+            />
+          )}
         </div>
       </div>
     </section>
