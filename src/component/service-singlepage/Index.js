@@ -34,21 +34,13 @@ const ServiceSinglePage = ({ pageData }) => {
           "https://images.pexels.com/photos/17483874/pexels-photo-17483874/free-photo-of-an-artist-s-illustration-of-artificial-intelligence-ai-this-image-was-inspired-by-neural-networks-used-in-deep-learning-it-was-created-by-novoto-studio-as-part-of-the-visualising-ai-pr.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
       />
-      <About brandLogos={pageData?.brandLogos} about={pageData?.about} />
+      {/* <About brandLogos={pageData?.brandLogos} about={pageData?.about} /> */}
       <ListsWrapper data={pageData?.process} />
       {/* <KeyMetrics /> */}
-      <VideoTestimonials
-        heading={"Testimonials"}
-        id={"testimonials"}
-        headingTag={"The Journey with us"}
-        videoCard
-        data={cardVideos}
-      />
+
       <GridLayout grids={pageData?.grids} />
       <CTABox cta={pageData?.cta} />
       <ListsWrapper data={pageData?.lists} />
-
-      <Testimonials />
     </>
   );
 };
