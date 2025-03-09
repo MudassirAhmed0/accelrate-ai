@@ -6,6 +6,9 @@ import KeyMetrics from "./keymetrics/KeyMetrics";
 import VideoTestimonials from "../home/video-testimonials/VideoTestimonials";
 import Testimonials from "../home/testimonials/Testimonials";
 import Cta from "../common/cta/Cta";
+import ListsWrapper from "./about/lists-wrapper/ListsWrapper";
+import GridLayout from "./about/grid-layout/GridLayout";
+import CTABox from "./about/CTABox";
 const cardVideos = [
   {
     src: "/videos/home-hero.mp4",
@@ -32,6 +35,7 @@ const ServiceSinglePage = ({ pageData }) => {
         }
       />
       <About brandLogos={pageData?.brandLogos} about={pageData?.about} />
+      <ListsWrapper data={pageData?.process} />
       {/* <KeyMetrics /> */}
       <VideoTestimonials
         heading={"Testimonials"}
@@ -40,6 +44,10 @@ const ServiceSinglePage = ({ pageData }) => {
         videoCard
         data={cardVideos}
       />
+      <GridLayout grids={pageData?.grids} />
+      <CTABox cta={pageData?.cta} />
+      <ListsWrapper data={pageData?.lists} />
+
       <Testimonials />
     </>
   );

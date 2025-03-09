@@ -48,8 +48,22 @@ const Partners = ({ brandLogos }) => {
           "linear-gradient(to right, rgba(248, 248, 255, 0), rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0))",
       }}
     >
-      {brandLogos?.name ? (
-        ""
+      {brandLogos?.[0]?.names ? (
+        <Marquee>
+          {brandLogos[0].names.flatMap((name, index) => [
+            <h4
+              key={index}
+              className="text-black mx-4 tracking-tighter lg:text30 mtext22"
+            >
+              {name}
+            </h4>,
+
+            <span
+              key={`${index}/${index}`}
+              className="block lg:size-[0.625vw] lg:min-w-[0.625vw] size-1.5 min-w-1.5 bg-black rounded-full overflow-hidden mx-3"
+            ></span>,
+          ])}
+        </Marquee>
       ) : (
         <Marquee>
           {brandLogos?.map((logo, index) => (

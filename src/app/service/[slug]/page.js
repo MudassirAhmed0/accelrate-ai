@@ -6,12 +6,9 @@ import React from "react";
 
 const page = async ({ params }) => {
   const slug = (await params).slug;
-  const formattedSlug = decodeURIComponent(slug).replace(/-/g, " ");
 
   // Find the matching service
-  const pageData = servicesData.find(
-    (service) => service.slug.toLowerCase() === formattedSlug.toLowerCase()
-  );
+  const pageData = servicesData.find((service) => service.slug === slug);
   return (
     <>
       <Loading />

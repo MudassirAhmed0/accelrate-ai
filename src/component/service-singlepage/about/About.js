@@ -7,12 +7,15 @@ const About = ({ brandLogos, about }) => {
   return (
     <section className="bg-white lg:py-[4.16666666667vw] py1">
       <Partners brandLogos={brandLogos} />
-      <div className="myContainer flex lg:flex-row flex-col-reverse flex-wrap lg:gap-[2.5vw] gap-[20px] items-center justify-between lg:mt-[3.125vw] mt-[40px]">
-        <div className="flex flex-col items-start lg:gap-y-[2.5vw] gap-y-[20px] lg:w-[40%] poppins lg:mt-[3.125vw] tracking-tight">
-          <h2 data-aos="fade-up" className="font-medium normal-case">
-            {about.heading}
-          </h2>
-          <div
+      <div className="myContainer flex lg:flex-row flex-col-reverse flex-wrap lg:gap-[2.5vw] gap-[30px] items-center justify-between lg:mt-[3.125vw] mt-[40px]">
+        <div className="flex flex-col items-start lg:gap-y-[2.5vw] gap-y-[20px] lg:w-[50%] poppins lg:mt-[3.125vw] tracking-tight">
+          <h4
+            data-aos="fade-up"
+            className="font-medium normal-case lg:text30 mtext22"
+          >
+            {about?.heading}
+          </h4>
+          {/* <div
             data-aos="fade-up"
             className="lg:text20 mtext18 defaultList text-[#4c4b49]"
           >
@@ -26,7 +29,7 @@ const About = ({ brandLogos, about }) => {
               from the very first workshop to handing over the design files to
               the development team.
             </p>
-          </div>
+          </div> */}
           <div data-aos="fade">
             <LinkBtn
               text={"Discover the results of our latest projects"}
@@ -37,7 +40,7 @@ const About = ({ brandLogos, about }) => {
         </div>
         <div
           data-aos="fade"
-          className="lg:w-[32.621%] w-full lg:h-[34.6354166667vw] sm:h-[500px] h-[400px] relative rounded-[8px] overflow-hidden"
+          className="lg:w-[40%] w-full lg:h-[34.6354166667vw] sm:h-[500px] h-[400px] relative rounded-[8px] overflow-hidden"
         >
           <Image
             unoptimized

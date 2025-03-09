@@ -2,6 +2,43 @@ import LinkBtn from "@/component/common/buttons/LinkBtn";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+  FaCalendarCheck,
+  FaPhoneAlt,
+  FaMoneyBillWave,
+  FaShippingFast,
+  FaHeadset,
+  FaPoll,
+  FaBullhorn,
+  FaTools,
+  FaLanguage,
+  FaBell,
+  FaKeyboard,
+  FaShoppingCart,
+  FaFilter,
+  FaClipboardList,
+  FaChartLine,
+  FaBook,
+  FaComments,
+  FaQuestionCircle,
+  FaFileInvoiceDollar,
+  FaChartBar,
+  FaUsersCog,
+  FaBoxes,
+  FaTicketAlt,
+  FaBalanceScale,
+  FaClipboardCheck,
+  FaShieldAlt,
+  FaTasks,
+  FaProjectDiagram,
+  FaUserCheck,
+  FaSearch,
+  FaChartPie,
+  FaServer,
+  FaShareAlt,
+  FaEdit,
+} from "react-icons/fa";
+
 export const servicesData = [
   {
     hero: {
@@ -40,18 +77,74 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
 `,
     },
     grids: [
-      { title: "Appointment Booking" },
-      { title: "Inbound & Outbound Sales" },
-      { title: "Payment Reminders" },
-      { title: "Order Tracking & Updates" },
-      { title: "24/7 Customer Support" },
-      { title: "Survey & Feedback Collection" },
-      { title: "Voice-Enabled Marketing Campaigns" },
-      { title: "Internal Helpdesk Automation" },
-      { title: "Multi-Language Support" },
-      { title: "Appointment Reminders" },
-      { title: "Real-Time Transcription & Notes" },
-      { title: "Voice Commerce" },
+      {
+        title: "Appointment Booking",
+        icon: <FaCalendarCheck />,
+        area: "1 / 1 / 2 / 4",
+      },
+      {
+        title: "Inbound & Outbound Sales",
+        icon: <FaPhoneAlt />,
+        area: "1 / 4 / 2 / 6",
+      },
+      {
+        title: "Payment Reminders",
+        icon: <FaMoneyBillWave />,
+        area: "1 / 6 / 2 / 9",
+      },
+      {
+        title: "Order Tracking & Updates",
+        icon: <FaShippingFast />,
+        area: "1 / 9 / 2 / 10",
+      },
+      {
+        title: "24/7 Customer Support",
+        icon: <FaHeadset />,
+        area: "1/10/2/11",
+      },
+
+      {
+        title: "Survey & Feedback Collection",
+        icon: <FaPoll />,
+        area: "2 / 1 / 3 / 3",
+      },
+      {
+        title: "Voice-Enabled Marketing",
+        icon: <FaBullhorn />,
+        area: "2 / 3 / 3 / 9",
+      },
+      {
+        title: "Internal Helpdesk Automation",
+        icon: <FaTools />,
+        area: "2 / 9 / 3 / 10",
+      },
+      {
+        title: "Multi-Language Support",
+        icon: <FaLanguage />,
+        area: "2 / 10 / 3 / 11",
+      },
+
+      {
+        title: "Voice Commerce",
+        icon: <FaShoppingCart />,
+        area: "3 / 1 / 4 / 2",
+      },
+      {
+        title: "Appointment Reminders",
+        icon: <FaBell />,
+        area: "3 / 2 / 4 / 3",
+      },
+      { title: "Survey & Feedback", icon: <FaPoll />, area: "3 / 3 / 4 / 6" },
+      {
+        title: "Order Tracking & Updates",
+        icon: <FaShippingFast />,
+        area: "3 / 6 / 4 / 9",
+      },
+      {
+        title: "Real-Time Transcription",
+        icon: <FaKeyboard />,
+        area: "3 / 9 / 4 / 11",
+      },
     ],
     cta: "Schedule an appointment with our AI experts",
     lists: {
@@ -105,18 +198,60 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
                 `,
     },
     grids: [
-      { title: "24/7 Support" },
-      { title: "Lead Qualification" },
-      { title: "E-commerce Guidance" },
-      { title: "Appointment Scheduling" },
-      { title: "FAQ Automation" },
-      { title: "Order Tracking" },
-      { title: "Internal Helpdesk" },
-      { title: "Feedback Collection" },
-      { title: "Conversational Marketing" },
-      { title: "Event Registration" },
-      { title: "Personalized Upselling" },
-      { title: "Knowledge Base Access" },
+      { title: "24/7 Support", icon: <FaHeadset />, area: "1 / 1 / 2 / 4" },
+      {
+        title: "Lead Qualification",
+        icon: <FaFilter />,
+        area: "1 / 4 / 2 / 6",
+      },
+      {
+        title: "E-commerce Guidance",
+        icon: <FaShoppingCart />,
+        area: "1 / 6 / 2 / 9",
+      },
+      {
+        title: "Appointment Scheduling",
+        icon: <FaCalendarCheck />,
+        area: "1 / 9 / 2 / 10",
+      },
+      {
+        title: "FAQ Automation",
+        icon: <FaQuestionCircle />,
+        area: "1 / 10 / 2 / 11",
+      },
+
+      {
+        title: "Order Tracking",
+        icon: <FaShippingFast />,
+        area: "2 / 1 / 3 / 3",
+      },
+      { title: "Internal Helpdesk", icon: <FaTools />, area: "2 / 3 / 3 / 9" },
+      {
+        title: "Feedback Collection",
+        icon: <FaPoll />,
+        area: "2 / 9 / 3 / 10",
+      },
+      {
+        title: "Conversational Marketing",
+        icon: <FaComments />,
+        area: "2 / 10 / 3 / 11",
+      },
+
+      {
+        title: "Event Registration",
+        icon: <FaClipboardList />,
+        area: "3 / 1 / 4 / 3",
+      },
+      {
+        title: "Personalized Upselling",
+        icon: <FaChartLine />,
+        area: "3 / 3 / 4 / 6",
+      },
+      {
+        title: "Knowledge Base Access",
+        icon: <FaBook />,
+        area: "3 / 6 / 4 / 11",
+      },
     ],
 
     cta: "AI Chat Agents have a direct impact on five key Business Metrics",
@@ -171,18 +306,60 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
                 `,
     },
     grids: [
-      { title: "Invoice Processing" },
-      { title: "Data Entry Automation" },
-      { title: "Report Generation & Dashboard Automations" },
-      { title: "CRM Automation" },
-      { title: "Inventory Management" },
-      { title: "Customer Support Ticketing" },
-      { title: "Marketing Campaign Automation" },
-      { title: "Financial Reconciliation" },
-      { title: "Procurement Management" },
-      { title: "Compliance Monitoring" },
-      { title: "Task Automation" },
-      { title: "Workflow Orchestration" },
+      {
+        title: "Invoice Processing",
+        icon: <FaFileInvoiceDollar />,
+        area: "1 / 1 / 2 / 4",
+      },
+      {
+        title: "Data Entry Automation",
+        icon: <FaKeyboard />,
+        area: "1 / 4 / 2 / 6",
+      },
+      {
+        title: "Report Generation & Dashboard Automations",
+        icon: <FaChartBar />,
+        area: "1 / 6 / 2 / 9",
+      },
+      { title: "CRM Automation", icon: <FaUsersCog />, area: "1 / 9 / 2 / 10" },
+      {
+        title: "Inventory Management",
+        icon: <FaBoxes />,
+        area: "1 / 10 / 2 / 11",
+      },
+
+      {
+        title: "Customer Support Ticketing",
+        icon: <FaTicketAlt />,
+        area: "2 / 1 / 3 / 3",
+      },
+      {
+        title: "Marketing Campaign Automation",
+        icon: <FaBullhorn />,
+        area: "2 / 3 / 3 / 9",
+      },
+      {
+        title: "Financial Reconciliation",
+        icon: <FaBalanceScale />,
+        area: "2 / 9 / 3 / 10",
+      },
+      {
+        title: "Procurement Management",
+        icon: <FaClipboardCheck />,
+        area: "2 / 10 / 3 / 11",
+      },
+
+      {
+        title: "Compliance Monitoring",
+        icon: <FaShieldAlt />,
+        area: "3 / 1 / 4 / 3",
+      },
+      { title: "Task Automation", icon: <FaTasks />, area: "3 / 3 / 4 / 6" },
+      {
+        title: "Workflow Orchestration",
+        icon: <FaProjectDiagram />,
+        area: "3 / 6 / 4 / 11",
+      },
     ],
 
     cta: "Schedule an appointment with our Automation experts",
@@ -240,18 +417,60 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
 `,
     },
     grids: [
-      { title: "Invoice Processing" },
-      { title: "Data Entry Automation" },
-      { title: "Report Generation & Dashboard Automations" },
-      { title: "CRM Automation" },
-      { title: "Inventory Management" },
-      { title: "Customer Support Ticketing" },
-      { title: "Marketing Campaign Automation" },
-      { title: "Financial Reconciliation" },
-      { title: "Procurement Management" },
-      { title: "Compliance Monitoring" },
-      { title: "Task Automation" },
-      { title: "Workflow Orchestration" },
+      {
+        title: "Invoice Processing",
+        icon: <FaFileInvoiceDollar />,
+        area: "1 / 1 / 2 / 4",
+      },
+      {
+        title: "Data Entry Automation",
+        icon: <FaKeyboard />,
+        area: "1 / 4 / 2 / 6",
+      },
+      {
+        title: "Report Generation & Dashboard Automations",
+        icon: <FaChartBar />,
+        area: "1 / 6 / 2 / 9",
+      },
+      { title: "CRM Automation", icon: <FaUsersCog />, area: "1 / 9 / 2 / 10" },
+      {
+        title: "Inventory Management",
+        icon: <FaBoxes />,
+        area: "1 / 10 / 2 / 11",
+      },
+
+      {
+        title: "Customer Support Ticketing",
+        icon: <FaTicketAlt />,
+        area: "2 / 1 / 3 / 3",
+      },
+      {
+        title: "Marketing Campaign Automation",
+        icon: <FaBullhorn />,
+        area: "2 / 3 / 3 / 9",
+      },
+      {
+        title: "Financial Reconciliation",
+        icon: <FaBalanceScale />,
+        area: "2 / 9 / 3 / 10",
+      },
+      {
+        title: "Procurement Management",
+        icon: <FaClipboardCheck />,
+        area: "2 / 10 / 3 / 11",
+      },
+
+      {
+        title: "Compliance Monitoring",
+        icon: <FaShieldAlt />,
+        area: "3 / 1 / 4 / 3",
+      },
+      { title: "Task Automation", icon: <FaTasks />, area: "3 / 3 / 4 / 6" },
+      {
+        title: "Workflow Orchestration",
+        icon: <FaProjectDiagram />,
+        area: "3 / 6 / 4 / 11",
+      },
     ],
 
     cta: "Schedule an appointment with our Automation experts",
@@ -306,18 +525,68 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
 `,
     },
     grids: [
-      { title: "Engaging User Experience" },
-      { title: "Seamless Appointment Booking" },
-      { title: "Dynamic E-commerce Integration" },
-      { title: "Real-Time Order Tracking" },
-      { title: "24/7 Customer Support" },
-      { title: "Interactive Feedback Collection" },
-      { title: "Multi-Language Capabilities" },
-      { title: "SEO-Optimized Architecture" },
-      { title: "Integrated Analytics & Data Insights" },
-      { title: "Secure & Scalable Infrastructure" },
-      { title: "Social Media Integration" },
-      { title: "Custom Content Management" },
+      {
+        title: "Engaging User Experience",
+        icon: <FaUserCheck />,
+        area: "1 / 1 / 2 / 4",
+      },
+      {
+        title: "Seamless Appointment Booking",
+        icon: <FaCalendarCheck />,
+        area: "1 / 4 / 2 / 6",
+      },
+      {
+        title: "Dynamic E-commerce Integration",
+        icon: <FaShoppingCart />,
+        area: "1 / 6 / 2 / 9",
+      },
+      {
+        title: "Real-Time Order Tracking",
+        icon: <FaShippingFast />,
+        area: "1 / 9 / 2 / 10",
+      },
+      {
+        title: "24/7 Customer Support",
+        icon: <FaHeadset />,
+        area: "1 / 10 / 2 / 11",
+      },
+
+      {
+        title: "Interactive Feedback Collection",
+        icon: <FaPoll />,
+        area: "2 / 1 / 3 / 3",
+      },
+      {
+        title: "Multi-Language Capabilities",
+        icon: <FaLanguage />,
+        area: "2 / 3 / 3 / 9",
+      },
+      {
+        title: "SEO-Optimized Architecture",
+        icon: <FaSearch />,
+        area: "2 / 9 / 3 / 10",
+      },
+      {
+        title: "Integrated Analytics & Data Insights",
+        icon: <FaChartPie />,
+        area: "2 / 10 / 3 / 11",
+      },
+
+      {
+        title: "Secure & Scalable Infrastructure",
+        icon: <FaServer />,
+        area: "3 / 1 / 4 / 3",
+      },
+      {
+        title: "Social Media Integration",
+        icon: <FaShareAlt />,
+        area: "3 / 3 / 4 / 6",
+      },
+      {
+        title: "Custom Content Management",
+        icon: <FaEdit />,
+        area: "3 / 6 / 4 / 11",
+      },
     ],
 
     cta: "Schedule an appointment with our Web Design experts",
@@ -339,6 +608,7 @@ and driving <strong>conversions through targeted cold and follow-up calls</stron
     ],
   },
 ];
+
 const DropDown = ({ headerDropDown, toggleMenu }) => {
   return (
     <div
@@ -364,16 +634,22 @@ const DropDown = ({ headerDropDown, toggleMenu }) => {
           </div>
           <span className="lg:w-[1px] lg:min-w-[1px] w-full min-w-full h-[1px] lg:h-[unset] bg-[#4B4B4B]"></span>
           <div className="flex flex-col lg:gap-y-[unset] sm:gap-y-[15px] gap-y-[10px] justify-start lg:text35 sm:mtext28 mtext22 lg:leading-[3.125vw] tracking-tight w-full lg:w-[41%]">
-            {servicesData.slice(3, 5).map((value, index) => (
-              <Link
-                key={index}
-                onClick={toggleMenu}
-                href={`service/${value.slug}`}
-                className="block after:hidden lg:after:block afterLineHover"
-              >
-                {value.title}
-              </Link>
-            ))}
+            {servicesData.length > 3 ? (
+              servicesData.slice(3, 5).map((value, index) => {
+                return (
+                  <Link
+                    key={index}
+                    onClick={toggleMenu}
+                    href={`/service/${value.slug}`}
+                    className="block after:hidden lg:after:block afterLineHover"
+                  >
+                    {value.title || "Unnamed Service"} {/* Ensure a fallback */}
+                  </Link>
+                );
+              })
+            ) : (
+              <p>Loading services...</p>
+            )}
           </div>
           {/* <div className="grow-[1] flex flex-wrap sm:flex-nowrap justify-between items-stretch lg:gap-[1.04166666667vw] gap-[16px]">
             {[1, 2].map((c, i) => (
