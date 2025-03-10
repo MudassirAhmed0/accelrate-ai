@@ -141,7 +141,7 @@ export const caseStudiesData = [
       "https://images.pexels.com/photos/5905960/pexels-photo-5905960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       " https://images.pexels.com/photos/3913031/pexels-photo-3913031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A60f07eea-230e-4f04-a3cb-e326062795fa%3AScreenshot_2025-02-18_at_10.32.31_PM.png?table=block&id=19e6ef92-20db-809a-baa9-c399daab9f3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://lh3.googleusercontent.com/fife/ALs6j_EezbqHFk7_l4B5KgMqNr5PXwprrOi5J-wpzuaZrW5jvUHrvrJkk2Vy1xaKCy19x9Zy_wCtwdVpo6DNJNrcK6jSNe01yt2A7M_LNZ1I0BNWYzIz8K3lTHdDQsNX1lRRB4YqcOVa3tij6gGbzmUbbaHT2VtM1Dad6rCb09d82h40AudaAcmUk_578V23fZmKH49_XfnEDKgY7z94Nuy0QxM6v8p9TgmFHAoQesTEaoQkXwPrUtShcfpmcstxA34Pfp2H-cfWJ04rfD-AhXqGhSvFnAzyAeuC32ylIWg-I_bT5Tx_gKaB7iRW_Na6utD3ivn6bJlSg-NaV8xG86cOPmLR11Se11hLCaOa4CJi-ZMaErPQZqqixq5nIvcGHPGex_ElfX01DIkJcWkR9pBcHqEPAqc0lOOp4xRK_UqoXCTwgjVEhdTlCSrvr2tbY0bJoP4pygiQQq7QACGawe8-ge1m_d-tEvSDvkJPoppagmYZijgdlN4gKJ1c3SCtzVxw9mO5rB2MNC76t-9-R8jWWSmP-PMBsAFOwMtkT6cZw7X0d_-Ft__rdTYtvR75WKuwXnq1L2jIBpYILaWz9KtgR2ZY1N5nY0WCZB20RA429rdmcd_Odie5xWOX_-4REaVZl25XehqpKMkSFut8C9WBv-rWdsiekCRLweDmkcb0XT9flc2aUL5HSPpJB0DwOUEAmi41st1BjNOLZuDzOoyECbYxuFrlSsUYjZgmk9eBWQfiA_MIzAGnYWmtyrD-zLC4M-U4Hgt4N7FuNo4MCEEjum2-Ptqcfy1BziqeOCveQOQCR-HUTiheF3ERREXH4evd_gB9pDyrnCCewUC56J4BqLU0Ai9QakVWiiQSQd3bSm_8iQgP12lhko862kfou_z1QCpoxCIfxO7sjAGcIUeQF0iEDuZOk2tsi9daDcIWb3vdxyQT2PIVPMaSNo2R2sVvhiCHUL-UhSiJTA3CgUflqlwa4naJpLyztV5mWNcZmeJ7uo29RbGo3hzVkhYlsddS4ykvHL261m6OBA0WlMUF_buswN9TdJ9MRr77od5Oqf5j-Gk4KBRofpwmHsOpuweOEePb_fwJzXzfH6UhENCMDitCppHlJX7pGFwHSOpQ1Zht1HS9mxyYuWHHF6kI4KhQXBPQrq07ijH4gPQpeBKkoAMvKPzAdizb6ZpfvXZQOL80yTSW-TJCOfFLvJoddw69BFyH-NN4DS8GNsixhPk7D3KDQ_36HZEFF5XVdZPnDZTuAf-HRc2UoPw8CSja8S3YCwWzNBEhOiC3s4wJgHdefj5GPKQVX7EFRqJBZ-b7dSqOl7ePoYNq1Nwz-ZxoR5tc6AlK2gJTEMnsEQN4leNh7Inh604iL8QKvLEWm0eVjsFBkPvIJ3xcpVUNZkNjbbKbYUoxKTKQnpYGbftU2GZt7Ud4KBO6ANhfVTb5ssBuxVAw2S3JJwpu12zNYG-Xv-QHKMaZBsUIe_H45f1Ttkc9yF4XzkYt5OPd1bal-owvEupq1_z-oygXHu96prcehi7c1NEvid8j2cPYZXpvYZ3t0AH43KRSDDG6HbbwklZkPA8T8rOHPFAFmloQYPqNlEvNvyA1sA-_CV63Z4U=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A2eb3a55b-403c-4a4c-a79b-9fa2d523bc2f%3AAI_Voice_Agents__Bots_(1).png?table=block&id=1a26ef92-20db-808e-ab87-c3a9b4783be1&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
     ],
     desc: "From Confusion to Clarity: How AI Empowered Student Engagement!",
     featured: true,
@@ -240,7 +240,7 @@ export const caseStudiesData = [
       "https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://images.pexels.com/photos/6169641/pexels-photo-6169641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A1fb1d694-e3ed-4c21-9a96-9cbf0e23049d%3AScreenshot_2025-02-25_at_11.54.27_AM.png?table=block&id=1a56ef92-20db-800e-9b8b-db14ea134e30&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
-      "https://lh3.google.com/u/0/d/1PVRucF6YsjJKeL5l6QGDw3Fnb3qCiZCo=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3Af10e2658-3c8a-4f12-ad74-763b05fbfc80%3AAI_Voice_Agents__Bots_(2).png?table=block&id=1a36ef92-20db-80bf-a2bc-cce52f82090d&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "From Manual Mishaps to Automated Excellence: Revolutionizing Purchase Order Management",
     slug: "From-Manual-Mishaps-to-Automated",
@@ -333,6 +333,7 @@ export const caseStudiesData = [
       "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A03c461a6-1c2f-4b1f-ae7d-cfe3a1e82867%3AScreenshot_2025-02-23_at_8.39.39_PM.png?table=block&id=1a36ef92-20db-8023-9349-e7190fb288c0&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
       "https://accelerate-tech-ai.notion.site/image/attachment%3A4d64feff-ac52-460d-acd0-6b0d1b28a8c5%3AScreenshot_2025-02-23_at_8.40.02_PM.png?table=block&id=1a36ef92-20db-80c1-ae61-dee2a5ddbe3a&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A493bf32d-f029-4ef0-bf12-5447bb453d8c%3AAI_Voice_Agents__Bots_(5).png?table=block&id=1a36ef92-20db-800e-8f28-e4e3c8bdd9f0&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
     ],
     desc: "From Outdated Listings to a Digital Showcase: Transforming Real Estate in Canada",
     slug: "From-Outdated-Listings",
@@ -412,7 +413,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg",
-      "https://lh3.googleusercontent.com/fife/ALs6j_EezbqHFk7_l4B5KgMqNr5PXwprrOi5J-wpzuaZrW5jvUHrvrJkk2Vy1xaKCy19x9Zy_wCtwdVpo6DNJNrcK6jSNe01yt2A7M_LNZ1I0BNWYzIz8K3lTHdDQsNX1lRRB4YqcOVa3tij6gGbzmUbbaHT2VtM1Dad6rCb09d82h40AudaAcmUk_578V23fZmKH49_XfnEDKgY7z94Nuy0QxM6v8p9TgmFHAoQesTEaoQkXwPrUtShcfpmcstxA34Pfp2H-cfWJ04rfD-AhXqGhSvFnAzyAeuC32ylIWg-I_bT5Tx_gKaB7iRW_Na6utD3ivn6bJlSg-NaV8xG86cOPmLR11Se11hLCaOa4CJi-ZMaErPQZqqixq5nIvcGHPGex_ElfX01DIkJcWkR9pBcHqEPAqc0lOOp4xRK_UqoXCTwgjVEhdTlCSrvr2tbY0bJoP4pygiQQq7QACGawe8-ge1m_d-tEvSDvkJPoppagmYZijgdlN4gKJ1c3SCtzVxw9mO5rB2MNC76t-9-R8jWWSmP-PMBsAFOwMtkT6cZw7X0d_-Ft__rdTYtvR75WKuwXnq1L2jIBpYILaWz9KtgR2ZY1N5nY0WCZB20RA429rdmcd_Odie5xWOX_-4REaVZl25XehqpKMkSFut8C9WBv-rWdsiekCRLweDmkcb0XT9flc2aUL5HSPpJB0DwOUEAmi41st1BjNOLZuDzOoyECbYxuFrlSsUYjZgmk9eBWQfiA_MIzAGnYWmtyrD-zLC4M-U4Hgt4N7FuNo4MCEEjum2-Ptqcfy1BziqeOCveQOQCR-HUTiheF3ERREXH4evd_gB9pDyrnCCewUC56J4BqLU0Ai9QakVWiiQSQd3bSm_8iQgP12lhko862kfou_z1QCpoxCIfxO7sjAGcIUeQF0iEDuZOk2tsi9daDcIWb3vdxyQT2PIVPMaSNo2R2sVvhiCHUL-UhSiJTA3CgUflqlwa4naJpLyztV5mWNcZmeJ7uo29RbGo3hzVkhYlsddS4ykvHL261m6OBA0WlMUF_buswN9TdJ9MRr77od5Oqf5j-Gk4KBRofpwmHsOpuweOEePb_fwJzXzfH6UhENCMDitCppHlJX7pGFwHSOpQ1Zht1HS9mxyYuWHHF6kI4KhQXBPQrq07ijH4gPQpeBKkoAMvKPzAdizb6ZpfvXZQOL80yTSW-TJCOfFLvJoddw69BFyH-NN4DS8GNsixhPk7D3KDQ_36HZEFF5XVdZPnDZTuAf-HRc2UoPw8CSja8S3YCwWzNBEhOiC3s4wJgHdefj5GPKQVX7EFRqJBZ-b7dSqOl7ePoYNq1Nwz-ZxoR5tc6AlK2gJTEMnsEQN4leNh7Inh604iL8QKvLEWm0eVjsFBkPvIJ3xcpVUNZkNjbbKbYUoxKTKQnpYGbftU2GZt7Ud4KBO6ANhfVTb5ssBuxVAw2S3JJwpu12zNYG-Xv-QHKMaZBsUIe_H45f1Ttkc9yF4XzkYt5OPd1bal-owvEupq1_z-oygXHu96prcehi7c1NEvid8j2cPYZXpvYZ3t0AH43KRSDDG6HbbwklZkPA8T8rOHPFAFmloQYPqNlEvNvyA1sA-_CV63Z4U=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A2eb3a55b-403c-4a4c-a79b-9fa2d523bc2f%3AAI_Voice_Agents__Bots_(1).png?table=block&id=1a26ef92-20db-808e-ab87-c3a9b4783be1&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
     ],
     desc: "How We Did Shopify Chat Fusion: Blending AI with E-Commerce Excellence",
     slug: "How-We-Did-Shopify-Chat",
@@ -507,7 +508,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/5474299/pexels-photo-5474299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://lh3.google.com/u/0/d/12iae6JExVkJFwaCzVbuzhMTYdM4-mFfF=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3Af10e2658-3c8a-4f12-ad74-763b05fbfc80%3AAI_Voice_Agents__Bots_(2).png?table=block&id=1a36ef92-20db-80bf-a2bc-cce52f82090d&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "From Manual Data Entry to Automated Brilliance: How AI Revolutionized Video Data Management",
     slug: "From-Manual-Data-Entry",
@@ -586,7 +587,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/8204403/pexels-photo-8204403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/8204403/pexels-photo-8204403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "How AI-Powered Calls Transformed Lead Qualification & Sales for This Business!",
     featured: false,
@@ -690,7 +691,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/7621136/pexels-photo-7621136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://lh3.googleusercontent.com/fife/ALs6j_EezbqHFk7_l4B5KgMqNr5PXwprrOi5J-wpzuaZrW5jvUHrvrJkk2Vy1xaKCy19x9Zy_wCtwdVpo6DNJNrcK6jSNe01yt2A7M_LNZ1I0BNWYzIz8K3lTHdDQsNX1lRRB4YqcOVa3tij6gGbzmUbbaHT2VtM1Dad6rCb09d82h40AudaAcmUk_578V23fZmKH49_XfnEDKgY7z94Nuy0QxM6v8p9TgmFHAoQesTEaoQkXwPrUtShcfpmcstxA34Pfp2H-cfWJ04rfD-AhXqGhSvFnAzyAeuC32ylIWg-I_bT5Tx_gKaB7iRW_Na6utD3ivn6bJlSg-NaV8xG86cOPmLR11Se11hLCaOa4CJi-ZMaErPQZqqixq5nIvcGHPGex_ElfX01DIkJcWkR9pBcHqEPAqc0lOOp4xRK_UqoXCTwgjVEhdTlCSrvr2tbY0bJoP4pygiQQq7QACGawe8-ge1m_d-tEvSDvkJPoppagmYZijgdlN4gKJ1c3SCtzVxw9mO5rB2MNC76t-9-R8jWWSmP-PMBsAFOwMtkT6cZw7X0d_-Ft__rdTYtvR75WKuwXnq1L2jIBpYILaWz9KtgR2ZY1N5nY0WCZB20RA429rdmcd_Odie5xWOX_-4REaVZl25XehqpKMkSFut8C9WBv-rWdsiekCRLweDmkcb0XT9flc2aUL5HSPpJB0DwOUEAmi41st1BjNOLZuDzOoyECbYxuFrlSsUYjZgmk9eBWQfiA_MIzAGnYWmtyrD-zLC4M-U4Hgt4N7FuNo4MCEEjum2-Ptqcfy1BziqeOCveQOQCR-HUTiheF3ERREXH4evd_gB9pDyrnCCewUC56J4BqLU0Ai9QakVWiiQSQd3bSm_8iQgP12lhko862kfou_z1QCpoxCIfxO7sjAGcIUeQF0iEDuZOk2tsi9daDcIWb3vdxyQT2PIVPMaSNo2R2sVvhiCHUL-UhSiJTA3CgUflqlwa4naJpLyztV5mWNcZmeJ7uo29RbGo3hzVkhYlsddS4ykvHL261m6OBA0WlMUF_buswN9TdJ9MRr77od5Oqf5j-Gk4KBRofpwmHsOpuweOEePb_fwJzXzfH6UhENCMDitCppHlJX7pGFwHSOpQ1Zht1HS9mxyYuWHHF6kI4KhQXBPQrq07ijH4gPQpeBKkoAMvKPzAdizb6ZpfvXZQOL80yTSW-TJCOfFLvJoddw69BFyH-NN4DS8GNsixhPk7D3KDQ_36HZEFF5XVdZPnDZTuAf-HRc2UoPw8CSja8S3YCwWzNBEhOiC3s4wJgHdefj5GPKQVX7EFRqJBZ-b7dSqOl7ePoYNq1Nwz-ZxoR5tc6AlK2gJTEMnsEQN4leNh7Inh604iL8QKvLEWm0eVjsFBkPvIJ3xcpVUNZkNjbbKbYUoxKTKQnpYGbftU2GZt7Ud4KBO6ANhfVTb5ssBuxVAw2S3JJwpu12zNYG-Xv-QHKMaZBsUIe_H45f1Ttkc9yF4XzkYt5OPd1bal-owvEupq1_z-oygXHu96prcehi7c1NEvid8j2cPYZXpvYZ3t0AH43KRSDDG6HbbwklZkPA8T8rOHPFAFmloQYPqNlEvNvyA1sA-_CV63Z4U=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A2eb3a55b-403c-4a4c-a79b-9fa2d523bc2f%3AAI_Voice_Agents__Bots_(1).png?table=block&id=1a26ef92-20db-808e-ab87-c3a9b4783be1&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
     ],
     desc: "How We Did Multi-Channel Chat Integration: From Shopify to Instagram, Converting Conversations into Conversions",
     featured: false,
@@ -891,7 +892,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://lh3.googleusercontent.com/fife/ALs6j_EezbqHFk7_l4B5KgMqNr5PXwprrOi5J-wpzuaZrW5jvUHrvrJkk2Vy1xaKCy19x9Zy_wCtwdVpo6DNJNrcK6jSNe01yt2A7M_LNZ1I0BNWYzIz8K3lTHdDQsNX1lRRB4YqcOVa3tij6gGbzmUbbaHT2VtM1Dad6rCb09d82h40AudaAcmUk_578V23fZmKH49_XfnEDKgY7z94Nuy0QxM6v8p9TgmFHAoQesTEaoQkXwPrUtShcfpmcstxA34Pfp2H-cfWJ04rfD-AhXqGhSvFnAzyAeuC32ylIWg-I_bT5Tx_gKaB7iRW_Na6utD3ivn6bJlSg-NaV8xG86cOPmLR11Se11hLCaOa4CJi-ZMaErPQZqqixq5nIvcGHPGex_ElfX01DIkJcWkR9pBcHqEPAqc0lOOp4xRK_UqoXCTwgjVEhdTlCSrvr2tbY0bJoP4pygiQQq7QACGawe8-ge1m_d-tEvSDvkJPoppagmYZijgdlN4gKJ1c3SCtzVxw9mO5rB2MNC76t-9-R8jWWSmP-PMBsAFOwMtkT6cZw7X0d_-Ft__rdTYtvR75WKuwXnq1L2jIBpYILaWz9KtgR2ZY1N5nY0WCZB20RA429rdmcd_Odie5xWOX_-4REaVZl25XehqpKMkSFut8C9WBv-rWdsiekCRLweDmkcb0XT9flc2aUL5HSPpJB0DwOUEAmi41st1BjNOLZuDzOoyECbYxuFrlSsUYjZgmk9eBWQfiA_MIzAGnYWmtyrD-zLC4M-U4Hgt4N7FuNo4MCEEjum2-Ptqcfy1BziqeOCveQOQCR-HUTiheF3ERREXH4evd_gB9pDyrnCCewUC56J4BqLU0Ai9QakVWiiQSQd3bSm_8iQgP12lhko862kfou_z1QCpoxCIfxO7sjAGcIUeQF0iEDuZOk2tsi9daDcIWb3vdxyQT2PIVPMaSNo2R2sVvhiCHUL-UhSiJTA3CgUflqlwa4naJpLyztV5mWNcZmeJ7uo29RbGo3hzVkhYlsddS4ykvHL261m6OBA0WlMUF_buswN9TdJ9MRr77od5Oqf5j-Gk4KBRofpwmHsOpuweOEePb_fwJzXzfH6UhENCMDitCppHlJX7pGFwHSOpQ1Zht1HS9mxyYuWHHF6kI4KhQXBPQrq07ijH4gPQpeBKkoAMvKPzAdizb6ZpfvXZQOL80yTSW-TJCOfFLvJoddw69BFyH-NN4DS8GNsixhPk7D3KDQ_36HZEFF5XVdZPnDZTuAf-HRc2UoPw8CSja8S3YCwWzNBEhOiC3s4wJgHdefj5GPKQVX7EFRqJBZ-b7dSqOl7ePoYNq1Nwz-ZxoR5tc6AlK2gJTEMnsEQN4leNh7Inh604iL8QKvLEWm0eVjsFBkPvIJ3xcpVUNZkNjbbKbYUoxKTKQnpYGbftU2GZt7Ud4KBO6ANhfVTb5ssBuxVAw2S3JJwpu12zNYG-Xv-QHKMaZBsUIe_H45f1Ttkc9yF4XzkYt5OPd1bal-owvEupq1_z-oygXHu96prcehi7c1NEvid8j2cPYZXpvYZ3t0AH43KRSDDG6HbbwklZkPA8T8rOHPFAFmloQYPqNlEvNvyA1sA-_CV63Z4U=k",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A2eb3a55b-403c-4a4c-a79b-9fa2d523bc2f%3AAI_Voice_Agents__Bots_(1).png?table=block&id=1a26ef92-20db-808e-ab87-c3a9b4783be1&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=2000&userId=&cache=v2",
     ],
     desc: "How AI Chatbots Rescued Lost Sales for an E-Commerce Brand!",
 
@@ -997,7 +998,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/6131578/pexels-photo-6131578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/6131578/pexels-photo-6131578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3Aaa084ce1-3599-4681-b5b3-cbdfecc2cd72%3AAI_Voice_Agents__Bots.png?table=block&id=19e6ef92-20db-80f9-8685-ea491d0dfe24&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "From Chaos to Convenience: How AI Helped a Pet Services Brand Handle Bookings Effortlessly!",
     featured: false,
