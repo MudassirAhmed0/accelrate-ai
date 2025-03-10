@@ -343,7 +343,11 @@ input[type="number"] {
 }
 .porcess_content ul,
 .porcess_content ol {
-  @apply flex flex-col lg:gap-y-[1.25vw] gap-y-3;
+  @apply flex flex-col lg:gap-y-[1.25vw] gap-y-3 !list-none !pl-0;
+}
+.porcess_content ul li,
+.porcess_content ol li {
+  @apply bg-[#1a1a1a] border rounded-[6px] p-6;
 }
 .case_details_content div {
   @apply flex flex-col gap-2;

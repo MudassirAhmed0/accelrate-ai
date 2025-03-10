@@ -4,9 +4,7 @@ const GridLayout = ({ grids }) => {
   return (
     <section>
       <div className="myContainer py1">
-        <h2 className="text-center shadow-lg p-6 border border-gray-700 rounded-lg">
-          APPLICATIONS
-        </h2>
+        <h2 className="text-center p-6 capitalize">applications</h2>
         <div className="about_grid_container w-full mt-12 lg:h-[650px] overflow-auto lg:overflow-visible hideScroll">
           {grids.map((grid, index) => (
             <div

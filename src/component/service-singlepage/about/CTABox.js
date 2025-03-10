@@ -3,10 +3,10 @@ import React from "react";
 
 const CTABox = ({ cta }) => {
   return (
-    <div className="myContainer flex justify-center items-center mt-6 ">
+    <div className="myContainer flex justify-center items-center lg:my-16 my-10">
       <Link
         href={"/#contact"}
-        className="group flex flex-col items-center gap-y-5 bg-gradient-to-r from-gray-600 to-gray-800 text-white text-center py-6 px-8 rounded-lg shadow-lg max-w-lg w-full"
+        className="group flex flex-col items-center gap-y-5 bg-black text-white text-center p-8 rounded-lg shadow-lg max-w-3xl w-full"
       >
         <h2 className="text-2xl font-bold"> {cta}</h2>
 
