@@ -794,7 +794,7 @@ export const caseStudiesData = [
   {
     images: [
       "https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://accelerate-tech-ai.notion.site/image/attachment%3A38397d50-268c-4dab-ab03-2b9311dcadf9%3AAI_Voice_Agents__Bots_(7).png?table=block&id=1a86ef92-20db-8090-843f-cb0a569b1a31&spaceId=b4e7c64f-7b0d-4b89-a8f6-ef81552c8f3a&width=1420&userId=&cache=v2",
     ],
     desc: "From Data Overload to Intelligent Insights: How AI Consulting Transformed Strategic Decision-Making",
     featured: false,

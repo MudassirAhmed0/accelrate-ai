@@ -349,6 +349,10 @@ input[type="number"] {
 .porcess_content ol li {
   @apply bg-[#1a1a1a] border rounded-[6px] p-6;
 }
+.porcess_content ul li strong,
+.porcess_content ol li strong {
+  @apply lg:text35 lg:leading-[2.5vw] mtext24;
+}
 .case_details_content div {
   @apply flex flex-col gap-2;
 }
