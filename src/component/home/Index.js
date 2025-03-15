@@ -4,15 +4,20 @@ import Hero from "./hero/Hero";
 import { caseStudiesData } from "@/component/show-case/Index";
 
 // Dynamically import other components
-const About = dynamic(() => import("./about/About"));
-const Services = dynamic(() => import("./services/Services"));
-const Stats = dynamic(() => import("./stats/Stats"));
-const Expertise = dynamic(() => import("./expertise/Expertise"));
-const Contact = dynamic(() => import("./contact/Contact"));
-const VideoTestimonials = dynamic(() =>
-  import("./video-testimonials/VideoTestimonials")
+const About = dynamic(() => import("./about/About"), { ssr: false });
+const Services = dynamic(() => import("./services/Services"), { ssr: false });
+const Stats = dynamic(() => import("./stats/Stats"), { ssr: false });
+const Expertise = dynamic(() => import("./expertise/Expertise"), {
+  ssr: false,
+});
+const Contact = dynamic(() => import("./contact/Contact"), { ssr: false });
+const VideoTestimonials = dynamic(
+  () => import("./video-testimonials/VideoTestimonials"),
+  { ssr: false }
 );
-const Testimonials = dynamic(() => import("./testimonials/Testimonials"));
+const Testimonials = dynamic(() => import("./testimonials/Testimonials"), {
+  ssr: false,
+});
 
 const cardVideos = [
   {
