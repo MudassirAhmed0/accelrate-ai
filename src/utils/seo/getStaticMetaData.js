@@ -53,11 +53,11 @@ const getStaticMetaData = ({ title, description, isRobotFollow }) => {
     robots: {
       index: isRobotFollow,
       follow: isRobotFollow,
-      nocache: isRobotFollow,
+      nocache: false,
       googleBot: {
         index: isRobotFollow,
         follow: isRobotFollow,
-        noimageindex: isRobotFollow,
+        noimageindex: false,
       },
     },
   };
