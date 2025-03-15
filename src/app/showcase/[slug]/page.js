@@ -4,6 +4,16 @@ import Layout from "@/component/layout/Index";
 import { caseStudiesData } from "@/component/show-case/Index";
 import React from "react";
 
+export async function generateMetadata({ params }) {
+  const slug = params.slug;
+  const pageData = caseStudiesData.find((caseStudy) => caseStudy.slug === slug);
+  return getStaticMetaData({
+    title: pageData.desc,
+    description: pageData.desc,
+    isRobotFollow: true,
+  });
+}
+
 const page = async ({ params }) => {
   const slug = (await params).slug;
 
