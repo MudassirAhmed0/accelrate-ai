@@ -2,6 +2,7 @@ import Layout from "@/component/layout/Index";
 import React from "react";
 import ShowCasePage from "@/component/show-case/Index";
 import Loading from "../loading";
+import getStaticMetaData from "@/utils/seo/getStaticMetaData";
 
 export const metadata = getStaticMetaData({
   title: "Accelerate AI || Showcase Page",

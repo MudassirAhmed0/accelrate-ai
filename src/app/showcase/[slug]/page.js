@@ -2,6 +2,7 @@ import Loading from "@/app/loading";
 import SinglePage from "@/component/common/showcase-single-page/Index";
 import Layout from "@/component/layout/Index";
 import { caseStudiesData } from "@/component/show-case/Index";
+import getStaticMetaData from "@/utils/seo/getStaticMetaData";
 import React from "react";
 
 export async function generateMetadata({ params }) {

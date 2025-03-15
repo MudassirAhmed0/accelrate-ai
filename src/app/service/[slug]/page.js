@@ -2,6 +2,7 @@ import Loading from "@/app/loading";
 import { servicesData } from "@/component/layout/header/dropdown/DropDown";
 import Layout from "@/component/layout/Index";
 import ServiceSinglePage from "@/component/service-singlepage/Index";
+import getStaticMetaData from "@/utils/seo/getStaticMetaData";
 import React from "react";
 
 export async function generateMetadata({ params }) {
