@@ -1,19 +1,23 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import Hero from "./hero/Hero";
-import About from "./about/About";
-import Services from "./services/Services";
-import Stats from "./stats/Stats";
-import Expertise from "./expertise/Expertise";
-import Contact from "./contact/Contact";
-import VideoTestimonials from "./video-testimonials/VideoTestimonials";
-import Testimonials from "./testimonials/Testimonials";
 import { caseStudiesData } from "@/component/show-case/Index";
+
+// Dynamically import other components
+const About = dynamic(() => import("./about/About"));
+const Services = dynamic(() => import("./services/Services"));
+const Stats = dynamic(() => import("./stats/Stats"));
+const Expertise = dynamic(() => import("./expertise/Expertise"));
+const Contact = dynamic(() => import("./contact/Contact"));
+const VideoTestimonials = dynamic(() =>
+  import("./video-testimonials/VideoTestimonials")
+);
+const Testimonials = dynamic(() => import("./testimonials/Testimonials"));
 
 const cardVideos = [
   {
     src: "/videos/daniel-short.mp4",
     youtubeSrc: "https://www.youtube.com/watch?v=kVfjNfReacQ",
-
     poster: "/images/testimonials/thumbnail.jpg",
   },
   {
@@ -27,6 +31,7 @@ const cardVideos = [
     poster: "/images/testimonials/thumbnail.jpg",
   },
 ];
+
 const HomePage = ({ variant }) => {
   return (
     <>
@@ -45,7 +50,7 @@ const HomePage = ({ variant }) => {
       <VideoTestimonials
         variant={variant}
         id={"testimonials"}
-        heading={"In our client's words"}
+        heading={"In our client's words"}
         headingTag={"The Journey with us"}
         videoCard
         data={cardVideos}
