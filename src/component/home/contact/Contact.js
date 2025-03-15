@@ -81,7 +81,7 @@ const Contact = ({ variant }) => {
                   <BsPlayCircleFill />
                 </div>
                 <video
-                  src="/videos/home-hero.mp4"
+                  src="http://accelerate-ai.vercel.app/videos/home-hero.mp4"
                   className="object-cover absolute inset-0 size-full"
                   preload="auto"
                   loading="lazy"
@@ -113,7 +113,7 @@ const Contact = ({ variant }) => {
           // ]}
           sources={[
             {
-              source: "/videos/home-hero.mp4",
+              source: "http://accelerate-ai.vercel.app/videos/home-hero.mp4",
               // source:
               //   data?.navigation_buttons?.length > 0 &&
               //   data?.navigation_buttons[0].button_link,

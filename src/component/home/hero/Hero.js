@@ -120,7 +120,7 @@ const Hero = ({ variant }) => {
         <div className="absolute top-0 left-0 size-full z-[-1] heroVideo">
           <span className="absolute top-0 left-0 size-full bg-black opacity-[0.5]"></span>
           <video
-            src="/videos/home-hero.mp4"
+            src="http://accelerate-ai.vercel.app/videos/home-hero.mp4"
             muted
             loop
             autoPlay

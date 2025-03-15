@@ -1094,7 +1094,7 @@ export const caseStudiesData = [
 ];
 const cardVideos = [
   {
-    src: "/videos/home-hero.mp4",
+    src: "http://accelerate-ai.vercel.app/videos/home-hero.mp4",
     poster: "/images/testimonials/thumbnail.jpg",
   },
 
