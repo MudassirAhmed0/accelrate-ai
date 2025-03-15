@@ -3,12 +3,12 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 
 const isVideoLoaded = () => {
-  const video = document.querySelector(".hero-video"); // Select the video in the header
-  if (video) {
-    return video && video.readyState >= 4; // Check if the video is ready to play
-  } else {
-    return true;
-  }
+  // const video = document.querySelector(".hero-video"); // Select the video in the header
+  // if (video) {
+  //   return video && video.readyState >= 4; // Check if the video is ready to play
+  // } else {
+  return true;
+  // }
 };
 
 function areAllAssetsLoaded() {
