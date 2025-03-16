@@ -15,28 +15,6 @@
   font-weight: 400;
   font-style: normal;
 }
-/* Sussie */
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/SuisseIntl/SuisseIntl-Regular.ttf");
-  font-display: block;
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/SuisseIntl/SuisseIntl-Light.ttf");
-  font-display: block;
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/SuisseIntl/SuisseIntl-Bold.ttf");
-  font-display: block;
-  font-weight: 600;
-  font-style: normal;
-}
 
 /* Poppins */
 @font-face {
@@ -100,34 +78,6 @@
 /* Roboto */
 
 @font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Regular.ttf");
-  font-display: block;
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Light.ttf");
-  font-display: block;
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SuisseIntl";
-  src: url("/fonts/refrence/SuisseIntl/SuisseIntl-Bold.ttf");
-  font-display: block;
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "switzer";
-  src: url("/fonts/refrence/switzer/Switzer-Semibold.otf");
-  font-display: block;
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
   font-family: "modica";
   src: url("/fonts/Modica/Fontspring-DEMO-modica-bold.otf");
   font-display: block;
@@ -141,38 +91,14 @@
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
-  font-family: "MElle HK Medium";
-  src: url("/fonts/MElle HK Medium/MElle HK Medium.ttf");
-  font-display: block;
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Cordia New Regular";
-  src: url("/fonts/Cordia New Regular/Cordia New Regular.ttf");
-  font-display: block;
-  font-weight: 500;
-  font-style: normal;
-}
+
 /* IMPORTING FONTS  */
-.cordia {
-  font-family: "Cordia New Regular";
-}
-.melle {
-  font-family: "MElle HK Medium";
-}
+
 .swiss {
   font-family: "swiss";
 }
 .modica {
   font-family: "modica";
-}
-.switzer {
-  font-family: "switzer";
-}
-.suisseIntl {
-  font-family: "SuisseIntl";
 }
 .roboto {
   font-family: "Roboto";
