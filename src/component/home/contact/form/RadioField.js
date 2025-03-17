@@ -3,7 +3,13 @@ import { useState } from "react";
 const RadioField = () => {
   const [selected, setSelected] = useState("");
 
-  const options = ["Email", "Call", "WhatsApp", "Carrier Pigeon"];
+  const options = [
+    "Email",
+    "LinkedIn",
+    "Referral",
+    "Instagram",
+    "Carrier Pigeon",
+  ];
 
   return (
     <div className="flex flex-col">

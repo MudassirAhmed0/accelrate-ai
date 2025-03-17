@@ -176,7 +176,7 @@ const Header = () => {
             href={"/"}
             className="flex lg:gap-[0.41666666666vw] overflow-hidden headerLink lg:text20 mtext14 relative z-[2]"
           >
-            <span>The Accelerate-AI</span>
+            <span>Accelerate-AI</span>
           </Link>
           <nav
             ref={sideBarRef}
