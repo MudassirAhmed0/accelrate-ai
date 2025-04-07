@@ -50,15 +50,15 @@ const testimonials = [
     name: "Ashok Balan, Consultant",
     location: "Medi Trust, India",
   },
-  {
-    profile: "/images/testimonials/profiles/5.png",
-    review: `
-      <p>I recently had a fantastic experience working with team Accelerate-AI on an AI automation project. They were communicative throughout the process and asked very good questions to make sure they really understood what I was looking for. They delivered on time and the final product was better than I had originally imagined in my head.</p>
-      <p>I’d highly recommend Accelerate-AI and will definitely be reaching out to them again for future projects.</p>
-    `,
-    name: "Todd Leverette, Founding Partner",
-    location: "Apis & Heritage Capital Partners, USA",
-  },
+  // {
+  //   profile: "/images/testimonials/profiles/5.png",
+  //   review: `
+  //     <p>I recently had a fantastic experience working with team Accelerate-AI on an AI automation project. They were communicative throughout the process and asked very good questions to make sure they really understood what I was looking for. They delivered on time and the final product was better than I had originally imagined in my head.</p>
+  //     <p>I’d highly recommend Accelerate-AI and will definitely be reaching out to them again for future projects.</p>
+  //   `,
+  //   name: "Todd Leverette, Founding Partner",
+  //   location: "Apis & Heritage Capital Partners, USA",
+  // },
 ];
 
 export default function Testimonials() {
