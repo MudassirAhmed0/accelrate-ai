@@ -35,7 +35,7 @@ const cardVideos = [
 const HomePage = ({ variant }) => {
   return (
     <>
-      <Hero variant={variant} />
+      {/* <Hero variant={variant} />
       <About variant={variant} />
       <Services variant={variant} />
       <Stats variant={variant} />
@@ -56,7 +56,7 @@ const HomePage = ({ variant }) => {
         data={cardVideos}
       />
       <Testimonials variant={variant} />
-      <Contact variant={variant} />
+      <Contact variant={variant} /> */}
     </>
   );
 };
