@@ -11,7 +11,7 @@ import GridLayout from "./about/grid-layout/GridLayout";
 import CTABox from "./about/CTABox";
 const cardVideos = [
   {
-    src: "http://accelerate-ai.vercel.app/videos/home-hero.mp4",
+    src: "/videos/home-hero.mp4",
     poster: "/images/testimonials/thumbnail.jpg",
   },
 

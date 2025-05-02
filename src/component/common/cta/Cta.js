@@ -27,7 +27,7 @@ const Cta = () => {
               boxShadow:
                 "rgba(255, 255, 255, 0.4) 2px -5px 20px, rgba(255, 255, 255, 0.4) -2px 5px 20px",
             }}
-            src="http://accelerate-ai.vercel.app/videos/home-hero.mp4"
+            src="/videos/home-hero.mp4"
             muted
             loop
             autoPlay
